@@ -39,7 +39,7 @@
    height:20px;
    line-height:20px;
   }
-  #sr-header-area:hover{rgba(68, 68, 68, 0.30);}
+  #sr-header-area:hover{background-color:rgba(68, 68, 68, 0.30);}
   .res-nightmode #sr-header-area{background-color: rgba(16, 16, 16, 1)!Important;}
   #sr-header-area .width-clip{
   right: 50px;
