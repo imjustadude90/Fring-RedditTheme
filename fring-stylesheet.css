@@ -8,8 +8,9 @@
 			v1.0 - Initial Design - /r/Fring Template
 			v1.1 - RES Nightmode Compatible
 			v1.2 - Nightmode re-design & header re-design. 
--------------------------------------------------------------------------- */		
-
+-------------------------------------------------------------------------- */	
+	
+/**Add Customization on the bottom, or it may not work**/
 
 /** Main Body **/
   body {
@@ -38,6 +39,7 @@
    height:20px;
    line-height:20px;
   }
+  #sr-header-area:hover{rgba(68, 68, 68, 0.30);}
   .res-nightmode #sr-header-area{background-color: rgba(16, 16, 16, 1)!Important;}
   #sr-header-area .width-clip{
   right: 50px;
@@ -1988,3 +1990,8 @@ border-top: 0px;
   border-color: #121212!Important;
 }
 /**End Additional Nightmode code**/
+
+
+/*-----Add your Custome CSS Below Here--------*/
+
+
