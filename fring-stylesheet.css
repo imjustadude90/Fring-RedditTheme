@@ -1789,6 +1789,7 @@ background-color:transparent!Important;
 	.footer-parent{
 	background-color: #323232;
 	}
+	body>.debuginfo:after{content: "CSS Theme from /r/Fring";padding: 3px 0 0 5px;float: left;color: #BBBBBB;font-size: 12px;}
 	.res-nightmode .footer-parent, .res-nightmode .debuginfo{background-color:#131313!Important;}
 		.debuginfo{
 		background-color: #323232;
