@@ -225,7 +225,7 @@
 		
 			/**Res Settings**/
 			.gearIcon  {
-				background: url(%%spritesheet%%) -46px 0px no-repeat;
+				background: url(%%spritesheet%%) -46px 0px no-repeat!Important;
 			}
 				#RESSettingsButton{
 					position: relative!important;
