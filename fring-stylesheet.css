@@ -11,34 +11,6 @@
 -------------------------------------------------------------------------- */		
 
 
-/** Customize Your Theme Colors **/
-
-/**Primary Background Color on submit links and more**/
-	.submit-page #newlink.submit.content .tabmenu.formtab .selected a,.submit-page .infobar,.side div.morelink,#search input[type=submit],.btn, button,.menuarea .drop-choices a.choice:hover,.side div.sidecontentbox a.helplink:hover:after{
-		background-color: #ff7247;
-	}
-	
-/**Box Shadow - Used for shadows on buttons, sidebar submission links and more**/
-	.side div.morelink, .btn, button, #search input[type=submit]
-	{
-	-webkit-box-shadow: 0px 3px 0px #D75A41;
-	-moz-box-shadow: 0px 3px 0px #D75A41;
-	box-shadow: 0px 3px 0px #D75A41;
-	}
-	
-/**Header Background Color**/
-	#header{
-		background: #93b2c7;
-	}
-
-/**Primary Link Color on various, places.**/
-	.tabmenu li.selected a,.sitetable .nextprev a, .next-suggestions a,.menuarea  .flat-list li.selected a,.tabmenu li a:hover,.commentarea .menuarea .dropdown.lightdrop .selected{
-    color: #ff7247;
-	}  
-
-/** STOP Customize**/
-
-
 /** Main Body **/
   body {
   color: #111111;
@@ -126,16 +98,20 @@
 	-moz-box-shadow: 0px 2px 0px #e2e2e2;
 	box-shadow: 0px 1px 0px #E0E0E0;
 	position: relative;
+	background-color: #93b2c7;
 	}
 	.res-nightmode #header{background-color:#161616!Important;border-bottom: 1px solid #333!Important; box-shadow: 0px 1px 0px #161616!Important;}
-		#header-img {
-		margin-top: 3px;
+		#header-img.default-header, #header-img {
 		margin-left: 5px;
+		background: url(%%spritesheet%%) -122px -186px no-repeat;
+		opacity:0.7;
+		height: 65px;
+		width: 65px;
+		margin: 3px 5px;
 		}
 			#header-img:hover {
-			opacity:0.9;
+			opacity:1.0;
 			}
-
 /** Header-Bottom-Left **/´
 
     #header .pagename{
@@ -146,12 +122,15 @@
 		font-weight: 600;
 		font-size: 19px;
 		border-collapse: separate;
-		position: relative;
-		text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+		display:inline-block;
+		position: absolute;
+		margin-top: 27px;
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 		}
 		.res-nightmode #header .pagename a{color:#fff!Important;}
 			#header .pagename a:hover{
-			color:#414141;
+			opacity:0.9;
 			text-decoration:none;
 			}
 				#header .pagename a:before{
@@ -260,22 +239,23 @@
 			}
 
 /** TABMENU **/
-   #header-bottom-left .tabmenu.tabmenu {
+   #header .tabmenu {
 	list-style-type: none;
 	white-space: nowrap;
 	display: inline-block;
 	position: absolute;
-	top: 75px;
 	right: 325px;
 	left: 15px;
 	text-align: left;
-	margin: 0px;
-	padding: 6px;
-	background-color: #f5f5f5;
-	overflow:hidden;
+	background-color: #FFFFFF;
+	overflow: hidden;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.10);
 	border-bottom: 0px;
 	border-radius: 3px 3px 0px 0px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	margin-top: 82px;
    }
    .res-nightmode #header-bottom-left .tabmenu.tabmenu {background-color: #101010;}
      .tabmenu li {
@@ -294,6 +274,7 @@
       padding: 5px 5px;
       font-family: "Trebuchet MS",Helvetica,sans-serif;
       }
+	  .tabmenu li a:hover{color: #ff7247;}
 	  .res-nightmode .tabmenu li a{background-color:transparent!Important; color:#bbbbbb!Important;}
 	   .res-nightmode .tabmenu li a:hover{color:#e6e6e6!Important;}
 		.res-nightmode .tabmenu li a:active{color:#fff!Important;}
@@ -302,6 +283,7 @@
         background-color: transparent;
         border: 0px;
         border-bottom: 0px;
+		color: #ff7247;
         }
 		.res-nightmode .tabmenu li.selected a{color:#fff!Important; background-color:transparent!Important;}
 
@@ -435,6 +417,7 @@
             color: #fff;
             margin-left: -257px;
             margin-top: 22px;
+			background-color: #ff7247;
             }
 			
 	/**Font Size**/
@@ -781,6 +764,10 @@ margin-top: 10px;
 			height: 35px;
 			line-height:35px;
 			opacity:0.9;
+			background-color: #ff7247;
+			-webkit-box-shadow: 0px 3px 0px #D75A41;
+			-moz-box-shadow: 0px 3px 0px #D75A41;
+			box-shadow: 0px 3px 0px #D75A41;
 			}
 			.res-nightmode .side div.morelink{
 			background-color: #161616!Important;
@@ -858,16 +845,15 @@ margin-top: 10px;
 		-moz-box-shadow: 0px 4px 0px #E2E2E2;
 		box-shadow: 0px 4px 0px #E2E2E2;
 		}
+		
 		.res-nightmode #search input[type=text]{
 		background-color:#161616!Important;
 		-moz-box-shadow: 0px 4px 0px #333;
 		-webkit-box-shadow: 0px 4px 0px #333;
 		box-shadow: 0px 4px 0px #333;
 		}
-			#search input[type:text]:hover{
-			background-color:#2980B9;
-			}
 				#search input[type=submit]{
+				background-color: #ff7247;
 				background-image: url(%%spritesheet%%);
 				background-position: 0px -107px;
 				background-repeat: no-repeat;
@@ -881,6 +867,9 @@ margin-top: 10px;
 				border-radius: 0px 5px 5px 0px;
 				outline: none;
 				opacity:1.0;
+				-webkit-box-shadow: 0px 3px 0px #D75A41;
+				-moz-box-shadow: 0px 3px 0px #D75A41;
+				box-shadow: 0px 3px 0px #D75A41;
 				}
 				.res-nightmode #search input[type=submit]{
 				background-image: url(%%spritesheet%%)!Important;
@@ -954,7 +943,7 @@ margin-top: 10px;
 	
 /** CONTENT **/
     .content {
-    margin: 36px 5px 0px 15px;
+    margin: 40px 5px 0px 15px;
     }
 	.res-nightmode body .content{background:transparent!Important;}
 	/**Sitetable**/
@@ -985,6 +974,7 @@ margin-top: 10px;
 			}
 				.sitetable .nextprev a, .next-suggestions a{
 				background-color: #F5F5F5;
+				color: #ff7247;
 				height: 20px;
 				line-height: 20px;
 				padding: 1px 5px;
@@ -1072,7 +1062,7 @@ margin-top: 10px;
 			color: #B3B3B3;
 			}
 			.res-nightmode .link .rank{background-color:rgba(16, 16, 16, 1)!Important;   border: 1px solid rgba(36, 36, 36, 1)!Important; border-top: 0px;}	
-	/** Thumbnail **/
+	/** Thumbnail Images **/
 	.thumbnail{
 	position: relative;
 	overflow: hidden;
@@ -1086,14 +1076,25 @@ margin-top: 10px;
 		-moz-border-radius: 4px;
 		border-radius: 4px;
 		}
-
+	/**Thumbnails**/
+	.thumbnail.self {
+		background: url(%%spritesheet%%) -120px 0px no-repeat;
+		height:60px;
+	}
+	.thing.stickied a.thumbnail{
+		background: url(%%spritesheet%%) -120px -60px no-repeat;
+		height:60px;
+	}
+	.thumbnail.default{
+		background: url(%%spritesheet%%) -120px -124px no-repeat;
+		height:60px;
+	}
 	/** Thing **/
 	.entry{
 	padding-bottom: 5px;
 	padding-right: 5px;
 	padding-left: 10px;
 	}
-
 	/**Comment Page**/
 	.commentarea .thing{
 	padding: 10px 10px 10px 8px;
@@ -1165,6 +1166,7 @@ margin-top: 10px;
 	}
 	    .commentarea .menuarea .dropdown.lightdrop .selected{
 		background-color:transparent;
+		color: #ff7247;
 		}
 					.usertext button{margin:0px;}
 					
@@ -1323,6 +1325,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 			}
 				.menuarea .drop-choices a.choice:hover{
 				color:#fff;
+				background-color: #ff7247;
 				}
 				.res-nightmode .menuarea .drop-choices a.choice:hover{
 				background-color:#181818!Important;
@@ -1636,6 +1639,10 @@ box-shadow: inset 0px 0px 5px #C0C0C0;
 	border: 0px!Important;
 	outline: none;
 	opacity: 1.0;
+	background-color: #ff7247;
+	-webkit-box-shadow: 0px 3px 0px #D75A41;
+	-moz-box-shadow: 0px 3px 0px #D75A41;
+	box-shadow: 0px 3px 0px #D75A41;
 }
 
 .btn:hover, button:hover{
@@ -1742,6 +1749,7 @@ background-color:transparent!Important;
 				font-size: 16px;
 				margin-right: 0px;
 				color:#fff;
+				background-color: #ff7247;
 				}
 				.res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a{
 				background-color:#161616!Important;
@@ -1752,17 +1760,15 @@ background-color:transparent!Important;
 					color: #fff;
 					padding: 15px;
 					font-size: 15px;
+					background-color: #ff7247;
 					}
 					.res-nightmode .submit-page .infobar{background-color:#161616!Important;}
 	/** Stickied Posts **/
 	.thing.stickied a.title, .thing.stickied a, .thing.stickied .entry li .comments {
   color: #228822!important;
 	}
-	.link.promoted, .link.stickied {background-color:rgba(34, 136, 34, 0.15);}
 	.link.promoted .rank, .link.stickied .rank{display:none;}
-	.link.promoted .thumbnail.self, .link.stickied .thumbnail.self{
-	display:none;
-	}
+
 /*Wiki*/
 	.wiki-page .wiki-page-content{
 	background-color: #fff;
@@ -1770,6 +1776,7 @@ background-color:transparent!Important;
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.16);
 	margin: 10px 320px 0px 0px;
 	}
+	.res-nightmode .wiki-page .wiki-page-content{background-color:#101010!Important;}
 		.wiki-page .pageactions{margin-top: 10px;}
 
 		.infobar{
