@@ -162,6 +162,7 @@
 	border-top-left-radius: 7px;
 	font-size:12px;
 	background-color: rgba(68,68,68,0.15);
+	line-height:14px;
     }
 	#header-bottom-right:hover{
 	background-color: rgba(0, 0, 0, 0.3);
