@@ -290,7 +290,13 @@
       padding: 5px 5px;
       font-family: "Trebuchet MS",Helvetica,sans-serif;
       }
-	  .tabmenu li a:hover{color: #ff7247;}
+	  .tabmenu li a:hover{
+		color: #ff7247;
+		-webkit-transition: all 0.1s ease;
+		-moz-transition: all 0.1s ease;
+		-o-transition: all 0.1s ease;
+		transition: all 0.1s ease;
+	  }
 	  .res-nightmode .tabmenu li a{background-color:transparent!Important; color:#bbbbbb!Important;}
 	   .res-nightmode .tabmenu li a:hover{color:#e6e6e6!Important;}
 		.res-nightmode .tabmenu li a:active{color:#fff!Important;}
