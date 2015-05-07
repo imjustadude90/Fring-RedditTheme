@@ -186,7 +186,7 @@
       color:#fff;
       text-decoration:none;
       }
-        #header-bottom-right .separator {color:#efefef;}
+        #header-bottom-right .separator {color:transparent;}
         #header-bottom-right a.pref-lang.choice:hover{color:#fff;}
         #header-bottom-right .logout a:hover{color:#fff;}
 
