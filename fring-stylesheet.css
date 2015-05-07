@@ -1808,18 +1808,11 @@ background-color:transparent!Important;
 		}
 
 /**Footer**/
-	.footer-parent{
-	background-color: #323232;
-	}
-	body>.debuginfo:after{content: "CSS Theme from /r/Fring";padding: 3px 0 0 5px;float: left;color: #BBBBBB;font-size: 12px;}
-	.res-nightmode .footer-parent, .res-nightmode .debuginfo{background-color:#131313!Important;}
-		.debuginfo{
-		background-color: #323232;
-		}
+
+	body>.debuginfo:after{content: "CSS Theme from /r/Fring";padding: 3px 0 0 5px;float: left;font-size: 12px;}
+	
 		.res-nightmode .footer{border: 1px solid rgba(0,0,0,0.20)!Important;  box-shadow: 0 1px 5px rgba(0,0,0,0.20);}
-			.footer a{color: #B8B8B8;}
 			.res-nightmode .footer a{color:#bbb!Important;}
-			.footer a:hover{color:#fff;}
 			.res-nightmode .footer a:hover {color:#eaeaea!Important;}
 	
 /**Reddit Enhancement Suite Fixes**/
