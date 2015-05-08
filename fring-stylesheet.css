@@ -1,7 +1,7 @@
 /*
 			Version 1.0
 			Stylesheet by Imjustadude90
-			Last modified: 08 MAY 2015
+			Last modified: 06 MAY 2015
 
 			--------------------------------------------------------------------------
             [Changelog]
@@ -108,7 +108,10 @@
 	position: relative;
 	background-color: #93b2c7;
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	}
 	.res-nightmode #header{background-color:#161616!Important;border-bottom: 1px solid #333!Important; box-shadow: 0px 1px 0px #161616!Important;}
 		#header-img.default-header, #header-img {
@@ -495,6 +498,7 @@ border-color: rgba(51, 51, 51, 0.5)!Important;
 padding: 4px 12px;
 font-size: 12px;
 color: #444;
+border-top: 1px solid rgba(234,234,234,0.4);
 }
 
 .side .titlebox .bottom{
@@ -2007,4 +2011,25 @@ border-top: 0px;
 
 /*-----Add your Custom CSS Below Here--------*/
 
-
+/**Customize button colors**/
+    .submit-page #newlink.submit.content .tabmenu.formtab .selected a,
+	.submit-page .infobar,
+	.side div.morelink,
+	#search input[type=submit],
+	.btn, button,
+	.menuarea .drop-choices a.choice:hover,
+	.side div.sidecontentbox a.helplink:hover:after
+	{
+    	background-color: #ff7247;
+    }
+    	
+/**Box Shadow - Used for shadows on buttons, sidebar submission links and more**/
+    .side div.morelink,
+	.btn, button,
+	#search input[type=submit]
+    	{
+    	-webkit-box-shadow: 0px 3px 0px #D75A41; /**Select a shadow color and change all three of these**/
+    	-moz-box-shadow: 0px 3px 0px #D75A41;
+    	box-shadow: 0px 3px 0px #D75A41;
+    }
+/**End Customize button colors**/
