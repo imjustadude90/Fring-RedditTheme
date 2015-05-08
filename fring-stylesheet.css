@@ -1795,7 +1795,16 @@ background-color:transparent!Important;
 	.thing.stickied a.title, .thing.stickied a, .thing.stickied .entry li .comments {
   color: #228822!important;
 	}
-	.link.promoted .rank, .link.stickied .rank{display:none;}
+	/**Stickied link rank - thanks to /u/ggitaliano from /r/Carbon**/
+	.link.promoted .rank, .link.stickied .rank{
+	position: relative;
+	visibility: visible;
+	}
+	.link.stickied .rank:after{
+	content: "S";
+	color: #228822;
+	margin-left: -1px;
+	}
 
 /*Wiki*/
 	.wiki-page .wiki-page-content{
@@ -2010,5 +2019,4 @@ border-top: 0px;
 
 
 /*-----Add your Custom CSS Below Here--------*/
-
 
