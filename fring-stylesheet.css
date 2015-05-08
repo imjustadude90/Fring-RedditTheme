@@ -993,7 +993,7 @@ margin-top: 10px;
 			.sitetable .nextprev, .next-suggestions{
 			color:#777;
 			}
-			.res-nightmode .sitetable .nextprev, .next-suggestions{
+			.res-nightmode .sitetable .nextprev, .res-nightmode .next-suggestions{
 			color:#e2e2e2!Important;
 			}
 				.sitetable .nextprev a, .next-suggestions a{
@@ -1011,7 +1011,7 @@ margin-top: 10px;
 				border: 1px solid #333!Important;
 				color: #eaeaea!Important;
 				}
-					.sitetable .nextprev a:hover, .next-suggestions a:hover{
+					.sitetable .nextprev a:hover, .res-nightmode .next-suggestions a:hover{
 					background-color: #F0F0F0;
 					border: 1px solid #DFDFDF;
 					}
