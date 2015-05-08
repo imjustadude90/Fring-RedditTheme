@@ -1006,7 +1006,7 @@ margin-top: 10px;
 				border-radius: 4px;
 				display: inline-block;
 				}
-				.res-nightmode .sitetable .nextprev a, .next-suggestions a{
+				.res-nightmode .sitetable .nextprev a, .res-nightmode .next-suggestions a{
 				background-color: #444!Important;
 				border: 1px solid #333!Important;
 				color: #eaeaea!Important;
