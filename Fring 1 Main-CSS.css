@@ -1229,7 +1229,7 @@ margin-top: 10px;
 	}
 	.res-nightmode .commentarea .thing{
 	background-color:#161616!Important;
-	border: 0px solid 1a1a1a!Important;
+	border: 0px!Important;
 	}
 		.commentarea .child .thing{
 		box-shadow:none;
