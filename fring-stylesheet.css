@@ -1,14 +1,14 @@
 /*
 			Version 1.0
 			Stylesheet by Imjustadude90
-			Last modified: 08 MAY 2015
+			Last modified: 09 MAY 2015
 
 			--------------------------------------------------------------------------
             [Changelog]
 			v1.0 - Initial Design - /r/Fring Template
 			v1.1 - RES Nightmode Compatible
 			v1.2 - Nightmode re-design & header re-design. 
-			v1.3 - B
+			v1.3 - New vote arrows & improved customization.
 -------------------------------------------------------------------------- */	
 	
 /**Add Customization on the bottom, or it may not work**/
@@ -354,14 +354,7 @@
 				background: linear-gradient(top, #161616, #1F1E1E);
 				background-color: #161616;
 				}
-						.listing-page h1.redditname:before{
-						content: "/r/";
-						font-size: 14px;
-						font-variant: normal;
-						text-transform: none;
-						font-family: arial;
-						}
-						
+
 	/**Login Form**/
 	.login-form-side{
 	border: 0px solid rgb(240, 240, 240);
@@ -707,24 +700,20 @@ background-color:#161616!Important;
 		background-color: #101010!Important;
 		color: #eaeaea!Important;
 	}
-	/*Hide Announcement message on submit page*/
-		.submit-page .side h6:nth-of-type(1){
-			display:none;
-			}
-	.side h6:nth-of-type(1):before{
-		content: "";
-		position: absolute;
-		display: inline-block;
-		background: url(%%spritesheet%%);
-		background-position: -23px -75px;
-		width: 20px;
-		height: 18px;
-		margin-left: -30px;
-		margin-top: 5px;
-	}
-	.res-nightmode .side h6:nth-of-type(1):before{
-		background-position: 0px -75px!Important;
-	}
+		.side h6:nth-of-type(1):before{
+			content: "";
+			position: absolute;
+			display: inline-block;
+			background: url(%%spritesheet%%);
+			background-position: -23px -75px;
+			width: 20px;
+			height: 18px;
+			margin-left: -30px;
+			margin-top: 5px;
+		}
+		.res-nightmode .side h6:nth-of-type(1):before{
+			background-position: 0px -75px!Important;
+		}
 /** Profile Page Fixes**/
 
 .profile-page .titlebox{padding: 5px 10px;}
@@ -757,7 +746,7 @@ background-color:#161616!Important;
 						.profile-page .comment, .content .details{
 						padding: 10px 10px 10px 8px;
 						}
-						
+		.profile-page .menuarea				
 /**Messages Page**/
 	.messages-page .sitetable{
 	margin-right:0px;
@@ -772,7 +761,7 @@ background-color:#161616!Important;
 			margin-bottom:0px;
 			}
 	.messages-page .content{
-	margin: 36px 15px 20px 15px
+	margin: 41px 15px 20px 15px
 	}
 	.messages-page .sitetable .nav-buttons{
 	border-left:0px;
@@ -1005,7 +994,78 @@ margin-top: 10px;
 	.search-page .content{
 	margin: 15px 5px 0px 15px;
 	}
-	
+
+/*Vote Arrows**/
+	.arrow {
+		background-image: url(%%spritesheet%%) !important; 
+		height: 14px; 
+		width: 22px; 
+		background-color: transparent;
+	}
+	.arrow.up { 
+		background-position: -52px -29px;
+	}
+
+	.arrow.upmod { 
+		background-position: -30px -29px; 
+	}
+
+	.arrow.down {
+		background-position: -52px -43px;
+	}
+
+	.arrow.downmod { 
+		background-position: -30px -43px;
+	}
+
+	.arrow.upmod:focus { 
+		background-position: -30px -29px; 
+		-webkit-animation: bounceIn 800ms ease-in;
+		-moz-animation: bounceIn 800ms ease-in;
+		-o-animation: bounceIn 800ms ease-in;
+		animation: bounceIn 800ms ease-in;	
+	}
+	/**Arrow Animation**/
+	@-webkit-keyframes bounceIn { 
+		0% { 
+        opacity: 0; 
+        -webkit-transform: scale(.3); 
+		} 
+		50% { 
+        opacity: 1; 
+        -webkit-transform: scale(1.05); 
+		} 
+		70% { 
+        -webkit-transform: scale(.9); 
+		} 
+		100% { 
+         -webkit-transform: scale(1); 
+		} 
+	} 
+	@keyframes bounceIn { 
+		0% { 
+			opacity: 0; 
+			transform: scale(.3); 
+		} 
+		50% { 
+			opacity: 1; 
+			transform: scale(1.05); 
+		} 
+		70% { 
+			transform: scale(.9); 
+		} 
+		100% { 
+			transform: scale(1); 
+		} 
+	}
+	.link .midcol{
+		overflow:visible;
+	}
+	.comment .midcol {
+		width:22px;
+	}
+/**End Vote Arrows**/
+
 /** CONTENT **/
     .content {
     margin: 40px 5px 0px 15px;
@@ -1418,7 +1478,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	color:#444;
 	}
 		.menuarea  .flat-list li a:hover{
-		color:#fff;
+		color:#000;
 		}
 	
 /**EXPANDO BUTTONS**/
@@ -1948,23 +2008,28 @@ border: 1px solid #242424!Important;
 
 /** Multi Reddit Fix**/
 	body.with-listing-chooser .listing-chooser{
-
+		top: 94px;
+		z-index:100;
 	}
+	.with-listing-chooser #header .tabmenu{left: 140px;}
+	.listing-chooser-collapsed #header .tabmenu{left:15px;}
 
 /**Trending Subreddits**/
 	.trending-subreddits {
-	margin-right: 320px;
-	background-color: ##efefef;
-	margin-bottom: 0px;
-	padding: 8px;
-	color: #fff;
-	margin-left: 0px;
-	border: 0px;
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-    border-top: 0px;
+		margin-right: 320px;
+		margin-bottom: -5px;
+		padding: 8px;
+		margin-left: 0px;
+		border: 0px;
+		border-top: 0px;
+		text-align: center;
+		color: #444;
+		background-color: #e4e4e4;
 	}
 
 /** Moderator Multi Page**/
+
+.multi-page #header .pagename a{position:relative;}
 
 .multi-page .menuarea{
 margin-bottom:0px;
@@ -2056,4 +2121,6 @@ border-top: 0px;
 
 
 /*-----Add your Custom CSS Below Here--------*/
+
+
 
