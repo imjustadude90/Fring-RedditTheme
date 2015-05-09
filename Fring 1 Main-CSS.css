@@ -10,7 +10,7 @@
 			v1.2 - Nightmode re-design & header re-design. 
 			v1.3 - New vote arrows & improved customization.
 -------------------------------------------------------------------------- */	
-
+	
 /**Add Customization on the bottom, or it will not work**/
 
 /** Main Body **/
@@ -126,7 +126,7 @@
 			#header-img:hover {
 			opacity:1.0;
 			}
-/** Header-Bottom-Left **/´
+/** Header-Bottom-Left **/
 
     #header .pagename{
 	font-size:0px;
@@ -682,38 +682,6 @@ background-color:#161616!Important;
 			
 			.RESshortcutside{margin-left:10px;}
 
-	/**Announcement Message Layout**/
-	.side h6:nth-of-type(1){
-		height: 28px;
-		line-height: 28px;
-		position: absolute;
-		display: block;
-		white-space: nowrap;
-		overflow: hidden;
-		left: 15px;
-		text-decoration: none;
-		font-size: 125%;
-		right: 325px;
-		border-radius: 0px;
-		padding: 0px 10px 0px 35px;
-}	.res-nightmode .side h6:nth-of-type(1){
-		background-color: #101010!Important;
-		color: #eaeaea!Important;
-	}
-		.side h6:nth-of-type(1):before{
-			content: "";
-			position: absolute;
-			display: inline-block;
-			background: url(%%spritesheet%%);
-			background-position: -23px -75px;
-			width: 20px;
-			height: 18px;
-			margin-left: -30px;
-			margin-top: 5px;
-		}
-		.res-nightmode .side h6:nth-of-type(1):before{
-			background-position: 0px -75px!Important;
-		}
 /** Profile Page Fixes**/
 
 .profile-page .titlebox{padding: 5px 10px;}
@@ -1061,6 +1029,9 @@ margin-top: 10px;
 	.link .midcol{
 		overflow:visible;
 	}
+	.gadget .midcol{
+		width:22px;
+	}
 	.comment .midcol {
 		width:22px;
 	}
@@ -1075,7 +1046,7 @@ margin-top: 10px;
     .sitetable {
     list-style-type: none;
     padding: 0px;
-    padding-top:2px;
+	padding-top:2px;
     margin-right: 320px;
     margin-bottom:20px;
     background-color: #fff;
@@ -2122,6 +2093,5 @@ border-top: 0px;
 
 
 /*-----Add your Custom CSS Below Here--------*/
-
 
 
