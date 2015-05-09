@@ -7,10 +7,12 @@ Fring is a reddit theme that anyone can use for their subreddit or use as their 
 How to install the theme. 
 ===============
 
-Change your subreddit theme in two easy steps.
 
-1. Upload the spritesheet image to your stylesheet. 
-2. Copy the CSS from fring-stylesheet.css and paste it into the the stylesheet page on reddit. 
+1. Go to the stylesheet page on your subreddit, go to your subreddit and click on the "edit stylesheet" link in the moderation tools sidebar box. 
+2. Upload the image(s) from the images folder to your stylesheet. 
+3. Copy the CSS from Fring 1 Main-CSS.css and paste it into the the stylesheet page on reddit. 
+
+Here's a gif to show you. 
 
 If you want to customize your theme for your subreddit go to http://www.reddit.com/r/Fring/wiki/customize and follow the instructions for each different addon. I'm always updating the theme, so make sure you are subscribed to /r/Fring so that you don't miss any important updates. 
 
