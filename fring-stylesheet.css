@@ -8,6 +8,7 @@
 			v1.0 - Initial Design - /r/Fring Template
 			v1.1 - RES Nightmode Compatible
 			v1.2 - Nightmode re-design & header re-design. 
+			v1.3 - B
 -------------------------------------------------------------------------- */	
 	
 /**Add Customization on the bottom, or it may not work**/
@@ -101,7 +102,7 @@
 /** Main Header Area **/
 
 	#header {
-	border-bottom: 1px solid #E8E8E8;
+	border-bottom: 0px;
 	-webkit-box-shadow: 0px 2px 0px #e2e2e2;
 	-moz-box-shadow: 0px 2px 0px #e2e2e2;
 	box-shadow: 0px 1px 0px #E0E0E0;
@@ -686,8 +687,44 @@ background-color:#161616!Important;
 			margin-top: -3px;
 			}
 			
-.RESshortcutside{margin-left:10px;}
+			.RESshortcutside{margin-left:10px;}
 
+	/**Announcement Message Layout**/
+	.side h6:nth-of-type(1){
+		height: 28px;
+		line-height: 28px;
+		position: absolute;
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		left: 15px;
+		text-decoration: none;
+		font-size: 125%;
+		right: 325px;
+		border-radius: 0px;
+		padding: 0px 10px 0px 35px;
+}	.res-nightmode .side h6:nth-of-type(1){
+		background-color: #101010!Important;
+		color: #eaeaea!Important;
+	}
+	/*Hide Announcement message on submit page*/
+		.submit-page .side h6:nth-of-type(1){
+			display:none;
+			}
+	.side h6:nth-of-type(1):before{
+		content: "";
+		position: absolute;
+		display: inline-block;
+		background: url(%%spritesheet%%);
+		background-position: -23px -75px;
+		width: 20px;
+		height: 18px;
+		margin-left: -30px;
+		margin-top: 5px;
+	}
+	.res-nightmode .side h6:nth-of-type(1):before{
+		background-position: 0px -75px!Important;
+	}
 /** Profile Page Fixes**/
 
 .profile-page .titlebox{padding: 5px 10px;}
