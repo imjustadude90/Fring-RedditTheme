@@ -467,6 +467,17 @@
 	box-shadow: 0px 3px 0px #D75A41;
 }
 
+.side .titlebox .md h3 a:after{
+	content:"";
+	position:absolute;
+	margin:0;
+	padding:0;
+	right: 10px;
+	background: url(%%spritesheet%%) no-repeat;
+	background-position: -47px -197px;
+	height:18px; width:18px;
+}
+
 .side .titlebox .md h3 a:active{
   transform: translate(0px, 3px);
   -webkit-transform: translate(0px, 3px);
