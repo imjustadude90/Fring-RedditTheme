@@ -1980,6 +1980,10 @@ border-bottom: 1px solid rgba(234,234,234,0.4);
 opacity:1.0!Important;
 }
 
+.res-nightmode .side .md ul{
+	background-color: #161616!Important;
+}
+/**End RES Fixes**/
 
 /**Login Form **/
 
@@ -1998,13 +2002,7 @@ background-color:#303030!Important;
 color: #fff!Important;
 border: 1px solid #242424!Important;
 }
-
 /**End Login Form**/
-
-.res-nightmode .side .md ul{
-	background-color: #161616!Important;
-}
-/**End RES Fixes**/
 
 /** ADS **/
 	.organic-listing{
@@ -2073,7 +2071,6 @@ width: 140px;
 
 .multi-page .sidecontentbox .title h1
 
-
 .multi-page #header .pagename a:before{display:none; content:none;}
 .multi-page .listing-page .side div.titlebox .redditname a:before{display:none;content:none;}
 
@@ -2119,7 +2116,6 @@ border-top: 0px;
   color: #D3D3D3!Important;
   border-color: rgba(0,0,0,0.3)!Important;
 }
-
 .res-nightmode .new-comment .usertext-body {
   background-color: rgb(42, 42, 42)!Important;
   border-color: #121212!Important;
