@@ -461,6 +461,10 @@
 	position: relative;
 	display: block;
 	margin: 0 auto;
+	background-color: #ff7247;
+	-webkit-box-shadow: 0px 3px 0px #D75A41;
+	-moz-box-shadow: 0px 3px 0px #D75A41;
+	box-shadow: 0px 3px 0px #D75A41;
 }
 
 .side .titlebox .md h3 a:active{
