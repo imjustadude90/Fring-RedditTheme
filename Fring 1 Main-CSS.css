@@ -1024,10 +1024,10 @@ margin-top: 10px;
 
 	.arrow.upmod:focus { 
 		background-position: -30px -29px; 
-		-webkit-animation: bounceIn 800ms ease-in;
-		-moz-animation: bounceIn 800ms ease-in;
-		-o-animation: bounceIn 800ms ease-in;
-		animation: bounceIn 800ms ease-in;	
+		-webkit-animation: bounceIn 400ms ease-in;
+		-moz-animation: bounceIn 400ms ease-in;
+		-o-animation: bounceIn 400ms ease-in;
+		animation: bounceIn 400ms ease-in;	
 	}
 	/**Arrow Animation**/
 	@-webkit-keyframes bounceIn { 
