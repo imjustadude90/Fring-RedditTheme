@@ -271,7 +271,7 @@
 	text-align: left;
 	background-color: #FFFFFF;
 	overflow: hidden;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.10);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.20);
 	border-bottom: 0px;
 	border-radius: 3px 3px 0px 0px;
 	height: 30px;
@@ -320,7 +320,7 @@
 	.side {
 	float: right;
 	background-color: transparent;
-	margin: 3px 10px 10px 5px;
+	margin: 3px 10px 10px 15px;
 	}
 	.res-nightmode .side{background-color:transparent!Important;}
 		.titlebox {
@@ -465,6 +465,13 @@
 	-webkit-box-shadow: 0px 3px 0px #D75A41;
 	-moz-box-shadow: 0px 3px 0px #D75A41;
 	box-shadow: 0px 3px 0px #D75A41;
+}
+
+.res-nightmode .side .titlebox .md h3 a{
+	background-color: #202020!Important;
+	-webkit-box-shadow: 0px 4px 0px #333;
+	-moz-box-shadow: 0px 4px 0px #333;
+	box-shadow: 0px 4px 0px #333;
 }
 
 .side .titlebox .md h3 a:after{
@@ -1006,6 +1013,7 @@ margin-top: 10px;
 		width: 22px; 
 		background-color: transparent;
 	}
+	.comment .arrow{margin-bottom:5px!Important;}
 	.arrow.up { 
 		background-position: -52px -29px;
 	}
@@ -1021,7 +1029,19 @@ margin-top: 10px;
 	.arrow.downmod { 
 		background-position: -30px -43px;
 	}
-
+		/**Nightmode Arrows**/
+			.res-nightmode .arrow {
+				background-image: url(%%spritesheet%%) !important; 
+				height: 14px!important; 
+				width: 22px!important; 
+				background-color: transparent;
+			}
+			.res-nightmode .comment .arrow{margin-bottom:5px!Important;}
+			.res-nightmode .arrow.up, .res-nightmode .arrow.up:hover{background: url(%%spritesheet%%) -52px -29px no-repeat!Important;}
+			.res-nightmode .arrow.upmod, .res-nightmode .arrow.upmod:hover{background: url(%%spritesheet%%) -30px -29px no-repeat!Important;}
+			.res-nightmode .arrow.down, .res-nightmode .arrow.down:hover{background: url(%%spritesheet%%) -52px -43px no-repeat!Important;}
+			.res-nightmode .arrow.downmod, .res-nightmode .arrow.downmod:hover{background: url(%%spritesheet%%) -30px -43px no-repeat!Important;}
+			
 	.arrow.upmod:focus { 
 		background-position: -30px -29px; 
 		-webkit-animation: bounceIn 400ms ease-in;
@@ -1077,20 +1097,31 @@ margin-top: 10px;
     .content {
     margin: 40px 5px 0px 15px;
     }
+	.listing-page .sitetable{
+		overflow:hidden;
+		-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+		-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+		box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	}
 	.res-nightmode body .content{background:transparent!Important;}
 	/**Sitetable**/
-    .sitetable {
+    .submit-page .sitetable {
+	overflow:hidden;
     list-style-type: none;
     padding: 0px;
 	padding-top:2px;
-    margin-right: 320px;
     margin-bottom:20px;
     background-color: #fff;
 	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
     }
-	.res-nightmode .sitetable{background-color:#161616!Important;box-shadow: 0 0px 4px rgba(22, 22, 22, 1)!Important;}	
+	.res-nightmode .submit-page .sitetable{
+	background-color:#161616!Important;
+	-webkit-box-shadow: 0 1px 5px rgba(22,22,22,0.20);
+	-moz-box-shadow: 0 1px 5px rgba(22,22,22,0.20);
+	box-shadow: 0 1px 5px rgba(22,22,22,0.20)!Important;	
+	}
         /*Buttons*/
         .sitetable .nav-buttons{
 		background-color: #FFFFFF;
@@ -1138,14 +1169,26 @@ margin-top: 10px;
 						}
 
 	/* Links */
+		.comments-page .linklisting .link {
+			overflow:hidden;
+			-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+			-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+			box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+		}
+			.res.res-nightmode .comments-page .linklisting .link{
+			-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+			-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+			box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+			}
 		.linklisting .link{
 		margin: 0px;
 		padding: 8px 8px;
 		border-bottom: 1px solid rgba(234, 234, 234, 0.4);
+		background-color:#fff;
 		}
 		.res.res-nightmode .linklisting .link{
 		background-color: #161616!Important;
-		border-bottom: 1px solid rgba(51, 51, 51, 0.5)!Important;
+		border-bottom: 0px!Important;
 		padding: 8px 8px!Important;
 		}
 			.last-clicked.link:not(:first-child), .link:not(:first-child), .linklisting>.comment:not(:first-child){
@@ -1176,25 +1219,10 @@ margin-top: 10px;
 	
 		/** Vote Score **/
 		.link .score{
-		font-weight:500;
 		}
 			.link .rank{
-			float: left;
-			padding: 2px 5px;
-			margin-top: -8px;
-			margin-left: -8px;
-			background: #FAFAFA;
-			background: rgba(250, 250, 250, 0.5);
 			border: 0px;
-			border-left: 0px;
-			border-top: 0px;
-			font-size: 11px;
-			font-family: sans-serif;
-			text-align: center;
-			border-radius: 0px 0px 4px 0px;
-			color: #B3B3B3;
-			}
-			.res-nightmode .link .rank{background-color:rgba(16, 16, 16, 1)!Important;   border: 1px solid rgba(36, 36, 36, 1)!Important; border-top: 0px;}	
+			}	
 	/** Thumbnail Images **/
 	.thumbnail{
 	position: relative;
@@ -1229,11 +1257,21 @@ margin-top: 10px;
 	padding-left: 10px;
 	}
 	/**Comment Page**/
+	
+	.sitetable.nestedlisting > .comment{
+		background-color:#fff;
+		overflow: hidden;
+		margin: 0px 0px 10px 0px;
+		-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+		-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+		box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	}
+	.res-nightmode .sitetable.nestedlisting > .comment {
+		  margin-right: 10px!Important;
+	}
 	.commentarea .thing{
 	padding: 10px 10px 10px 8px;
 	margin: 0 0 8px 0;
-	background-color: #fff;
-	border: 1px solid #eaeaea;
 	}
 	.res-nightmode .commentarea .thing{
 	background-color:#161616!Important;
@@ -1255,112 +1293,42 @@ margin-top: 10px;
 			background-color:transparent;
 			margin:0px;
 			}
-			
 				.commentarea>.usertext {
 				background-color: #fff;
-				overflow: visible;
-				margin: 0px 0 10px 0;
+				overflow: hidden;
+				margin: -2px 0 10px 0;
 				padding: 10px;
 				border: 0px;
-				-webkit-box-shadow: 0px 2px 0px #eaeaea;
-				-moz-box-shadow: 0px 2px 0px #eaeaea;
-				box-shadow: 0px 2px 0px #eaeaea;
+				-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+				-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+				box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 				border-top: 0px;
 				}
 				.res-nightmode .commentarea>.usertext{
 				background-color: #161616!Important;
-				border: 0px solid rgba(51,51,51,0.5)!Important;
-				box-shadow: 0 2px 0 #161616!important;
+				border: 0px!Important;
+				margin: 0px 0 10px 0;
 				}
 					.commentarea .sitetable {
 					margin: 0px;
 					box-shadow: none;
 					}	
 						.commentarea {
-						margin-right: 320px;
+						
 						}
 							.commentarea .panestack-title {
 							border-bottom:0px;
 							}
-		
-	.commentarea .menuarea {
-	background-color: #fff;
-	color: #444;
-	padding: 10px;
-	margin: 0 0px 0px 0px;
-	border-top: 0px;
-	}
-	.res-nightmode .commentarea .menuarea{
-	border: 1px solid rgba(51,51,51,0.5)!Important;
-	border-left: 0px!Important;
-	border-right: 0px!Important;
-	border-top: 0px!Important;
-	background-color: #101010!Important;
-	}
-	    .commentarea .menuarea .dropdown.lightdrop .selected{
-		background-color:transparent;
-		color: #ff7247;
-		}
-					
-	.commentarea .panestack-title{
-	margin: 0px 0px 0px 0px;
-	padding: 10px;
-	background-color: #fff;
-	border: 1px solid #eaeaea;
-	border-left: 0px;
-	border-right: 0px;
-	color: black;
-	}
-	.res-nightmode .panestack-title {
-	background-color: #101010!Important;
-	border: 1px solid rgba(51,51,51,0.5)!Important;
-	border-left: 0px!Important;
-	border-right: 0px!Important;
-	color:#fff!Important;
-	box-shadow: 0 0px 5px rgba(22,22,22,1)!Important;
-	}
-
-	/**Commentarea Sitetable**/
-	.comments-page .sitetable{
-	margin-bottom: 10px;
-	border:0px;
-	}	
-	.res-nightmode .comments-page .sitetable{
-	  background-color: transparent!Important;
-	  box-shadow: 0 0px 4px rgba(22,22,22,1)!Important;
-	}
-	/**Link Comment Area**/
-	.link .usertext-body .md{
-	background-color: #FFFFFF;
-	border: 0px solid #e2e2e2!Important;
-	border-radius: 0px;
-	}
-	
-	/**Link Info**/
-	.single-page.comments-page .linkinfo{
-		box-shadow: 0px 2px 0px #eaeaea;
-		border: 1px solid #e2e2e2;
-		background-color: #fff;
-		border-radius: 0px;
-	}
-	.res-nightmode .single-page.comments-page .linkinfo{
-	background-color: #161616!Important;
-	  box-shadow: 0 0px 8px rgba(22,22,22,1)!Important;
-	border: 0px!Important;
-	}
-	
+							
 /* nested commentary boxes - Thanks to /u/creesch :) */
 
 .sitetable.nestedlisting>.comment, .res .sitetable.nestedlisting>.comment {
     border: 0!important;
-    border: solid 1px #e2e2e2!important;
-	box-shadow: 0 2px 0 #eaeaea;
     margin-bottom: 10px !important;
 }
 
 .res-nightmode .sitetable.nestedlisting>.comment, .res-nightmode .res .sitetable.nestedlisting>.comment{
-  border: solid 0px #333!important;
-  box-shadow: 0 2px 0 #161616!important;
+  border: solid 0px!important;
 }
 
 .sitetable.nestedlisting {
@@ -1401,7 +1369,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment
  {
-    background-color: #fff !important;
+    background-color: #fff!important;
     border-radius: 0 !important;
 }
 
@@ -1415,17 +1383,85 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    background-color: #e2e2e2 !important;
+    background-color: #F7F7F8!important;
     border-radius: 0 !important;
 }
 
 /** End Nested Comments **/
 
+	
+	.commentarea .menuarea {
+	background-color: #fff;
+	color: #444;
+	padding: 10px;
+	margin: 0 0px 0px 0px;
+	border-top: 0px;
+	background-color: #f6f6f6;
+	box-shadow: inset 0px 0px 3px #ddd;
+	}
+	.res-nightmode .commentarea .menuarea{
+	background-color: #1D1D1D!Important;
+	border: 0px!Important;
+	box-shadow: inset 0px 0px 3px #1B1B1B!Important;
+	}
+	    .commentarea .menuarea .dropdown.lightdrop .selected{
+		background-color:transparent;
+		color: #ff7247;
+		}
+					
+	.commentarea .panestack-title{
+	margin: 0px 0px 0px 0px;
+	padding: 10px;
+	background-color: #fff;
+	border-left: 0px;
+	border-right: 0px;
+	color: black;
+	overflow:hidden;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	}
+	.res-nightmode .panestack-title {
+	background-color: #101010!Important;
+	border: 0px!Important;
+	border-left: 0px!Important;
+	border-right: 0px!Important;
+	color:#fff!Important;
+	box-shadow: 0 0px 5px rgba(22,22,22,1)!Important;
+	}
+
+	/**Commentarea Sitetable**/
+	.comments-page .sitetable{
+	margin-bottom: 10px;
+	border:0px;
+	}	
+	.res-nightmode .comments-page .sitetable{
+	  background-color: transparent!Important;
+	}
+	/**Link Comment Area**/
+	.link .usertext-body .md{
+	background-color: #FFFFFF;
+	border: 0px solid #e2e2e2!Important;
+	border-radius: 0px;
+	}
+	
+	/**Link Info**/
+	.single-page.comments-page .linkinfo{
+		box-shadow: 0px 2px 0px #eaeaea;
+		border: 1px solid #e2e2e2;
+		background-color: #fff;
+		border-radius: 0px;
+	}
+	.res-nightmode .single-page.comments-page .linkinfo{
+	background-color: #161616!Important;
+	  box-shadow: 0 0px 8px rgba(22,22,22,1)!Important;
+	border: 0px!Important;
+	}
+
 	/**Menu Area**/
 	.menuarea {
 	overflow: hidden;
 	font-size: larger;
-	padding: 8px;
 	background-color: #FFF;
 	color: #444;
 	margin-right: 320px;
@@ -1434,6 +1470,8 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	margin-bottom: 0px;
 	border-top: 0px;
 	border: 0px;
+	height: 25px;
+	line-height: 25px;
 	border-bottom: 1px solid rgba(234,234,234,0.4);
 	}
 	.res-nightmode .menuarea{
@@ -1446,7 +1484,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 		background-color: #fff;
 		}
 		.res-nightmode .menuarea .drop-choices.lightdrop{
-		background-color:#373737!Important;
+		background-color:#1D1D1D!Important;
 		}
 			.menuarea .drop-choices a.choice{
 			color:#444;
@@ -2125,12 +2163,3 @@ border-top: 0px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
-
-
-
-
-
-
-
-
-
