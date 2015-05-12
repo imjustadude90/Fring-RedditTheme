@@ -763,6 +763,10 @@ background-color:#161616!Important;
 	margin-right:0px;
 	border: 0px;
 	border-top: 0px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	}
 		.messages-page #header-bottom-left .tabmenu.tabmenu{
 		right:15px;
@@ -807,7 +811,6 @@ box-shadow: none;
 border:0px;
 margin-top: 10px;
 }
-
 
 /** Submit Buttons **/
          .side div.morelink a {
@@ -1095,7 +1098,7 @@ margin-top: 10px;
 
 /** CONTENT **/
     .content {
-    margin: 40px 5px 0px 15px;
+    margin: 40px 15px 0px 15px;
     }
 	.listing-page .sitetable{
 		overflow:hidden;
@@ -2163,3 +2166,5 @@ border-top: 0px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
+
+
