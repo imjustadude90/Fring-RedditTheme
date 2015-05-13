@@ -1104,7 +1104,7 @@ background-color:#161616!Important;
 		}
 		.res.res-nightmode .linklisting .link{
 		background-color: #161616!Important;
-		border-bottom: 0px!Important;
+		border-bottom: 1px solid rgba(31, 31, 31, 1)!Important;
 		padding: 8px 8px!Important;
 		}
 			.last-clicked.link:not(:first-child), .link:not(:first-child), .linklisting>.comment:not(:first-child){
@@ -1894,7 +1894,7 @@ background-color:transparent!Important;
 
 	body>.debuginfo:after{content: "CSS Theme from /r/Fring";padding: 3px 0 0 5px;float: left;font-size: 12px;}
 	
-		.res-nightmode .footer{border: 1px solid rgba(0,0,0,0.20)!Important;  box-shadow: 0 1px 5px rgba(0,0,0,0.20);}
+		.res-nightmode .footer{border: 1px solid rgba(0,0,0,0.20)!Important;  box-shadow: 0 1px 5px rgba(0,0,0,0.20);  background: rgb(25, 25, 25);}
 			.res-nightmode .footer a{color:#bbb!Important;}
 			.res-nightmode .footer a:hover {color:#eaeaea!Important;}
 	
@@ -2003,9 +2003,21 @@ border: 1px solid #eaeaea;
 border-top: 0px;
 }
 
-.mod-toolbox .sidecontentbox ul a{padding:0px;margin:0px;font-size:12px;}
+.res-nightmode .mod-toolbox #subredditsearch{
+	background: #161616!Important;
+	border-color: #161616;
+	color: #eaeaea;
+}
 
-/** End ToolBox - modtool **/
+.res-nightmode .mod-toolbox.res-nightmode #tb-search-suggest tr{
+
+}
+
+.res-nightmode #tb-search-suggest table{
+
+}
+
+.mod-toolbox .sidecontentbox ul a{padding:0px;margin:0px;font-size:12px;}
 
 /**Moderation Pages**/
 
@@ -2148,6 +2160,7 @@ margin-top: 10px;
 /** Profile Page Fixes**/
 
 .profile-page .titlebox{padding: 5px 10px;}
+.res-nightmode .profile-page .titlebox h1{border:0px;}
 	/**Side Content Box Fixes**/
 	.profile-page .sidecontentbox .title h1{
 	color:#444;
@@ -2177,15 +2190,42 @@ margin-top: 10px;
 						.profile-page .comment, .content .details{
 						padding: 10px 10px 10px 8px;
 						}
-	.profile-page .comment{
+	.res-nightmode .profile-page .comment{
 	margin-bottom:0px!Important;
-	border-bottom: 1px solid rgba(234,234,234,0.4);
-	}			
+	background-color: #161616!Important;
+	border-bottom: 1px solid rgba(31,31,31,1)!Important;
+	}		
+
+	.res-nightmode .gold-accent.snoovatar-link, .res-nightmode .gold-bubble, .res-nightmode .gold-accent {
+		background: -webkit-linear-gradient(top, #ccac00, #998100);
+		background: -moz-linear-gradient(top, #ccac00, #998100);
+		background: -o-linear-gradient(top, #ccac00, #998100);
+		background: -ms-linear-gradient(top, #ccac00, #998100);
+		background: linear-gradient(top, #ccac00, #998100);
+		background-color: #ccac00;
+		border: 0px;
+	}
+	.res-nightmode .gold-accent.snoovatar-link a, .res-nightmode  div.rounded.gold-accent.gold-expiration-info > div.gold-remaining > a{color:#eaeaea;}
+	.res-nightmode div.rounded.gold-accent.gold-expiration-info > .res-nightmode div.gold-remaining, .res-nightmode .gold-expiration-info .gold-remaining+div{
+		color: #444!Important;
+	}
+	.res-nightmode .goldvertisement .inner{
+	border: 0px solid #161616;
+	}
+	.res-nightmode .goldvertisement{
+	background: -webkit-linear-gradient(top,#caab00,#9a8200);
+	background-color: #ccac00;
+	box-shadow: 0 0 10px #C6B280 inset;
+	border: 0px;
+	border-radius: 4px
+	}
+	.res-nightmode .server-seconds{
+	background-color: #161616!Important;
+	border: 0px;
+	}
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
-
-
 
 
 
