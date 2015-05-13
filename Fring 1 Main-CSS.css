@@ -19,7 +19,7 @@
   background-color: #F0F0F0;
   margin: 0 auto;
   }
-
+  
 .res-nightmode .res{background-color:#202020;}
 
    .entry .buttons li a {
@@ -79,7 +79,6 @@
 				color:#fff
 				}
 					.sr-bar .separator, .separator{color:transparent;}
-
 					#sr-header-area .dropdown.srdrop .selected, .res #sr-header-area #srDropdownContainer a{
 					background-image: url(%%spritesheet%%);
 					background-position: 0px -55px;
@@ -97,10 +96,7 @@
 					#sr-header-area .dropdown.srdrop .selected:hover, .res #sr-header-area #srDropdownContainer a:hover{
 					opacity:0.8;
 					}
-
-
 /** Main Header Area **/
-
 	#header {
 	border-bottom: 0px;
 	-webkit-box-shadow: 0px 2px 0px #e2e2e2;
@@ -473,6 +469,9 @@
 	-moz-box-shadow: 0px 4px 0px #333;
 	box-shadow: 0px 4px 0px #333;
 }
+.res-nightmode .side .titlebox .md h3 a:active{
+	box-shadow: 0px 1px 0px #333;
+}
 
 .side .titlebox .md h3 a:after{
 	content:"";
@@ -725,92 +724,6 @@ background-color:#161616!Important;
 			
 			.RESshortcutside{margin-left:10px;}
 
-/** Profile Page Fixes**/
-
-.profile-page .titlebox{padding: 5px 10px;}
-	/**Side Content Box Fixes**/
-	.profile-page .sidecontentbox .title h1{
-	color:#444;
-	}
-		.profile-page .side div.sidecontentbox a.helplink {
-		font-size: 12px;
-		background-image: none;
-		color: #4286D0;
-		margin: 0px;
-		padding: 0px;
-		width: initial;
-		height: initial;
-		opacity: 1.0;
-		top: 10px;
-		right: 2px;
-		opacity:1.0;
-		}
-			.profile-page .side div.sidecontentbox a.helplink:hover{
-			color:#3074be;
-			}
-				.profile-page .side div.sidecontentbox a.helplink:hover:after {
-				display:none;
-				}
-					.profile-page .last-clicked.link:not(:first-child), .link:not(:first-child), .linklisting>.comment:not(:first-child){
-					padding: 8px 8px;
-					}
-						.profile-page .comment, .content .details{
-						padding: 10px 10px 10px 8px;
-						}
-				
-/**Messages Page**/
-	.messages-page .sitetable{
-	margin-right:0px;
-	border: 0px;
-	border-top: 0px;
-	background-color: #fff;
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	}
-		.messages-page #header-bottom-left .tabmenu.tabmenu{
-		right:15px;
-		}
-			.messages-page .menuarea{
-			margin-right:0px;
-			margin-bottom:0px;
-			}
-	.messages-page .content{
-	margin: 41px 15px 20px 15px
-	}
-	.messages-page .sitetable .nav-buttons{
-	border-left:0px;
-	border-right:0px;
-	}
-	
-	.message{
-	padding-left: 5px;
-	margin: 0px 0px 10px 0px;
-	padding: 7px;
-	border: 1px solid #eaeaea;
-	border-left: 0px;
-	border-right: 0px;
-	border-top: 0px;
-	}
-
-.message.message-reply .entry, .message.message-parent .entry{
-margin-left:0px;
-border-left:0px;
-}
-
-.message.message-parent .child, .message.message-reply .child{
-margin-left: 15px;
-}
-
-.messages-page .sitetable .listing{
-border:0px;
-box-shadow: none;
-}	
-
-.messages-page .message.message-parent .child .message, .message.message-reply .child .message{
-border:0px;
-margin-top: 10px;
-}
 
 /** Submit Buttons **/
          .side div.morelink a {
@@ -1465,9 +1378,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	.menuarea {
 	overflow: hidden;
 	font-size: larger;
-	background-color: #FFF;
 	color: #444;
-	margin-right: 320px;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-bottom: 0px;
@@ -1475,12 +1386,14 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	border: 0px;
 	height: 25px;
 	line-height: 25px;
-	border-bottom: 1px solid rgba(234,234,234,0.4);
+	background-color: #f6f6f6;
+	box-shadow: inset 0px 0px 3px #ddd;
 	}
 	.res-nightmode .menuarea{
 	color: #eaeaea!Important;
-	background-color: #2A2A2A!Important;
+	background-color: #1F1F1F!Important;
 	border:0px!Important;
+	box-shadow:none;
 	}
 		.menuarea .drop-choices.lightdrop{
 		border: 0px;
@@ -1525,9 +1438,11 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	.menuarea  .flat-list li a{
 	color:#444;
 	}
+	.res-nightmode .menuarea .flat-list li a{color:#ddd!Important;}
 		.menuarea  .flat-list li a:hover{
 		color:#000;
 		}
+		.res-nightmode .menuarea .flat-list li a:hover{color:#eaeaea!Important;}
 	
 /**EXPANDO BUTTONS**/
 
@@ -1597,30 +1512,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	font-size: 11px;
 	padding: 0px 4px;
 	}
-		/**Vanilla Reddit Margin Fix**/
-		.expando-button.video.collapsed:after, .expando-button.selftext.collapsed:after{
-			position: absolute;
-			content: "Expand";
-			font-size: 0px;
-			background-color: #84a4ba;
-			color: #fff;
-			margin:0px 24px!Important;
-			padding: 0px 0px;
-			height: 20px;
-			line-height: 20px;
-			max-width: 0px;
-			border-radius: 0px 3px 3px 0px;
-			box-shadow: 0px 0px 2px #C0C0C0;
-			-webkit-transition: all 0.15s ease;
-			-moz-transition: all 0.15s ease;
-			-o-transition: all 0.15s ease;
-			transition: all 0.15s ease;
-		}
-		.expando-button.video.collapsed:hover:after, .expando-button.selftext.collapsed:hover:after{
-		max-width: 80px;
-		padding: 0px 4px;
-		font-size: 11px;
-		}
 	/**Expanded**/
 	.res .expando-button.image.expanded:after, .res .expando-button.image.gallery.expanded:after, .res .expando-button.video-muted.expanded:after, .res .expando-button.selftext.expanded:after{
 		position: absolute;
@@ -1645,30 +1536,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	padding: 0px 4px;
 	font-size: 11px;
 	}
-		/**Vanilla Reddit Margin Fix**/
-		.expando-button.video.expanded:after, .expando-button.selftext.expanded:after{
-			position: absolute;
-			content: "Collapse";
-			font-size: 0px;
-			background-color: #84a4ba;
-			color: #fff;
-			margin:0px 24px!Important;
-			padding: 0px 0px;
-			height: 20px;
-			line-height: 20px;
-			max-width: 0px;
-			border-radius: 0px 3px 3px 0px;
-			box-shadow: 0px 0px 2px #C0C0C0;
-			-webkit-transition: all 0.3s ease;
-			-moz-transition: all 0.3s ease;
-			-o-transition: all 0.3s ease;
-			transition: all 0.3s ease;
-		}
-		.expando-button.video.expanded:hover:after, .expando-button.selftext.expanded:hover:after{
-		max-width: 80px;
-		padding: 0px 4px;
-		font-size: 11px;
-		}
 
 /**Expandos Backround Image**/
 	/**Image**/
@@ -1954,9 +1821,10 @@ background-color:transparent!Important;
 /*Wiki*/
 	.wiki-page .wiki-page-content{
 	background-color: #fff;
-	padding: 30px 14px;
-	box-shadow: 0px 1px 5px rgba(0,0,0,0.16);
-	margin: 10px 320px 0px 0px;
+	padding: 5px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.20);
+	margin: 10px 15px 0 0;
+	overflow: hidden;
 	}
 	.res-nightmode .wiki-page .wiki-page-content{background-color:#101010!Important;}
 		.wiki-page .pageactions{margin-top: 10px;}
@@ -1964,7 +1832,17 @@ background-color:transparent!Important;
 		.infobar{
 		margin: 5px 320px 5px 0px;
 		}
-
+	.wiki-page .wiki-page-content .wiki.md{padding: 5px 10px;}
+	.wiki-page .wiki-page-content .wiki>.toc>ul{
+	border:0px;
+	padding: 8px 15px;
+	background-color:#fff;
+	}
+	.wiki-page-content .md h1{
+		margin-top: 0.25em;
+		margin-bottom: 0.18125em;
+	}
+	
 /**Footer**/
 
 	body>.debuginfo:after{content: "CSS Theme from /r/Fring";padding: 3px 0 0 5px;float: left;font-size: 12px;}
@@ -2052,26 +1930,50 @@ border: 1px solid #242424!Important;
 	border:0px;
 	}
 
-/** Multi Reddit Fix**/
-	body.with-listing-chooser .listing-chooser{
-		top: 94px;
-		z-index:100;
-	}
-	.with-listing-chooser #header .tabmenu{left: 140px;}
-	.listing-chooser-collapsed #header .tabmenu{left:15px;}
+/**Hide Stuff **/
 
-/**Trending Subreddits**/
-	.trending-subreddits {
-		margin-right: 320px;
-		margin-bottom: -5px;
-		padding: 8px;
-		margin-left: 0px;
-		border: 0px;
-		border-top: 0px;
-		text-align: center;
-		color: #444;
-		background-color: #e4e4e4;
-	}
+.sidebox .spacer, .sidebox .subtitle, .sidebox .subtitle, .sidebox.create .spacer a{display:none;}
+
+/*Additional Nightmode code*/
+.res-nightmode .md code, .res-nightmode .md pre{
+  background-color: #191919!Important;
+  color: #D3D3D3!Important;
+  border-color: rgba(0,0,0,0.3)!Important;
+}
+.res-nightmode .new-comment .usertext-body {
+  background-color: rgb(42, 42, 42)!Important;
+  border-color: #121212!Important;
+}
+/**End Additional Nightmode code**/
+
+/**Reddit-Theme Specific CSS**/
+
+/** ToolBox - modtools **/
+.mod-toolbox .menuarea.modtools {
+margin: 0px 320px 5px 0px!Important;
+background-color: #93B2C7;
+border: 1px solid #eaeaea;
+border-top: 0px;
+}
+
+.mod-toolbox .sidecontentbox ul a{padding:0px;margin:0px;font-size:12px;}
+
+/** End ToolBox - modtool **/
+
+/**Moderation Pages**/
+
+.sitetable.linklisting .link.spam, .thing .title.loggedin, .thing .title, body .content .sitetable .link .title a:hover{}
+
+.sitetable.linklisting .link.spam, .sitetable.linklisting .thing .title  {}
+.sitetable.linklisting .link.spam, .sitetable.linklisting .thing .title:hover  {}
+.sitetable.linklisting .link.spam, .sitetable.linklisting .thing .title:visited {}
+
+
+.sitetable.linklisting .link.spam a, .sitetable.linklisting .link.spam, .link .entry .buttons li a.comments{
+}
+
+.sitetable.linklisting .link.spam a:hover, .sitetable.linklisting .link.spam:hover, .link .entry .buttons li a.comments:hover{
+}
 
 /** Moderator Multi Page**/
 
@@ -2116,55 +2018,126 @@ width: 140px;
 .multi-page .listing-page .side div.titlebox .redditname a:before{display:none;content:none;}
 
 
-/**Moderation Pages**/
+/** Multi Reddit Fix**/
+	body.with-listing-chooser .listing-chooser{
+		top: 94px;
+		z-index:100;
+	}
+	.with-listing-chooser #header .tabmenu{left: 140px;}
+	.listing-chooser-collapsed #header .tabmenu{left:15px;}
 
-.sitetable.linklisting .link.spam, .thing .title.loggedin, .thing .title, body .content .sitetable .link .title a:hover{}
+/**Trending Subreddits**/
+	.trending-subreddits {
+		margin-right: 320px;
+		margin-bottom: -5px;
+		padding: 8px;
+		margin-left: 0px;
+		border: 0px;
+		border-top: 0px;
+		text-align: center;
+		color: #444;
+		background-color: #e4e4e4;
+	}
+	.res-nightmode .trending-subreddits{background-color: #161616!Important;}
 
-.sitetable.linklisting .link.spam, .sitetable.linklisting .thing .title  {}
-.sitetable.linklisting .link.spam, .sitetable.linklisting .thing .title:hover  {}
-.sitetable.linklisting .link.spam, .sitetable.linklisting .thing .title:visited {}
+/**Messages Page**/
+	.messages-page .sitetable{
+	margin-right:0px;
+	border: 0px;
+	border-top: 0px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
+	}
+	.res-nightmode .messages-page .sitetable{
+	background-color: transparent!Important;
+	}
+		.messages-page #header-bottom-left .tabmenu.tabmenu{
+		right:15px;
+		}
+			.messages-page .menuarea{
+			margin-right:0px;
+			margin-bottom:0px;
+			}
+	.messages-page .content{
+	margin: 41px 15px 20px 15px
+	}
+	.messages-page .sitetable .nav-buttons{
+	border-left:0px;
+	border-right:0px;
+	}
+	
+	.message{
+	padding-left: 5px;
+	margin: 0px 0px 10px 0px;
+	padding: 7px;
+	border: 1px solid #eaeaea;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	}
+	.res-nightmode .message{border:0px!Important;}
 
-
-.sitetable.linklisting .link.spam a, .sitetable.linklisting .link.spam, .link .entry .buttons li a.comments{
+.message.message-reply .entry, .message.message-parent .entry{
+margin-left:0px;
+border-left:0px;
 }
 
-.sitetable.linklisting .link.spam a:hover, .sitetable.linklisting .link.spam:hover, .link .entry .buttons li a.comments:hover{
+.message.message-parent .child, .message.message-reply .child{
+margin-left: 15px;
 }
 
+.messages-page .sitetable .listing{
+border:0px;
+box-shadow: none;
+}	
 
-/** ToolBox - modtools **/
-.mod-toolbox .menuarea.modtools {
-margin: 0px 320px 5px 0px!Important;
-background-color: #93B2C7;
-border: 1px solid #eaeaea;
-border-top: 0px;
+.messages-page .message.message-parent .child .message, .message.message-reply .child .message{
+border:0px;
+margin-top: 10px;
 }
 
-.mod-toolbox .sidecontentbox ul a{padding:0px;margin:0px;font-size:12px;}
+/** Profile Page Fixes**/
 
-/** End ToolBox - modtool **/
-
-/**Hide Stuff **/
-
-/**Hide Create description, leave button **/
-.sidebox .spacer, .sidebox .subtitle, .sidebox .subtitle, .sidebox.create .spacer a{display:none;}
-
-/**End hide Stuff**/
-
-/*Additional Nightmode code*/
-.res-nightmode .md code, .res-nightmode .md pre{
-  background-color: #191919!Important;
-  color: #D3D3D3!Important;
-  border-color: rgba(0,0,0,0.3)!Important;
-}
-.res-nightmode .new-comment .usertext-body {
-  background-color: rgb(42, 42, 42)!Important;
-  border-color: #121212!Important;
-}
-/**End Additional Nightmode code**/
-
+.profile-page .titlebox{padding: 5px 10px;}
+	/**Side Content Box Fixes**/
+	.profile-page .sidecontentbox .title h1{
+	color:#444;
+	}
+		.profile-page .side div.sidecontentbox a.helplink {
+		font-size: 12px;
+		background-image: none;
+		color: #4286D0;
+		margin: 0px;
+		padding: 0px;
+		width: initial;
+		height: initial;
+		opacity: 1.0;
+		top: 10px;
+		right: 2px;
+		opacity:1.0;
+		}
+			.profile-page .side div.sidecontentbox a.helplink:hover{
+			color:#3074be;
+			}
+				.profile-page .side div.sidecontentbox a.helplink:hover:after {
+				display:none;
+				}
+					.profile-page .last-clicked.link:not(:first-child), .link:not(:first-child), .linklisting>.comment:not(:first-child){
+					padding: 8px 8px;
+					}
+						.profile-page .comment, .content .details{
+						padding: 10px 10px 10px 8px;
+						}
+	.profile-page .comment{
+	margin-bottom:0px!Important;
+	border-bottom: 1px solid rgba(234,234,234,0.4);
+	}			
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
+
+
 
 
