@@ -1725,9 +1725,6 @@ background-color:transparent!Important;
 	.res-nightmode .wiki-page .wiki-page-content{background-color:#101010!Important;}
 		.wiki-page .pageactions{margin-top: 10px;}
 
-		.infobar{
-		margin: 5px 320px 5px 0px;
-		}
 	.wiki-page .wiki-page-content .wiki.md{padding: 5px 10px;}
 	.wiki-page .wiki-page-content .wiki>.toc>ul{
 	border:0px;
@@ -1821,7 +1818,6 @@ border: 1px solid #242424!Important;
 
 /** ADS **/
 	.organic-listing{
-	margin-right: 320px; 
 	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	border:0px;
 	}
@@ -2075,113 +2071,6 @@ margin-top: 10px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
-
-
-/*-- r/Fring Tables - Simple Grey --*/
-
-    h4 + h1 + table {
-        background:transparent;
-        width:100%;
-        border-style:hidden;
-        box-shadow: 0px 2px 6px #eaeaea;
-    }
-    h4 + h1 + table > thead > tr > th{
-        background: -webkit-linear-gradient(top,#f5f5f5,#eee);
-        background: -moz-linear-gradient(top,#f5f5f5,#eee);
-        background: -o-linear-gradient(top,#f5f5f5,#eee);
-        background: -ms-linear-gradient(top,#f5f5f5,#eee);
-        background: linear-gradient(top,#f5f5f5,#eee);
-        background-color: #f5f5f5;
-        height: 24px;
-        color: #444;
-        border: 1px solid rgba(229, 227, 218, 0.2)!Important;
-    }
-    h4+h1+table tbody tr:nth-child(even){
-        background: #f5f5f5;
-        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-        -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-        box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-    }
-    h4+h1+table th:first-child {
-        border-radius: 3px 0px 0px 0px;
-    }
-    h4+h1+table th:last-child{
-        border-radius: 0px 3px 0px 0px;
-        border: none;
-    }
-    h4+h1+table tbody{
-        background-color: #fff;
-        -webkit-box-shadow: 0px 1px 5px #E5E3DA;
-        -moz-box-shadow: 0px 1px 5px #E5E3DA;
-        box-shadow: 0px 1px 5px #E5E3DA;
-    }
-/**End r/Fring Tables - Simple Grey**/
-
-
-/*-- r/Fring Tables - Flat Green --*/
-    h4 + h2 + table {
-        background:transparent;
-        width:100%;
-        border-style:hidden;
-        box-shadow: 0px 2px 6px #eaeaea;
-    }
-    h4 + h2 + table > thead > tr > th{
-        background-color: #7CCD76;
-        height: 20px;
-        color: white;
-        border: 0px!Important;
-    }
-    h4+h2+table th:first-child {
-        border-radius: 3px 0px 0px 0px;
-    }
-    h4+h2+table th:last-child{
-        border-radius: 0px 3px 0px 0px;
-        border: none;
-    }
-    h4+h2+table tbody{
-        background-color: #fff;
-        -webkit-box-shadow: 0px 1px 5px #E5E3DA;
-        -moz-box-shadow: 0px 1px 5px #E5E3DA;
-        box-shadow: 0px 1px 5px #E5E3DA;
-    }
-/**End r/Fring Tables - Flat Green**/
-
-
-/*-- r/Fring Tables - Muted Blue--*/
-    h4 + h3 + table {
-        background:transparent;
-        width:100%;
-        border-style:hidden;
-        box-shadow: 0px 2px 6px #eaeaea;
-    }
-    h4 + h3 + table > thead > tr > th{
-        background: rgb(65, 124, 173);
-        height: 24px;
-        text-shadow: 0 1px 0 #38678f;
-        color: white;
-        border: 1px solid #38678f!Important;
-        box-shadow: inset 0px 1px 2px #568ebd;
-    }
-    h4+h3+table th:first-child {
-        border-radius: 3px 0px 0px 0px;
-    }
-    h4+h3+table th:last-child{
-        border-radius: 0px 3px 0px 0px;
-        border: none;
-    }
-    h4+h3+table tbody{
-        background-color: #fff;
-        -webkit-box-shadow: 0px 1px 5px #E5E3DA;
-        -moz-box-shadow: 0px 1px 5px #E5E3DA;
-        box-shadow: 0px 1px 5px #E5E3DA;
-    }
-/*-- End r/Fring Tables - Muted Blue--*/
-
-
-
-
-
-
 
 
 
