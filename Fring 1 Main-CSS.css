@@ -96,6 +96,9 @@
 					#sr-header-area .dropdown.srdrop .selected:hover, .res #sr-header-area #srDropdownContainer a:hover{
 					opacity:0.8;
 					}
+		.sr-bar a.gold {
+		color: #e5c100;
+		}
 /** Main Header Area **/
 	#header {
 	border-bottom: 0px;
