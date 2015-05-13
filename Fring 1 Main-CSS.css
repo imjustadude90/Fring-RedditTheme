@@ -1479,114 +1479,16 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	}
 	/** Collapsed Hover Styling**/
 	.expando-button.video.collapsed:hover, .expando-button.selftext.collapsed:hover, .res .expando-button.image.collapsedExpando:hover, .res .expando-button.image.gallery.collapsedExpando:hover, .res .expando-button.video-muted.collapsed:hover{
-		border-radius: 3px 0px 0px 3px;
 		box-shadow: 0px 0px 2px #C0C0C0;
 		background-color:#93b2c7;
 		max-width:24px;
 	}
 	/** Expanded Hover Styling**/
 	.expando-button.video.expanded:hover, .expando-button.selftext.expanded:hover, .res .expando-button.image.expanded:hover, .res .expando-button.image.gallery.expanded:hover, .res .expando-button.video-muted.expanded:hover, .res .expando-button.selftext.expanded:hover {
-		border-radius: 3px 0px 0px 3px;
 		box-shadow: 0px 0px 2px #C0C0C0;
 		background-color: #84a4ba;
 	}
-/**Expandos Hover Message**/
-	/**Collapsed**/
-	.res .expando-button.image.collapsedExpando:after, .res .expando-button.image.gallery.collapsedExpando:after, .res .expando-button.video-muted.collapsed:after{
-		position: absolute;
-		content: "Expand";
-		font-size: 0px;
-		background-color: #84a4ba;
-		color: #fff;
-		margin: 0px 20px;
-		padding: 0px 0px;
-		height: 20px;
-		line-height: 20px;
-		max-width: 0px;
-		border-radius: 0px 3px 3px 0px;
-		box-shadow: 0px 0px 2px #C0C0C0;
-		-webkit-transition: all 0.15s ease;
-		-moz-transition: all 0.15s ease;
-		-o-transition: all 0.15s ease;
-		transition: all 0.15s ease;
-	}
-	.res .expando-button.image.collapsedExpando:hover:after, .res .expando-button.image.gallery.collapsedExpando:hover:after, .res .expando-button.video-muted.collapsed:hover:after{
-	max-width: 80px;
-	font-size: 11px;
-	padding: 0px 4px;
-	}
-		/**Vanilla Reddit**/
-		.expando-button.video.collapsed:after, .expando-button.selftext.collapsed:after{
-			position: absolute;
-			content: "Expand";
-			font-size: 0px;
-			background-color: #84a4ba;
-			color: #fff;
-			margin:0px 24px!Important;
-			padding: 0px 0px;
-			height: 20px;
-			line-height: 20px;
-			max-width: 0px;
-			border-radius: 0px 3px 3px 0px;
-			box-shadow: 0px 0px 2px #C0C0C0;
-			-webkit-transition: all 0.15s ease;
-			-moz-transition: all 0.15s ease;
-			-o-transition: all 0.15s ease;
-			transition: all 0.15s ease;
-		}
-		.expando-button.video.collapsed:hover:after, .expando-button.selftext.collapsed:hover:after{
-		max-width: 80px;
-		padding: 0px 4px;
-		font-size: 11px;
-		}
-	/**Expanded**/
-	.res .expando-button.image.expanded:after, .res .expando-button.image.gallery.expanded:after, .res .expando-button.video-muted.expanded:after, .res .expando-button.selftext.expanded:after{
-		position: absolute;
-		content: "Collapse";
-		font-size: 0px;
-		background-color: #84a4ba;
-		color: #fff;
-		margin: 0px 20px;
-		padding: 0px 0px;
-		height: 20px;
-		line-height: 20px;
-		max-width: 0px;
-		border-radius: 0px 3px 3px 0px;
-		box-shadow: 0px 0px 2px #C0C0C0;
-		-webkit-transition: all 0.3s ease;
-		-moz-transition: all 0.3s ease;
-		-o-transition: all 0.3s ease;
-		transition: all 0.3s ease;
-	}
-	.res .expando-button.image.expanded:hover:after, .res .expando-button.image.gallery.expanded:hover:after, .res .expando-button.video-muted.expanded:hover:after, .res .expando-button.selftext.expanded:hover:after{
-	max-width: 80px;
-	padding: 0px 4px;
-	font-size: 11px;
-	}
-		/**Vanilla Reddit Margin Fix**/
-		.expando-button.video.expanded:after, .expando-button.selftext.expanded:after{
-			position: absolute;
-			content: "Collapse";
-			font-size: 0px;
-			background-color: #84a4ba;
-			color: #fff;
-			margin:0px 24px!Important;
-			padding: 0px 0px;
-			height: 20px;
-			line-height: 20px;
-			max-width: 0px;
-			border-radius: 0px 3px 3px 0px;
-			box-shadow: 0px 0px 2px #C0C0C0;
-			-webkit-transition: all 0.3s ease;
-			-moz-transition: all 0.3s ease;
-			-o-transition: all 0.3s ease;
-			transition: all 0.3s ease;
-		}
-		.expando-button.video.expanded:hover:after, .expando-button.selftext.expanded:hover:after{
-		max-width: 80px;
-		padding: 0px 4px;
-		font-size: 11px;
-		}
+
 /**Expandos Backround Image**/
 	/**Image**/
 	.res .expando-button.image.collapsedExpando, .res .expando-button.image.collapsedExpando:hover, .res .expando-button.image.expanded, .res .expando-button.image.expanded {
@@ -1637,28 +1539,15 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	}
 	/** Collapsed Hover Styling**/
 	.res-nightmode .expando-button.video.collapsed:hover, .res-nightmode .expando-button.selftext.collapsed:hover, .res-nightmode .res .expando-button.image.collapsedExpando:hover, .res-nightmode .res .expando-button.image.gallery.collapsedExpando:hover, .res-nightmode .res .expando-button.video-muted.collapsed:hover{
-		border-radius: 3px 0px 0px 3px;
 		box-shadow: 0px 0px 2px #908F8F;
 		background-color:#333;
 	}
 	/** Expanded Hover Styling**/
 	.res-nightmode .expando-button.video.expanded:hover, .res-nightmode .expando-button.selftext.expanded:hover, .res-nightmode .res .expando-button.image.expanded:hover, .res-nightmode .res .expando-button.image.gallery.expanded:hover, .res-nightmode .res .expando-button.video-muted.expanded:hover, .res-nightmode .res .expando-button.selftext.expanded:hover {
-		border-radius: 3px 0px 0px 3px;
 		box-shadow: 0px 0px 2px #908F8F;
 		background-color: #333;
 	}
-/**Expandos Hover Message For Nightmode**/
-	/**Expanded**/
-	.res-nightmode .res .expando-button.image.collapsedExpando:hover:after, .res-nightmode .res .expando-button.image.gallery.collapsedExpando:hover:after, .res-nightmode .res .expando-button.video-muted.collapsed:hover:after, .res-nightmode .expando-button.selftext.expanded:hover:after, .res-nightmode .expando-button.video.expanded:hover:after{
-		background-color: #272727;
-		box-shadow: 0px 0px 2px #908F8F;
-	}
-	/**Collapsed**/
-	 .res-nightmode .res .expando-button.image.expanded:hover:after, .res-nightmode .res .expando-button.image.gallery.expanded:hover:after, .res-nightmode .res .expando-button.video-muted.expanded:hover:after, .res-nightmode .thing .expando-button.video.collapsed:hover:after, .res-nightmode .expando-button.selftext.collapsed, .res-nightmode .link .entry .expando-button.selftext.collapsed:hover:after{
-		background-color: #272727;
-		box-shadow: 0px 0px 2px #908F8F;
-	}	
-	
+
 /**Expandos Backround Image For Nightmode**/
 	/**Image**/
 	.res-nightmode .res .expando-button.image.collapsedExpando, .res-nightmode .res .expando-button.image.collapsedExpando:hover, .res-nightmode .res .expando-button.image.expanded, .res-nightmode .res .expando-button.image.expanded {
@@ -1703,6 +1592,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	.res .commentarea .expando-button.video-muted.collapsed:hover{
 		vertical-align: middle!important; 
 		margin-left: 5px!Important;
+		margin-right: 5px!Important;
 	}
 
 /**End Commentarea Expandos**/
