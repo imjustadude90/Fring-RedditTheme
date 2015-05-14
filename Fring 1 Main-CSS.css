@@ -29,7 +29,30 @@
    .pref-lang {
     font-weight: normal;
     }
-
+/**Common css**/
+	/**Box shadow on content, boxes and more**/
+	.organic-listing,
+	.messages-page .sitetable,
+	#header .tabmenu,
+	.login-form-side,
+	.sidecontentbox,
+	.listing-page .sitetable,
+	.submit-page .sitetable,
+	.comments-page .linklisting .link,
+	.res.res-nightmode .comments-page .linklisting .link,
+	.sitetable.nestedlisting > .comment,
+	.commentarea>.usertext,
+	.commentarea .panestack-title,
+	.wiki-page .wiki-page-content,
+	.single-page.comments-page .linkinfo
+	{
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);
+	}
+	.content .spacer {
+	margin-bottom: 0px;
+	}
 /** HEADER **/
  
 /** SR Header Area **/
@@ -270,13 +293,13 @@
 	text-align: left;
 	background-color: #FFFFFF;
 	overflow: hidden;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.20);
 	border-bottom: 0px;
 	border-radius: 3px 3px 0px 0px;
 	height: 30px;
 	line-height: 30px;
 	padding-left: 10px;
 	margin-top: 82px;
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,.1);
    }
    .res-nightmode #header-bottom-left .tabmenu.tabmenu {background-color: #101010;}
      .tabmenu li {
@@ -358,9 +381,6 @@
 	.login-form-side{
 	border: 0px solid rgb(240, 240, 240);
 	background-color: #fff;
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	}
 	.res-nightmode .login-form-side{
 	
@@ -369,9 +389,6 @@
 	.sidecontentbox {
 	font-size: normal;
 	border: 0px;
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20); 
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20); 
 	}
 	.res-nightmode .sidecontentbox{background-color: #161616!Important;  box-shadow: 0 0px 4px rgba(22, 22, 22, 1)!Important; border:0px!Important;}
 		.sidecontentbox .title {
@@ -523,7 +540,6 @@ background-color:#161616!Important;
 .titlebox .tagline{
 padding: 4px 20px 10px;
 margin:0px;
-border-bottom: 1px solid rgba(234,234,234,0.4);
 }
 .res-nightmode .titlebox .tagline{
 border-bottom: 1px solid rgba(0,0,0,0.10)!Important;
@@ -918,12 +934,32 @@ background-color:#161616!Important;
 	/**Search Page**/
 	.searchpane{
 	margin: 36px 320px 0px 0px;
-	background-color: #E2E2E2;
-	border: 1px solid rgba(234,234,234,0.4);
+	border: 0px;
+	background-color: #f6f6f6;
 	}
-	.search-page .content{
+	.search-page div.content{
 	margin: 15px 5px 0px 15px;
 	}
+	.search-page div#siteTable{overflow:hidden;margin-top: 10px;}
+	.search-page .link{
+	margin-bottom: 10px;
+	border-radius: 3px;
+	margin-bottom: 10px!Important;
+	}
+	.search-page .searchfacets{
+	border:0px;
+	margin-top: 0px;
+	background-color: #F0F9FF;
+	}
+	.search-page .menuarea{
+	background-color:#fff;
+	}
+	/**Common Box-Shadow**/
+		.searchpane, .search-page .link, .search-page .searchfacets, .search-page .menuarea{
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);
+		-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);
+		}
 
 /*Vote Arrows**/
 	.arrow {
@@ -1018,9 +1054,6 @@ background-color:#161616!Important;
     }
 	.listing-page .sitetable{
 		overflow:hidden;
-		-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-		-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-		box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	}
 	.res-nightmode body .content{background:transparent!Important;}
 	/**Sitetable**/
@@ -1031,9 +1064,6 @@ background-color:#161616!Important;
 	padding-top:2px;
     margin-bottom:20px;
     background-color: #fff;
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
     }
 	.res-nightmode .submit-page .sitetable{
 	background-color:#161616!Important;
@@ -1090,15 +1120,8 @@ background-color:#161616!Important;
 	/* Links */
 		.comments-page .linklisting .link {
 			overflow:hidden;
-			-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-			-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-			box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 		}
-			.res.res-nightmode .comments-page .linklisting .link{
-			-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-			-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-			box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-			}
+
 		.linklisting .link{
 		margin: 0px;
 		padding: 8px 8px;
@@ -1140,8 +1163,24 @@ background-color:#161616!Important;
 		.link .score{
 		}
 			.link .rank{
-			border: 0px;
+			border: .1em solid rgba(234,234,234,0.4);
+			background-color: #FFFFFF;
+			color: #B0B0B0;
+			margin-top: -0.8em;
+			margin-left: -0.8em;
+			text-align: center;
+			height: 1.5em;
+			font-size: 11px;
+			line-height: 1.5em;
+			padding: 0px 3px;
+			-webkit-border-radius: 0px 0px 5px 0px;
+			-moz-border-radius: 0px 0px 5px 0px;
+			border-radius: 0px 0px 5px 0px;
 			}	
+			.res-nightmode .link .rank {
+			background-color: #161616;
+			border: .1em solid rgba(31,31,31,1)!Important;
+			}
 	/** Thumbnail Images **/
 	.thumbnail{
 	position: relative;
@@ -1181,9 +1220,6 @@ background-color:#161616!Important;
 		background-color:#fff;
 		overflow: hidden;
 		margin: 0px 0px 10px 0px;
-		-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-		-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-		box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	}
 	.res-nightmode .sitetable.nestedlisting > .comment {
 		  margin-right: 10px!Important;
@@ -1218,9 +1254,6 @@ background-color:#161616!Important;
 				margin: -2px 0 10px 0;
 				padding: 10px;
 				border: 0px;
-				-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-				-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-				box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 				border-top: 0px;
 				}
 				.res-nightmode .commentarea>.usertext{
@@ -1336,9 +1369,6 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	border-right: 0px;
 	color: black;
 	overflow:hidden;
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	}
 	.res-nightmode .panestack-title {
 	background-color: #101010!Important;
@@ -1366,10 +1396,9 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	
 	/**Link Info**/
 	.single-page.comments-page .linkinfo{
-		box-shadow: 0px 2px 0px #eaeaea;
-		border: 1px solid #e2e2e2;
 		background-color: #fff;
 		border-radius: 0px;
+		border:0px;
 	}
 	.res-nightmode .single-page.comments-page .linkinfo{
 	background-color: #161616!Important;
@@ -1399,8 +1428,11 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	box-shadow:none;
 	}
 		.menuarea .drop-choices.lightdrop{
-		border: 0px;
 		background-color: #fff;
+		border: 1px solid rgba(0,0,0,.15);
+		border-radius: 4px;
+		-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+		box-shadow: 0 6px 12px rgba(0,0,0,.175);
 		}
 		.res-nightmode .menuarea .drop-choices.lightdrop{
 		background-color:#1D1D1D!Important;
@@ -1718,7 +1750,6 @@ background-color:transparent!Important;
 	.wiki-page .wiki-page-content{
 	background-color: #fff;
 	padding: 5px;
-	box-shadow: 0px 1px 5px rgba(0,0,0,0.20);
 	margin: 10px 15px 0 0;
 	overflow: hidden;
 	}
@@ -1740,7 +1771,7 @@ background-color:transparent!Important;
 
 	body>.debuginfo:after{content: "CSS Theme from /r/Fring";padding: 3px 0 0 5px;float: left;font-size: 12px;}
 	
-		.res-nightmode .footer{border: 1px solid rgba(0,0,0,0.20)!Important;  box-shadow: 0 1px 5px rgba(0,0,0,0.20);  background: rgb(25, 25, 25);}
+		.res-nightmode .footer{border: 1px solid rgba(0,0,0,0.20)!Important;  box-shadow: 0px 1px 3px 0px rgba(0,0,0,.1);  background: rgb(25, 25, 25);}
 			.res-nightmode .footer a{color:#bbb!Important;}
 			.res-nightmode .footer a:hover {color:#eaeaea!Important;}
 	
@@ -1818,7 +1849,6 @@ border: 1px solid #242424!Important;
 
 /** ADS **/
 	.organic-listing{
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	border:0px;
 	}
 
@@ -1950,9 +1980,6 @@ width: 140px;
 	border: 0px;
 	border-top: 0px;
 	background-color: #fff;
-	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.20);
-	box-shadow: 0 1px 5px rgba(0,0,0,0.20);
 	}
 	.res-nightmode .messages-page .sitetable{
 	background-color: transparent!Important;
@@ -2071,7 +2098,6 @@ margin-top: 10px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
-
 
 
 
