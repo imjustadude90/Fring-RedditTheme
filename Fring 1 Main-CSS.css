@@ -1963,7 +1963,7 @@ width: 140px;
 /**Trending Subreddits**/
 	.trending-subreddits {
 		overflow:hidden;
-		margin-bottom: -5px;
+		margin-bottom:0px;
 		padding: 8px;
 		margin-left: 0px;
 		border: 0px;
@@ -2098,6 +2098,5 @@ margin-top: 10px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
-
 
 
