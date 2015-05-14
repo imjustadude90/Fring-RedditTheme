@@ -1851,7 +1851,7 @@ border: 1px solid #242424!Important;
 	.organic-listing{
 	border:0px;
 	}
-
+	.link.promoted .rank{display:none;}
 /**Hide Stuff **/
 
 .sidebox .spacer, .sidebox .subtitle, .sidebox .subtitle, .sidebox.create .spacer a{display:none;}
