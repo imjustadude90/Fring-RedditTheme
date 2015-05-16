@@ -292,7 +292,7 @@
 	left: 15px;
 	text-align: left;
 	background-color: #FFFFFF;
-	overflow: hidden;
+	overflow: hidden!important;
 	border-bottom: 0px;
 	border-radius: 3px 3px 0px 0px;
 	height: 30px;
@@ -1736,7 +1736,7 @@ background-color:transparent!Important;
   color: #228822!important;
 	}
 	/**Stickied link rank - thanks to /u/ggitaliano from /r/Carbon**/
-	.link.promoted .rank, .link.stickied .rank{
+	.link.stickied .rank{
 	position: relative;
 	visibility: visible;
 	}
@@ -1852,6 +1852,7 @@ border: 1px solid #242424!Important;
 	border:0px;
 	}
 	.link.promoted .rank{display:none;}
+
 /**Hide Stuff **/
 
 .sidebox .spacer, .sidebox .subtitle, .sidebox .subtitle, .sidebox.create .spacer a{display:none;}
@@ -1910,6 +1911,9 @@ border-top: 0px;
 }
 
 /** Moderator Multi Page**/
+
+.multi-page .sitetable{overflow:hidden;}
+.multi-page .content {margin:10px 15px 0px 15px;}
 
 .multi-page #header .pagename a{position:relative;}
 
@@ -2031,6 +2035,8 @@ margin-top: 10px;
 
 /** Profile Page Fixes**/
 
+.profile-page .comment, .res-commentBoxes .comment{margin-bottom:0px!Important;}
+
 .profile-page .titlebox{padding: 5px 10px;}
 .res-nightmode .profile-page .titlebox h1{border:0px;}
 	/**Side Content Box Fixes**/
@@ -2098,5 +2104,4 @@ margin-top: 10px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
-
 
