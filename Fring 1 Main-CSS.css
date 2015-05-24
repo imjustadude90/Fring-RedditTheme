@@ -824,6 +824,9 @@ background-color:#161616!Important;
 				.side div.create .morelink .nub{
 					display:none;
 				}
+	/*Restricted Button*/
+	.disabled .morelink .nub, .disabled .morelink:hover .nub{display:none;}
+	.disabled .morelink, .disabled .morelink:hover{background-image:none;}
 /** Search **/
 
   /**Position**/
@@ -2105,4 +2108,5 @@ margin-top: 10px;
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
+
 
