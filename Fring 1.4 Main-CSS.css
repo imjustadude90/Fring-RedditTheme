@@ -1327,7 +1327,8 @@ background-repeat: no-repeat
 }
 
 .res-nightmode .link .rank {
-
+	border: .1em solid rgba(31, 31, 31, 1);
+	background-color: #161616;
 }
 /** Thumbnail Images **/
 
