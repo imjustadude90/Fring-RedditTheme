@@ -1,0 +1,2529 @@
+/*
+			Version 1.4
+			Stylesheet by Imjustadude90
+			Last modified: 27 MAY 2015
+
+			--------------------------------------------------------------------------
+            [Changelog]
+			v1.0 - Initial Design - /r/Fring Template
+			v1.1 - RES Nightmode Compatible
+			v1.2 - Nightmode re-design & header re-design. 
+			v1.3 - New vote arrows & improved customization.
+			v1.4 - Re-write, various bug-fixes. Re-design of tabmenu, comments page, thumbnails and much more.
+-------------------------------------------------------------------------- */
+/**Add Customization on the bottom, or it will not work**//** Main Body **/
+
+body {
+    color: #111111;
+    background-color: #F0F0F0;
+    margin: 0 auto;
+}
+.res-nightmode .res {
+    background-color: #202020;
+}
+.entry .buttons li a {
+    font-weight: normal;
+}
+.pref-lang {
+    font-weight: normal;
+}
+/**Common css**/
+/**Box shadow on content, boxes and more**/
+
+.messages-page .sitetable,
+.login-form-side,
+.sidecontentbox,
+.listing-page .sitetable,
+.submit-page .sitetable,
+.comments-page .linklisting .link,
+.res.res-nightmode .comments-page .linklisting .link,
+.sitetable.nestedlisting > .comment,
+.commentarea>.usertext,
+.commentarea .panestack-title,
+.wiki-page .wiki-page-content,
+.menuarea,
+#search input[type=text],
+.single-page.comments-page .linkinfo {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+}
+.content .spacer {
+    margin-bottom: 0px;
+}
+/** HEADER **/
+/** SR Header Area **/
+#sr-header-area {
+    border-bottom: 0px solid #adadad;
+	background-color: rgba(0, 0, 0, 0.1);
+    height: 22px;
+    line-height: 22px;
+}
+#sr-header-area:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.res-nightmode #sr-header-area {
+    background-color: rgba(16, 16, 16, 1)!Important;
+}
+#sr-header-area .width-clip {
+    right: 50px;
+}
+#RESShortcutsViewport {
+    margin-right: 65px!Important;
+}
+#sr-header-area .drop-choices {
+    border: 1px solid #adadad;
+    background-color: #f3f3f3;
+}
+#sr-header-area .drop-choices.srdrop {
+    margin-top: 5px;
+	margin-left:0px;
+    border: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border-radius: 0px 0px 5px 5px;
+    background-color: #fff;
+}
+.sr-bar a {
+    color: #ebebeb;
+    text-decoration: none
+}
+.sr-bar a:hover {
+    color: #fff;
+}
+/**SR More Link **/
+
+#sr-more-link {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px 5px 0px 10px;
+    color: #ebebeb;
+    margin-right: -50px;
+}
+#sr-more-link:hover {
+    color: #fff
+}
+.sr-bar .separator,
+.separator {
+    color: transparent;
+}
+#sr-header-area .dropdown.srdrop{padding-right:10px;}
+#sr-header-area .dropdown.srdrop .selected,
+.res #sr-header-area #srDropdownContainer a {
+    background-image: url(%%spritesheet%%);
+    background-position: -2px -57px;
+    background-repeat: no-repeat!important;
+    width: 16px;
+    height: 15px;
+    display: block;
+    margin: 3px 0px 0px 0px;
+    padding: 0;
+    line-height: 18px;
+    cursor: pointer;
+    text-indent: -999em;
+}
+#sr-header-area .dropdown.srdrop .selected:hover,
+.res #sr-header-area #srDropdownContainer a:hover {
+    opacity: 0.8;
+}
+.sr-bar a.gold {
+    color: #e5c100!Important;
+}
+/** Main Header Area **/
+
+#header {
+    border-bottom: 0px;
+    -webkit-box-shadow: 0px 2px 0px #e2e2e2;
+    -moz-box-shadow: 0px 2px 0px #e2e2e2;
+    box-shadow: 0px 1px 0px #E0E0E0;
+    position: relative;
+    background-color: #93b2c7;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover!Important;
+    -moz-background-size: cover!Important;
+    -o-background-size: cover!Important;
+    background-size: cover!Important;
+	height:80px;
+}
+.res-nightmode #header {
+    background-color: #161616!Important;
+    border-bottom: 1px solid #333!Important;
+    box-shadow: 0px 1px 0px #161616!Important;
+}
+#header-img,
+#header-img.default-header {
+	position: absolute;
+	margin-left: 5px;
+    background: url(%%spritesheet%%) -127px -239px no-repeat;
+	opacity: 1.0;
+	padding-left: 60px;
+	height: 54px;
+	width: 0;
+	display: inline-block;
+	bottom: 0px;
+}
+#header-img:hover {
+    opacity: 0.7;
+}
+/** Header-Bottom-Left **/
+
+#header-bottom-left {
+  font-size: larger;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+}
+
+#header .pagename {
+    font-size: 0px;
+}
+#header .pagename a {
+	font-weight: 600;
+	font-size: 20px;
+	border-collapse: separate;
+	display: inline-block;
+	position: absolute;
+	margin-top: -10px;
+	margin-left: 70px;
+	color: #fff;
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.55);
+}
+.res-nightmode #header .pagename a {
+    color: #fff!Important;
+}
+#header .pagename a:hover {
+	color: #eaeaea;
+    text-decoration: none;
+}
+#header .pagename a:before {
+    content: "/r/";
+    font-size: 16px;
+    font-variant: normal;
+    letter-spacing: 1px;
+    text-transform: none;
+    font-family: arial;
+}
+/** Header-Bottom-Right **/
+
+#header-bottom-right {
+    position: absolute;
+    right: 0px;
+    border-top-left-radius: 7px;
+    font-size: 12px;
+	background-color: rgba(0, 0, 0, 0.1);
+	line-height: 20px;
+	height: 20px!important;
+	padding-left: 10px;
+	min-width:14px;
+}
+.res-navTop #header-bottom-right {top:22px!Important;}
+#header-bottom-right:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.15s ease;
+	-moz-transition: all 0.15s ease;
+	-o-transition: all 0.15s ease;
+	transition: all 0.15s ease;
+}
+.res-nightmode #header-bottom-right {
+	background-color: rgba(16,16,16,1)!Important;
+}
+#header-bottom-right .user {
+    color: #efefef;
+	font-weight: 600;
+}
+#header-bottom-right .user .userkarma {
+    border-bottom: 0px dotted #efefef;
+    color: #efefef;
+    font-weight: 500;
+}
+#header-bottom-right .user a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+#header-bottom-right .user a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#header-bottom-right .separator {
+    color: transparent;
+	margin: 0px .4ex 0px .4ex;
+}
+#header-bottom-right a.pref-lang.choice:hover {
+    color: #fff;
+}
+#header-bottom-right .logout a:hover {
+    color: #fff;
+}
+/**Userbar**/
+
+/**Preferences**/
+
+#header-bottom-right a.pref-lang,
+.loggedin .logout a {
+    background: url(%%spritesheet%%) -94px -13px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 0px;
+}
+/**Res Settings**/
+
+.gearIcon {
+    background: url(%%spritesheet%%) -76px -13px no-repeat!Important;
+    height: 18px!Important;
+    width: 18px!Important;
+}
+#RESSettingsButton {
+    position: relative!important;
+    top: 2px!important;
+    left: 0px;
+}
+#RESMainGearOverlay {
+	background-image: none!important;
+	margin: 2px 2px 2px 1px!Important;
+	width: 30px!Important;
+	padding: 0!Important;
+	border: 0!Important;
+}
+/**Mail**/
+
+#mail.havemail {
+    background-image: url(%%spritesheet%%)!Important;
+    background-position: -76px 0px;
+    width: 18px!Important;
+    height: 12px;
+    background-repeat: no-repeat
+}
+#mail.nohavemail {
+    background-image: url(%%spritesheet%%)!Important;
+    background-position: -94px -0px;
+    width: 18px!Important;
+    height: 12px!Important;
+    background-repeat: no-repeat
+}
+#modmail.havemail {
+    background-image: url(%%spritesheet%%)!Important;
+    background-position: -30px 0px;
+    width: 21px;
+    height: 18px;
+    background-repeat: no-repeat
+}
+#modmail.nohavemail {
+    background-image: url(%%spritesheet%%)!Important;
+    background-position: -51px 0px;
+    width: 21px;
+    height: 18px;
+    background-repeat: no-repeat
+}
+/**Logout**/
+
+.loggedin .logout a {
+    background: url(%%spritesheet%%) -94px -34px no-repeat;
+}
+/** End Userbar**/
+/** TABMENU **/
+
+#header .tabmenu {
+	position: absolute;
+	background-color: #F6F6F6;
+	overflow: hidden!important;
+	border-bottom: 0;
+	border-radius: 3px 3px 0px 0px;
+	height: 27px;
+	line-height: 27px;
+	top: 25px;
+	left: 15px;
+	right: 325px;
+	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+}
+.res-nightmode #header-bottom-left .tabmenu.tabmenu {
+    background-color: #101010;
+}
+.tabmenu li {
+    display: inline;
+    font-weight: normal;
+    margin: 0px 0px;
+}
+.tabmenu li a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+	background-color: #F6F6F6;
+    font-weight: 500;
+	color: #A0A0A0;
+    padding: 6px 10px;
+	border-right:1px solid rgba(219, 219, 219, 0.3);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.res-nightmode .tabmenu li a{border-right: 1px solid rgba(0, 0, 0, 0.3)!Important}
+.tabmenu li a:hover {
+    color: #FF7247;
+	background-color: #fff;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+.res-nightmode .tabmenu li a {
+    background-color: transparent!Important;
+    color: #bbbbbb!Important;
+}
+.res-nightmode .tabmenu li a:hover {
+    color: #e6e6e6!Important;
+	background-color:#161616!Important;
+}
+.res-nightmode .tabmenu li a:active {
+    color: #fff!Important;
+}
+.tabmenu li.selected a {
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border: 0px;
+    border-bottom: 0px;
+	color: #FF7247;
+}
+.res-nightmode .tabmenu li.selected a {
+    color: #fff!Important;
+    background-color: #161616!Important;
+}
+
+/** SIDE - Sidebar **/
+
+.side {
+    float: right;
+    background-color: transparent;
+    margin: 5px 10px 10px 15px;
+}
+.search-page .side {margin-top:0}
+.res-nightmode .side {
+    background-color: transparent!Important;
+}
+.titlebox {
+    font-size: larger;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.10);
+    border: 0px;
+}
+.res-nightmode .titlebox {
+    background-color: #161616!Important;
+    box-shadow: 0 0px 4px rgba(22, 22, 22, 1)!Important;
+}
+h1.redditname {
+    background: -webkit-linear-gradient(top, #fafafa, #f0f0f0);
+    background: -moz-linear-gradient(top, #fafafa, #f0f0f0);
+    background: -o-linear-gradient(top, #fafafa, #f0f0f0);
+    background: -ms-linear-gradient(top, #fafafa, #f0f0f0);
+    background: linear-gradient(top, #fafafa, #f0f0f0);
+    background-color: #fafafa;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+}
+.res-nightmode h1.redditname {
+    background: -webkit-linear-gradient(top, #161616, #1F1E1E);
+    background: -moz-linear-gradient(top, #161616, #1F1E1E);
+    background: -o-linear-gradient(top, #161616, #1F1E1E);
+    background: -ms-linear-gradient(top, #161616, #1F1E1E);
+    background: linear-gradient(top, #161616, #1F1E1E);
+    background-color: #161616;
+}
+/**Login Form**/
+
+.login-form-side {
+    border: 0px solid rgb(240, 240, 240);
+    background-color: #fff;
+}
+.res-nightmode .login-form-side {}
+/** Content Box **/
+
+.sidecontentbox {
+    font-size: normal;
+    border: 0px;
+}
+.res-nightmode .sidecontentbox {
+    background-color: #161616!Important;
+    box-shadow: 0 0px 4px rgba(22, 22, 22, 1)!Important;
+    border: 0px!Important;
+}
+.sidecontentbox .title {
+    background: -webkit-linear-gradient(top, #fafafa, #f0f0f0);
+    background: -moz-linear-gradient(top, #fafafa, #f0f0f0);
+    background: -o-linear-gradient(top, #fafafa, #f0f0f0);
+    background: -ms-linear-gradient(top, #fafafa, #f0f0f0);
+    background: linear-gradient(top, #fafafa, #f0f0f0);
+    background-color: #fafafa;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+    color: rgb(5, 5, 5);
+    padding: 5px 10px;
+    margin: 0px;
+}
+.res-nightmode .sidecontentbox .title {
+    background: -webkit-linear-gradient(top, #161616, #1F1E1E);
+    background: -moz-linear-gradient(top, #161616, #1F1E1E);
+    background: -o-linear-gradient(top, #161616, #1F1E1E);
+    background: -ms-linear-gradient(top, #161616, #1F1E1E);
+    background: linear-gradient(top, #161616, #1F1E1E);
+    background-color: #161616;
+}
+.sidecontentbox .content {
+    border: 0px;
+    background: #fff;
+    padding: 5px 10px;
+}
+.sidecontentbox .title h1 {
+    color: #444;
+}
+.res-nightmode .sidecontentbox .title h1 {
+    color: rgb(238, 238, 238)!Important;
+    border-bottom: 0px!Important;
+}
+.side div.sidecontentbox a.helplink {
+    position: relative;
+    background-image: url(%%spritesheet%%);
+    background-position: 0px -175px;
+    background-repeat: no-repeat!important;
+    font-size: 0;
+    right: 5px;
+    margin-top: 4px;
+    width: 36px;
+    height: 20px;
+    opacity: 0.6;
+}
+.res-nightmode .side div.sidecontentbox a.helplink {
+    background-position: 0px -197px!Important;
+}
+.side div.sidecontentbox a.helplink:hover {
+    opacity: 1.0;
+}
+.side div.sidecontentbox a.helplink:hover:after {
+    position: absolute;
+    white-space: normal;
+    display: block;
+    z-index: 1000;
+    width: 280px;
+    padding: 10px;
+    content: "Message the moderators.";
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    margin-left: -259px;
+    margin-top: 22px;
+    background-color: #FF7247;
+}
+/**Font Size**/
+
+.md-small h1,
+.side .md h1,
+.md-small h2,
+.side .md h2 {
+    font-size: 1.5em;
+    line-height: 1.38889em;
+    margin-top: 0.555556em;
+    margin-bottom: 0.555556em;
+}
+/**TitleBox, sub buttons, short info and more **/
+/*H3 Button*/
+
+.side .titlebox .md h3 a {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: #FF7247;
+    -webkit-box-shadow: 0px 3px 0px #D75A41;
+    -moz-box-shadow: 0px 3px 0px #D75A41;
+    box-shadow: 0px 3px 0px #D75A41;
+}
+.res-nightmode .side .titlebox .md h3 a {
+    background-color: #202020!Important;
+    -webkit-box-shadow: 0px 4px 0px #333;
+    -moz-box-shadow: 0px 4px 0px #333;
+    box-shadow: 0px 4px 0px #333;
+}
+.res-nightmode .side .titlebox .md h3 a:active {
+    box-shadow: 0px 1px 0px #333;
+}
+.side .titlebox .md h3 a:after {
+    content: "";
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+    background: url(%%spritesheet%%) no-repeat;
+    background-position: -47px -197px;
+    height: 18px;
+    width: 18px;
+}
+.side .titlebox .md h3 a:active {
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    box-shadow: 0px 1px 0px 0px;
+}
+/**End H3 Button**/
+.titlebox .fancy-toggle-button {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    line-height: 30px;
+    width: 288px;
+    display: block;
+}
+.titlebox .toggle.flairtoggle {
+    padding: 6px 12px;
+    margin: 0;
+    border-top: 1px solid rgba(234, 234, 234, 0.4);
+    font-size: 10px;
+}
+.titlebox form.toggle,
+.leavemoderator {
+    padding: 6px 12px;
+    border-top: 1px solid rgba(234, 234, 234, 0.4);
+}
+.res-nightmode .titlebox form.toggle,
+.res-nightmode .leavemoderator {
+    border-top: 1px solid rgba(0, 0, 0, 0.10)!Important;
+    background-color: #161616!Important;
+}
+.titlebox .tagline {
+    padding: 4px 20px 10px;
+    margin: 0px;
+}
+.res-nightmode .titlebox .tagline {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10)!Important;
+    background-color: #161616!Important;
+    border-top: 1px solid rgba(51, 51, 51, 0.5)!Important;
+}
+.res-nightmode .side .spacer .titlebox .redditname {
+    border-color: rgba(51, 51, 51, 0.5)!Important;
+}
+.titlebox .usertext-body .md,
+.titlebox div.usertext .md {
+    padding: 4px 12px;
+    font-size: 12px;
+    color: #444;
+    border-top: 1px solid rgba(234, 234, 234, 0.4);
+}
+.side .titlebox .bottom {
+    min-height: 11px;
+    padding: 6px 12px;
+    border-top: 1px solid rgba(234, 234, 234, 0.4);
+}
+.res-nightmode .side .titlebox .bottom {
+    border-bottom: 0px!Important;
+    border-top: 1px solid rgba(51, 51, 51, 0.5)!Important;
+}
+.titlebox .bottom .age {
+    font-size: 0px!Important;
+}
+.titlebox .bottom .age time {
+    font-size: 11px;
+}
+.titlebox .bottom .age time:before {
+    content: "";
+    position: absolute!Important;
+    margin: -4px 0px 0px -26px!Important;
+    height: 20px!Important;
+    width: 22px!Important;
+    background: url(%%spritesheet%%) 0 -150px no-repeat!Important;
+    display: inline-block!Important;
+}
+.res-nightmode .flairselector,
+.res-nightmode .linefield,
+.res-nightmode .icon-menu a,
+.res-nightmode .side .leavemoderator,
+.res-nightmode .side .leavecontributor-button,
+.res-nightmode .side .titlebox,
+.res-nightmode .side .spacer .titlebox .redditname,
+.res-nightmode .side .titlebox .flairtoggle,
+.res-nightmode .side .usertext-body .md ol,
+.res-nightmode .side .usertext-body .md ol ol,
+.res-nightmode .side .usertext-body .md ol ol li,
+.res-nightmode .side blockquote,
+.res-nightmode .modactionlisting table *,
+.res-nightmode .side .recommend-box .rec-item {
+    background-color: #161616!Important;
+}
+.side .subscribe-button a.add {
+    background-image: none;
+    border: none;
+    background-color: #7bb850;
+    padding: 3px 8px;
+    border-bottom: 3px solid #75a849;
+    transition: background-color .2s ease;
+}
+.side .subscribe-button a.add:hover {
+    background-color: #79b34e;
+}
+.side .subscribe-button a.add:active,
+.side .subscribe-button a.remove:active {
+    position: relative;
+    top: 3px;
+    border-bottom-width: 0;
+}
+.side .subscribe-button a.remove {
+    background-image: none;
+    border: none;
+    background-color: #DADADA;
+    padding: 3px 8px;
+    border-bottom: 3px solid #CBCBCB;
+    transition: all .2s ease;
+}
+.res-nightmode .side .subscribe-button a.remove {
+    background-color: #373737;
+    border-bottom: 3px solid #5E5E5E;
+}
+.side .subscribe-button a.remove:hover {
+    background-color: #BBBBBB;
+    border-bottom-color: #9D9D9D;
+}
+.res-nightmode .side .subscribe-button a.remove:hover {
+    background-color: #181818;
+    border-bottom: 3px solid #000000;
+}
+.side .subscribe-button a.add:active,
+.side .subscribe-button a.remove:active,
+.res-nightmode .side .subscribe-button a.add:active,
+.res-nightmode .side .subscribe-button a.remove:active {
+    position: relative;
+    top: 3px;
+    border-bottom-width: 0;
+}
+/**Res Shortcuts and Dashboard buttons - Thanks to /u/ggitaliano from /r/carbon **/
+
+.res .RESDashboardToggle,
+.res .RESshortcutside {
+    background: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1);
+    background: -moz-linear-gradient(top, #F5F5F5, #F1F1F1);
+    background: -o-linear-gradient(top, #F5F5F5, #F1F1F1);
+    background: -ms-linear-gradient(top, #F5F5F5, #F1F1F1);
+    background: linear-gradient(top, #F5F5F5, #F1F1F1);
+    background-color: #F5F5F5;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 6px;
+    width: 138px;
+    border: 0px!Important;
+    border-radius: 0px;
+    color: #444;
+    display: inline-block;
+    margin: 0px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+.res-nightmode .res .RESDashboardToggle,
+.res-nightmode .res .RESshortcutside {
+    background: -webkit-linear-gradient(top, #434242, #313030)!Important;
+    background: -moz-linear-gradient(top, #434242, #313030)!Important;
+    background: -o-linear-gradient(top, #434242, #313030)!Important;
+    background: -ms-linear-gradient(top, #434242, #313030)!Important;
+    background: linear-gradient(top, #434242, #313030)!Important;
+    background-color: #434242!Important;
+    color: #DADADA;
+}
+.res .RESDashboardToggle:hover,
+.res .RESshortcutside:hover {
+    -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.res-nightmode .res .RESDashboardToggle:hover,
+.res-nightmode .res .RESshortcutside:hover {
+    color: #fff!Important;
+    -moz-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2)!Important;
+    -webkit-box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2)!Important;
+    box-shadow: 1px 0px 2px rgba(56, 55, 55, 1)!Important;
+}
+.res .RESDashboardToggle:active,
+.res .RESshortcutside:active {
+    box-shadow: none;
+    background: -webkit-linear-gradient(top, #F1F1F1, #F5F5F5);
+    background: -moz-linear-gradient(top, #F1F1F1, #F5F5F5);
+    background: -o-linear-gradient(top, #F1F1F1, #F5F5F5);
+    background: -ms-linear-gradient(top, #F1F1F1, #F5F5F5);
+    background: linear-gradient(top, #F1F1F1, #F5F5F5);
+}
+.res-nightmode .res .RESDashboardToggle:active,
+.res-nightmode .res .RESshortcutside:active {
+    background: -webkit-linear-gradient(top, #313030, #434242)!Important;
+    background: -moz-linear-gradient(top, #313030, #434242)!Important;
+    background: -o-linear-gradient(top, #313030, #434242)!Important;
+    background: -ms-linear-gradient(top, #313030, #434242)!Important;
+    background: linear-gradient(top, #313030, #434242)!Important;
+}
+.RESshortcutside.remove,
+.RESDashboardToggle.remove {
+    background: #E2E2E2!Important;
+}
+.res-nightmode .RESshortcutside.remove,
+.res-nightmode .RESDashboardToggle.remove {
+    background: #1B1B1B!Important;
+}
+.res .RESDashboardToggle {
+    width: 138px;
+}
+/** Subscribers and Live Users**/
+
+body:not(.res) .titlebox .fancy-toggle-button {
+    display: block;
+}
+.subscribers {
+    float: right;
+    max-width: 210px;
+    margin-top: -30px;
+    position: relative;
+    padding: 5px 5px;
+    text-align: right;
+    color: #444;
+    margin-bottom: 0px;
+}
+.titlebox .users-online,
+.titlebox .users-online:before {
+    display: none;
+    content: none;
+}
+.titlebox .subscribers:hover+.users-online,
+.titlebox .users-online:hover {
+    display: block;
+    margin-top: -30px;
+    max-width: 210px;
+    position: relative;
+    padding: 5px 5px;
+    text-align: right;
+    background-color: #fff!Important;
+    margin-bottom: 0px;
+    float: right;
+}
+.res-nightmode .titlebox .subscribers:hover+.users-online,
+.res-nightmode .titlebox .users-online:hover {
+    background-color: #161616!Important;
+}
+.res .subscribers {
+    margin-top: -55px!Important;
+}
+.res .users-online {
+    margin-top: -55px!Important;
+}
+.titlebox .users-online:after {
+    content: "";
+    top: 11px;
+    width: 20px;
+    height: 17px;
+    background-color: transparent!Important;
+    background-image: url(%%spritesheet%%);
+    background-position: -101px 0px;
+    background-repeat: no-repeat!important;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+.RESshortcutside {
+    margin-left: 10px;
+}
+/** Submit Buttons **/
+.side div.morelink a {
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+.res-nightmode .side div.morelink a {
+    color: #fff!Important;
+}
+.side div.morelink {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-image: none;
+    border: none;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ff7247;
+    -webkit-box-shadow: 0px 3px 0px #D75A41;
+    -moz-box-shadow: 0px 3px 0px #D75A41;
+    box-shadow: 0px 3px 0px #D75A41;
+}
+.side div.morelink:hover{opacity:0.9;}
+.res-nightmode .side div.morelink {
+    background-color: #161616!Important;
+    -webkit-box-shadow: 0px 4px 0px #333;
+    -moz-box-shadow: 0px 4px 0px #333;
+    box-shadow: 0px 4px 0px #333;
+}
+.side div.morelink:active {
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    box-shadow: 0px 1px 0px 0px;
+    -webkit-box-shadow: 0px 2px 0px;
+    -moz-box-shadow: 0px 2px 0px;
+    box-shadow: 0px 2px 0px;
+    color: transparent;
+}
+.res-nightmode .side div.morelink:active {
+    -webkit-box-shadow: 0px 2px 0px #333;
+    -moz-box-shadow: 0px 2px 0px #333;
+    box-shadow: 0px 2px 0px #333;
+}
+.side div.submit-link .morelink .nub {
+    background-image: url(%%spritesheet%%);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    background-color: transparent;
+}
+.res-nightmode .side div.submit-link .morelink .nub {
+    background-image: url(%%spritesheet%%)!important;
+    background-position: 0px 0px!important;
+	display:inherit!important;
+}
+.side div.submit-text .morelink .nub {
+    background-image: url(%%spritesheet%%);
+    background-position: 0px -29px;
+    background-repeat: no-repeat!important;
+    width: 23px;
+    height: 26px;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    background-color: transparent;
+}
+.res-nightmode .side div.submit-text .morelink .nub {
+    background-image: url(%%spritesheet%%)!important;
+    background-position: 0px -29px!important;
+	display:inherit!important;
+}
+.side div.create .morelink .nub {
+    display: none;
+}
+/*Restricted Button*/
+
+.disabled .morelink .nub,
+.disabled .morelink:hover .nub {
+    display: none;
+}
+.disabled .morelink,
+.disabled .morelink:hover {
+    background-image: none;
+}
+/** Search **/
+
+form#search {
+    white-space: nowrap;
+}
+/*** Search Input ***/
+
+#search input[type=text] {
+    border: 0;
+    padding: 10px;
+    outline: none;
+    background-color: #fff;
+	border-radius: 5px;
+}
+.res-nightmode #search input[type=text] {
+    background-color: #161616!Important;
+    -moz-box-shadow: 0px 4px 0px #333;
+    -webkit-box-shadow: 0px 4px 0px #333;
+    box-shadow: 0px 4px 0px #333;
+}
+#search input[type=submit] {
+	background: #FF7247;
+    background-image: url(%%spritesheet%%);
+	background-position: -6px -113px;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 30px;
+    vertical-align: middle;
+    outline: none;
+    position: relative;
+    right: 15px;
+    margin-top: 0px;
+    border-radius: 3px;
+}
+#search input[type=submit]:hover {
+	-webkit-box-shadow: 0px 0px 3px #999999;
+	-moz-box-shadow: 0px 0px 3px #999999;
+	box-shadow: 0px 0px 3px #999999;
+	background-image: url(%%spritesheet%%);
+	background-position: -6px -113px;
+    background-repeat: no-repeat;
+}
+#search input[type=submit]:active {
+	-webkit-box-shadow: 0px 0px 6px #999999;
+	-moz-box-shadow: 0px 0px 6px #999999;
+	box-shadow: 0px 0px 6px #999999;
+}
+/**Search Info**/
+
+#searchexpando {
+    position: relative;
+    background: #FBEDAD;
+    border: 2px solid #E3C758;
+    margin-top: 20px;
+    color: black;
+	font-size: 1.2em;
+	padding: 10px;
+}
+.res-nightmode #searchexpando,
+.res-nightmode #searchexpando .infobar {
+    background: #161616!Important;
+    border: 2px solid #333333!Important;
+}
+#searchexpando:after,
+#searchexpando:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#searchexpando:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #FBEDAD;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.res-nightmode #searchexpando:after {
+    border-bottom-color: #161616;
+}
+#searchexpando:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #E3C758;
+    border-width: 13px;
+    margin-left: -13px;
+}
+.res-nightmode #searchexpando:before {
+    border-bottom-color: #333333;
+}
+label+#moresearchinfo {
+    box-shadow: none;
+    border-top: 0px;
+}
+.search-summary .debuginfo {
+    background-color: rgba(193, 66, 66, 0);
+}
+/**Search Page**/
+
+.searchpane {
+    margin-right: 320px;
+    border: 0px;
+	margin-bottom:0;
+    background-color: #f6f6f6;
+}
+.res .searchpane{margin-top:40px;}
+.search-page div.content {
+    margin: 15px 5px 0px 15px;
+}
+.search-page div#siteTable {
+    overflow: hidden;
+}
+
+.search-page .searchfacets {
+    border: 0px;
+    margin-top: 0px;
+    background-color: #F0F9FF;
+}
+
+/**Common Box-Shadow**/
+
+.searchpane,
+.search-page .link,
+.search-page .searchfacets,
+.search-page div#siteTable
+ {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+}
+/*Vote Arrows**/
+
+.arrow {
+    height: 14px;
+    width: 22px;
+    background-color: transparent;
+}
+.comment .arrow {
+    margin-bottom: 5px!Important;
+}
+.arrow.up {
+	background-image: url(%%spritesheet%%);
+    background-position: -52px -29px;
+}
+.arrow.upmod {
+	background-image: url(%%spritesheet%%);
+    background-position: -30px -29px;
+}
+.arrow.down {
+	background-image: url(%%spritesheet%%);
+    background-position: -52px -43px;
+}
+.arrow.downmod {
+	background-image: url(%%spritesheet%%);
+    background-position: -30px -43px;
+}
+/*Gold only*/
+.gold-only .arrow.upmod {
+background-image: url(%%spritesheet%%) !important;
+background-position: -30px -29px;
+background-repeat: no-repeat
+}
+.gold-only .arrow.downmod {
+background-image: url(%%spritesheet%%) !important;
+background-position: -30px -43px;
+background-repeat: no-repeat
+}
+/**Nightmode Arrows**/
+
+.res-nightmode .arrow {
+    background-image: url(%%spritesheet%%) !important;
+    height: 14px!important;
+    width: 22px!important;
+    background-color: transparent;
+}
+.res-nightmode .comment .arrow {
+    margin-bottom: 5px!Important;
+}
+.res-nightmode .arrow.up,
+.res-nightmode .arrow.up:hover {
+    background: url(%%spritesheet%%) -52px -29px no-repeat!Important;
+}
+.res-nightmode .arrow.upmod,
+.res-nightmode .arrow.upmod:hover {
+    background: url(%%spritesheet%%) -30px -29px no-repeat!Important;
+}
+.res-nightmode .arrow.down,
+.res-nightmode .arrow.down:hover {
+    background: url(%%spritesheet%%) -52px -43px no-repeat!Important;
+}
+.res-nightmode .arrow.downmod,
+.res-nightmode .arrow.downmod:hover {
+    background: url(%%spritesheet%%) -30px -43px no-repeat!Important;
+}
+.arrow.upmod:focus {
+    background-position: -30px -29px;
+    -webkit-animation: bounceIn 400ms ease-in;
+    -moz-animation: bounceIn 400ms ease-in;
+    -o-animation: bounceIn 400ms ease-in;
+    animation: bounceIn 400ms ease-in;
+}
+/**Arrow Animation**/
+
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+    }
+    70% {
+        -webkit-transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.link .midcol {
+    overflow: visible;
+}
+.gadget .midcol {
+    width: 22px;
+}
+.comment .midcol {
+    width: 22px;
+}
+/**End Vote Arrows**/
+
+/** CONTENT **/
+
+.content {
+    margin: 40px 15px 0px 15px;
+}
+.listing-page .sitetable {
+    overflow: hidden;
+}
+.res-nightmode body .content {
+    background: transparent!Important;
+}
+/**Sitetable**/
+
+.submit-page .sitetable {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0px;
+    padding-top: 2px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.res-nightmode .submit-page .sitetable {
+    background-color: #161616!Important;
+    -webkit-box-shadow: 0 1px 5px rgba(22, 22, 22, 0.20);
+    -moz-box-shadow: 0 1px 5px rgba(22, 22, 22, 0.20);
+    box-shadow: 0 1px 5px rgba(22, 22, 22, 0.20)!Important;
+}
+/*Buttons*/
+
+.sitetable .nav-buttons {
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+}
+.res-nightmode .sitetable .nav-buttons {
+    background-color: #101010!Important;
+}
+.sitetable .nextprev,
+.next-suggestions {
+    color: #777;
+}
+.res-nightmode .sitetable .nextprev,
+.res-nightmode .next-suggestions {
+    color: #e2e2e2!Important;
+}
+.sitetable .nextprev a,
+.next-suggestions a {
+    background-color: #F5F5F5;
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    display: inline-block;
+}
+.res-nightmode .sitetable .nextprev a,
+.res-nightmode .next-suggestions a {
+    background-color: #444!Important;
+    border: 1px solid #333!Important;
+    color: #eaeaea!Important;
+}
+.sitetable .nextprev a:hover,
+.res-nightmode .next-suggestions a:hover {
+    background-color: #F0F0F0;
+    border: 1px solid #DFDFDF;
+}
+.res-nightmode .sitetable .nextprev a:hover,
+.res-nightmode .next-suggestions a:hover {
+    background-color: #333!Important;
+    border: 1px solid #222!Important;
+}
+.sitetable .nextprev a:active,
+.next-suggestions a:active {
+    background-color: #ECECEC;
+    border: 1px solid #D2D2D2;
+}
+.res-nightmode .sitetable .nextprev a:active,
+.res-nightmode .next-suggestions a:active {
+    background-color: #272727!Important;
+    border: 1px solid #1a1a1a!Important;
+}
+/* Links */
+
+.comments-page .linklisting .link {
+    overflow: hidden;
+}
+
+.link .entry .buttons li a.comments{
+	color:#FF7247;
+	font-weight:600;
+}
+
+.linklisting .link {
+    margin: 0px;
+    padding: 8px 8px;
+    border-bottom: 1px solid rgba(234, 234, 234, 0.4);
+    background-color: #fff;
+}
+.res.res-nightmode .linklisting .link {
+    background-color: #161616!Important;
+    border-bottom: 1px solid rgba(31, 31, 31, 1)!Important;
+    padding: 8px 8px!Important;
+}
+.last-clicked.link:not(:first-child),
+.link:not(:first-child),
+.linklisting>.comment:not(:first-child) {
+    padding: 8px 8px;
+    margin: 0px;
+}
+/*Top Border*/
+
+.last-clicked.link:not(:first-child),
+.link:not(:first-child),
+.linklisting > .comment:not(:first-child) {
+    margin: 0;
+}
+/** Link Title**/
+
+.thing .title {
+    color: #1D8DFD!Important;
+}
+.thing .title:hover {
+    color: #0a78e6!Important;
+}
+.res-nightmode .thing .title {
+    color: #6598CB!Important;
+}
+.res-nightmode .thing .title:hover {
+    color: #fff!Important;
+}
+.thing .title:visited {
+    color: #551a8b!Important;
+}
+.res-nightmode .thing .title:visited {
+    color: #b7b7b7!Important;
+}
+/** Vote Score **/
+
+.link .score {} 
+
+.link .rank {
+    border: .1em solid rgba(234, 234, 234, 0.4);
+    background-color: #FFFFFF;
+    color: #B0B0B0;
+    margin-top: -0.8em;
+    margin-left: -0.8em;
+    text-align: center;
+    height: 1.5em;
+    font-size: 11px;
+    line-height: 1.5em;
+    padding: 0px 3px;
+    -webkit-border-radius: 0px 0px 5px 0px;
+    -moz-border-radius: 0px 0px 5px 0px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.res-nightmode .link .rank {
+
+}
+/** Thumbnail Images **/
+
+.thumbnail {
+	margin-left:5px;
+}
+
+.thumbnail.nsfw {
+    background: #ff0000 url(%%spritesheet%%) -127px -180px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.thumbnail.self {
+    background: #f5f5f5 url(%%spritesheet%%) -128px 0px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.thumbnail.default {
+    background: #f5f5f5 url(%%spritesheet%%) -127px -120px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.thing.stickied a.thumbnail {
+    background: #f5f5f5 url(%%spritesheet%%) -128px -60px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.nsfw-stamp {
+	border: 0px!Important;
+	background-color: #d10023;
+	color: white;
+	padding-left: 4px;
+}
+
+/** Thing **/
+
+.entry {
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+/**Comment Page**/
+
+.commentarea .md blockquote, .link .usertext-body .md blockquote{
+	padding: 5px 8px;
+	background: #EDEDED;
+	border-left: 5px solid #ccc;
+	margin: 10px 15px;
+	font-weight: 300;
+	font-style: italic;
+	text-indent: 35px;
+}
+.res-nightmode .commentarea .md blockquote, .res-nightmode  .link .usertext-body .md blockquote{
+	color:#BBB;
+	border-left: 5px solid #CCC;
+	background: #202020;
+}
+.commentarea .md blockquote:before, .link .usertext-body .md blockquote:before {
+  content: "";
+  position: absolute;
+  margin: 0px 0px;
+  width: 28px;
+  height: 21px;
+  background: url(%%spritesheet%%) no-repeat;
+  background-position: -53px -75px;
+}
+
+.md code{
+	border:0;
+	background: #F9F9F9 url:;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.90em!Important;
+	line-height: 1.6!Important;
+	box-sizing: border-box;
+	margin: 8px 0px;
+	position: relative;
+}
+
+.md code:before{
+	content: "";
+	position: relative;
+	margin: 0px 0px;
+	right: 0px;
+	float: right;
+	width: 32px;
+	height: 17px;
+	background: url(%%spritesheet%%) no-repeat;
+	background-position: -82px -75px;
+}
+
+.md code, .md pre{
+	border: 1px solid #E7E8EA;
+	border-left: 5px solid #E7E8EA;
+	background: #F9F9F9;
+	
+}
+.usertext-edit textarea{
+	border: 1px solid #E7E8EA;
+	background-color: #F9F9F9;
+}
+.sitetable.nestedlisting > .comment {
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0px 0px 10px 0px;
+}
+.res-nightmode .sitetable.nestedlisting > .comment {
+    margin-right: 10px!Important;
+}
+.commentarea .thing {
+    padding: 10px 10px 10px 8px;
+    margin: 0 0 5px 0;
+}
+.res-nightmode .commentarea .thing {
+    background-color: #161616!Important;
+    border: 0px!Important;
+}
+.commentarea .child .thing {
+    box-shadow: none;
+    padding: 2px;
+    margin: 12px 0 0 0;
+    border: 0px;
+}
+.comment .child,
+.comment .showreplies {
+    border-left: 1px dotted #ECECEC;
+    margin-top: 0px;
+}
+.commentarea .sitetable {
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px;
+}
+.commentarea>.usertext {
+    background-color: #fff;
+    overflow: hidden;
+    margin: -2px 0 10px 0;
+    padding: 10px;
+    border: 0px;
+    border-top: 0px;
+}
+.res-nightmode .commentarea>.usertext {
+    background-color: #161616!Important;
+    border: 0px!Important;
+    margin: 0px 0 10px 0;
+}
+.commentarea .sitetable {
+    margin: 0px;
+    box-shadow: none;
+}
+.commentarea {} .commentarea .panestack-title {
+    border-bottom: 0px;
+}							
+/* nested commentary boxes - Thanks to /u/creesch :) */
+
+.sitetable.nestedlisting>.comment, .res .sitetable.nestedlisting>.comment {
+    border: 0!important;
+    margin-bottom: 5px !important;
+}
+
+.res-nightmode .sitetable.nestedlisting>.comment, .res-nightmode .res .sitetable.nestedlisting>.comment{
+  border: solid 0px!important;
+}
+
+.sitetable.nestedlisting {
+    border: solid 0px!important;
+}
+
+.res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 0px !important;
+    border: 0 !important;
+    margin-left: 0 !important;
+}
+
+body .comment .child, .comment .showreplies {
+    border-left: 0px !important;
+}
+
+
+body .comment, .res-commentBoxes .comment{
+    margin-left: 0 !important;
+    margin-right: 0px!important;
+    margin-top: 0!important;
+    margin-bottom: 8px !important;
+    border: 0;
+    padding: 5px 8px 0 18px!important;
+    border-radius: 3px !important;
+}
+
+/* Yep we have to do it twice, RES will not let go of comment styling if we don't */
+
+body .comment,
+body .comment .comment .comment,
+body .comment .comment .comment .comment .comment,
+body .comment .comment .comment .comment .comment .comment .comment,
+body .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment,
+.res-commentBoxes .content .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment
+ {
+    background-color: #fff!important;
+    border-radius: 3px !important;
+}
+
+.comment .comment,
+.comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #F7F7F8!important;
+    border-radius: 3px !important;
+}
+
+/** End Nested Comments **/
+
+.commentarea .menuarea {
+    background-color: #fff;
+    color: #444;
+    padding: 10px;
+    margin: 0 0px 0px 0px;
+    border-top: 0px;
+    background-color: #fff;
+}
+.res-nightmode .commentarea .menuarea {
+    background-color: #1D1D1D!Important;
+    border: 0px!Important;
+    box-shadow: inset 0px 0px 3px #1B1B1B!Important;
+}
+.commentarea .menuarea .dropdown.lightdrop .selected {
+    background-color: transparent;
+    color: #FF7247;
+}
+.commentarea .panestack-title {
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 0px;
+    border-right: 0px;
+    color: black;
+    overflow: hidden;
+}
+.res-nightmode .panestack-title {
+    background-color: #101010!Important;
+    border: 0px!Important;
+    border-left: 0px!Important;
+    border-right: 0px!Important;
+    color: #fff!Important;
+    box-shadow: 0 0px 5px rgba(22, 22, 22, 1)!Important;
+}
+/**Commentarea Sitetable**/
+
+.comments-page .sitetable {
+    margin-bottom: 5px;
+    border: 0px;
+}
+.res-nightmode .comments-page .sitetable {
+    background-color: transparent!Important;
+}
+/**Link Comment Area**/
+
+.link .usertext-body .md {
+	background-color: #F4F4F4;
+	border-radius: 5px;
+	border: 1px solid #DBDBDB;
+}
+.res-nightmode .link .usertext-body .md{
+	background-color: #333333!Important;
+	border: 1px solid #222!Important;
+}
+/**Link Info**/
+
+.single-page.comments-page .linkinfo {
+    background-color: #fff;
+    border-radius: 0px;
+    border: 0px;
+}
+.res-nightmode .single-page.comments-page .linkinfo {
+    background-color: #161616!Important;
+    box-shadow: 0 0px 8px rgba(22, 22, 22, 1)!Important;
+    border: 0px!Important;
+}
+/**Menu Area**/
+
+.menuarea {
+    overflow: hidden;
+    font-size: larger;
+    color: #444;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border: 0px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fff;
+}
+.res-nightmode .menuarea {
+    color: #eaeaea!Important;
+    background-color: #1F1F1F!Important;
+    border: 0px!Important;
+    box-shadow: none;
+}
+.menuarea .drop-choices.lightdrop {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.res-nightmode .menuarea .drop-choices.lightdrop {
+    background-color: #1D1D1D!Important;
+}
+.menuarea .drop-choices a.choice {
+    color: #444;
+    padding: 6px;
+}
+.res-nightmode .menuarea .drop-choices a.choice {
+    color: #eaeaea!Important;
+}
+.menuarea .drop-choices a.choice:hover {
+    color: #fff;
+    background-color: #FF7247;
+}
+.res-nightmode .menuarea .drop-choices a.choice:hover {
+    background-color: #181818!Important;
+}
+.gold-accent.comment-visits-box {
+    margin: 0px 5px 10px;
+}
+.menuarea .dropdown.lightdrop .selected {
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.res-nightmode .menuarea .dropdown.lightdrop .selected {
+    color: #eaeaea!Important;
+}
+.menuarea .dropdown.lightdrop .selected:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.res-nightmode .menuarea .dropdown.lightdrop .selected:hover {
+    color: #fff!Important;
+}
+.menuarea .flat-list li a {
+    color: #444;
+}
+.res-nightmode .menuarea .flat-list li a {
+    color: #ddd!Important;
+}
+.menuarea .flat-list li a:hover {
+    color: #000;
+}
+.res-nightmode .menuarea .flat-list li a:hover {
+    color: #eaeaea!Important;
+}
+
+.related-page .sitetable{overflow:hidden;}
+.related-page .commentarea .panestack-title{margin-bottom:5px;}
+
+/**EXPANDO BUTTONS**/
+/**Main CSS**/
+.expando-button,
+.expando-button.image,
+.expando-button.video-muted,
+.expando-button.video,
+.expando-button.video.collapsed,
+.expando-button.video.expanded,
+.expando-button.selftext.collapsed,
+.expando-button.selftext.expanded,
+.res-nightmode .expando-button.image,
+.res-nightmode .res .expando-button.image.collapsedExpando,
+.res-nightmode .res .expando-button.image.expanded,
+.res-nightmode .expando-button.video-muted,
+.res-nightmode .expando-button.video,
+.res-nightmode .expando-button.video.collapsed,
+.res-nightmode .expando-button.video.expanded,
+.res-nightmode .expando-button.selftext.collapsed,
+.res-nightmode .expando-button.selftext.expanded{
+    max-width: 20px!Important;
+    max-height: 20px!Important;
+    background-image: url(%%spritesheet%%)!important;
+    cursor: pointer;
+    border-radius: 3px;
+	margin: 5px 5px;
+}
+/**Expandos Styling**/
+/**Collapsed Styling **/
+.expando-button.video.collapsed,
+.expando-button.selftext.collapsed,
+.res .expando-button.image.collapsedExpando,
+.res .expando-button.image.gallery.collapsedExpando,
+.res .expando-button.video-muted.collapsed {
+    background-color: #fff;
+    box-shadow: 0px 0px 1px #C0C0C0;
+}
+/**Expanded Styling**/
+.expando-button.video.expanded,
+.expando-button.selftext.expanded,
+.res .expando-button.image.expanded,
+.res .expando-button.image.gallery.expanded,
+.res .expando-button.video-muted.expanded,
+.res .expando-button.selftext.expanded {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 1px #696969;
+}
+/** Collapsed Hover Styling**/
+.expando-button.video.collapsed:hover,
+.expando-button.selftext.collapsed:hover,
+.res .expando-button.image.collapsedExpando:hover,
+.res .expando-button.image.gallery.collapsedExpando:hover,
+.res .expando-button.video-muted.collapsed:hover {
+    box-shadow: 0px 0px 2px #C0C0C0;
+    background-color: #F2F2F2;
+    max-width: 20px;
+}
+/**Expandos Backround Image**/
+/**Image**/
+.res .expando-button.image.collapsedExpando,
+.res .expando-button.image.collapsedExpando:hover,
+.res .expando-button.image.expanded {
+    background-position: -40px -217px!important;
+}
+/**Image Gallery**/
+.res .expando-button.image.gallery.collapsedExpando,
+.res .expando-button.image.gallery.expanded,
+.res .expando-button.image.gallery {
+    background-position: -100px -217px!important;
+}
+/**Video & Video Muted**/
+
+.expando-button.video.collapsed,
+.res .expando-button.video.collapsed,
+.res .expando-button.video-muted.collapsed
+{
+    background-position: 0px -217px!important;
+}
+.expando-button.video.expanded,
+.res .expando-button.video.expanded,
+.res .expando-button.video-muted.expanded
+{
+    background-position: -20px -217px!important;
+}
+/**Self Posts**/
+.expando-button.selftext.collapsed
+{
+	background-position: -60px -217px!important;
+}
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover
+{
+    background-position: -80px -217px!important;
+}
+
+/*Nightmode Expandos*/
+
+/**Expandos Styling**/
+/**Collapsed Styling **/
+.res-nightmode .expando-button.video.collapsed,
+.res-nightmode .expando-button.selftext.collapsed,
+.res-nightmode .res .expando-button.image.collapsedExpando,
+.res-nightmode .res .expando-button.image.gallery.collapsedExpando,
+.res-nightmode .res .expando-button.video-muted.collapsed {
+	background-color: #444;
+	box-shadow: 0px 0px 1px #222;
+}
+/**Expanded Styling**/
+.res-nightmode .expando-button.video.expanded,
+.res-nightmode .expando-button.selftext.expanded,
+.res-nightmode .res .expando-button.image.expanded,
+.res-nightmode .res .expando-button.image.gallery.expanded,
+.res-nightmode .res .expando-button.video-muted.expanded,
+.res-nightmode .res .expando-button.selftext.expanded {
+	background-color: #333;
+	box-shadow: 0px 0px 1px #161616;
+}
+/** Collapsed Hover Styling**/
+.res-nightmode .expando-button.video.collapsed:hover,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+.res-nightmode .res .expando-button.image.collapsedExpando:hover,
+.res-nightmode .res .expando-button.image.gallery.collapsedExpando:hover,
+.res-nightmode .res .expando-button.video-muted.collapsed:hover {
+	background-color: #333;
+	box-shadow: 0px 0px 1px #161616;
+}
+/**Expandos Backround Image**/
+/**Image**/
+.res-nightmode .res .expando-button.image.collapsedExpando,
+.res-nightmode .res .expando-button.image.collapsedExpando:hover,
+.res-nightmode .res .expando-button.image.expanded {
+    background-position: -40px -237px!important;
+}
+/**Image Gallery**/
+.res-nightmode .res .expando-button.image.gallery.collapsedExpando,
+.res-nightmode .res .expando-button.image.gallery.expanded,
+.res-nightmode .res .expando-button.image.gallery {
+    background-position: -100px -237px!important;
+}
+/**Video & Video Muted**/
+
+.res-nightmode .expando-button.video.collapsed,
+.res-nightmode .res .expando-button.video.collapsed,
+.res-nightmode .res .expando-button.video-muted.collapsed
+{
+    background-position: 0px -237px!important;
+}
+.res-nightmode .expando-button.video.expanded,
+.res-nightmode .res .expando-button.video.expanded,
+.res-nightmode .res .expando-button.video-muted.expanded
+{
+    background-position: -20px -237px!important;
+}
+/**Self Posts**/
+.res-nightmode .expando-button.selftext.collapsed
+{
+	background-position: -60px -237px!important;
+}
+.res-nightmode .expando-button.selftext.expanded,
+.res-nightmode .expando-button.selftext.expanded:hover
+{
+    background-position: -80px -237px!important;
+}
+/**Comment Area Styling**/
+
+.commentarea .expando-button.video.collapsed,
+.commentarea .expando-button.selftext.collapsed,
+.res .commentarea .expando-button.image.collapsedExpando,
+.res .commentarea .expando-button.image.gallery.collapsedExpando,
+.res .commentarea .expando-button.video-muted.collapsed ,
+.commentarea  .expando-button.video.expanded,
+.commentarea  .expando-button.selftext.expanded,
+.res .commentarea .expando-button.image.expanded,
+.res .commentarea .expando-button.image.gallery.expanded,
+.res .commentarea .expando-button.video-muted.expanded,
+.res .commentarea .expando-button.selftext.expanded,
+.commentarea  .expando-button.video.collapsed:hover,
+.commentarea  .expando-button.selftext.collapsed:hover,
+.commentarea  .res .expando-button.image.collapsedExpando:hover,
+.commentarea  .res .expando-button.image.gallery.collapsedExpando:hover,
+.commentarea  .res .expando-button.video-muted.collapsed:hover ,
+.commentarea  .expando-button.video.expanded:hover,
+.commentarea  .expando-button.selftext.expanded:hover,
+.res .commentarea .expando-button.image.expanded:hover,
+.res .commentarea .expando-button.image.gallery.expanded:hover,
+.res .commentarea .expando-button.video-muted.expanded:hover,
+.res .commentarea .expando-button.selftext.expanded:hover 
+{
+    background-color: transparent!Important;
+    border: 0!Important;
+	vertical-align:middle!Important;
+	box-shadow: none!Important;
+	margin: 0px 2px!Important;
+}
+/**END EXPANDO BUTTONS**/
+
+/**Button**/
+.btn,button {
+    border-radius: 4px;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin: 2px 5px 2px 0px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    border: 0px!Important;
+    outline: none;
+    opacity: 1.0;
+    background-color: #FF7247;
+    -webkit-box-shadow: 0px 3px 0px #D75A41;
+    -moz-box-shadow: 0px 3px 0px #D75A41;
+    box-shadow: 0px 3px 0px #D75A41;
+}
+.btn:hover,
+button:hover {
+    opacity: 0.9;
+}
+.btn:active,
+button:active {
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    box-shadow: 0px 1px 0px 0px;
+}
+#subreddit_stylesheet > div.sheets > div.col > div > div > span > a{color:#fff;}
+.c-btn-primary,
+.organic-listing .nextprev .arrow.next,
+.organic-listing .nextprev .arrow.prev {
+    box-shadow: none;
+    background-color: transparent
+}
+.login-form-side .submit,
+.res-nightmode .login-form-side .submit {
+    background-color: transparent!Important;
+}
+.content .RESBigEditorPop {
+    background-color: #DADADA;
+    box-shadow: none;
+}
+/**Nightmode Button**/
+
+.res-nightmode .btn,
+.res-nightmode button {
+    color: #fafafa!Important;
+    background-color: #373737!Important;
+    -webkit-box-shadow: 0px 3px 0px 0px #5E5E5E;
+    -moz-box-shadow: 0px 3px 0px 0px #5E5E5E;
+    box-shadow: 0px 3px 0px 0px #5E5E5E;
+    opacity: 1.0;
+}
+.res-nightmode .btn:hover,
+.res-nightmode button:hover {
+    opacity: 0.9;
+}
+.res-nightmode .btn:active,
+.res-nightmode button:active {
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    -webkit-box-shadow: 0px 1px 0px 0px #5E5E5E!Important;
+    -moz-box-shadow: 0px 1px 0px 0px #5E5E5E!Important;
+    box-shadow: 0px 1px 0px 0px #5E5E5E!Important;
+}
+/**End Button**/
+/**Submit Page**/
+
+.submit-page .roundfield textarea,
+.submit-page .roundfield input[type=text], 
+.submit-page .roundfield input[type=url],
+.submit-page .roundfield input[type=hidden]
+ {
+	border: 1px solid #E7E8EA;
+	background-color: #F9F9F9;
+}
+.submit-page div.content {
+    margin: 7px 5px 0px 15px;
+}
+
+.submit-page div.content > h1{
+	display:none;
+}
+
+.submit-page #newlink.submit.content {
+    width: 524px;
+    margin: 0px 0px 0px 15px;
+}
+.submit-page ul.tabmenu.formtab {
+    display: block;
+    font-size: larger;
+    padding-left: 0px;
+}
+.submit-page .formtabs-content {
+    width: 520px;
+    padding-top: 0px;
+    border-top: 0px;
+}
+.submit-page .roundfield {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #E2E2E2;
+}
+
+#newlink > div.formtabs-content > div:nth-child(6) > div{
+	background-color: #E0F2FF;
+	border: 1px solid #C1DEF2;
+	max-height: 1000px;
+}
+
+#newlink > div.formtabs-content > div:nth-child(7) > div{
+	background-color: #fbedad;
+	border: 1px solid #e3c758;
+}
+
+form .spacer+.spacer {
+  margin: 0px 0;
+}
+#newlink > div.formtabs-content > div:nth-child(1){
+	margin-bottom:15px;
+}
+.res-nightmode .submit-page .roundfield {
+    border: 1px solid #1F1F1F!Important;
+    background-color: #161616!Important;
+}
+.res-nightmode .submit_text .content p {
+    color: rgb(204, 204, 204);
+}
+.content.submit .info-notice {
+	background-color: #e0f2ff;
+	border: 1px solid #C1DEF2;
+}
+.submit-page #newlink.submit.content .tabmenu.formtab a {
+    padding: 12px;
+    width: 232px;
+    display: inline-block;
+    text-align: center;
+    background-color: #444;
+    color: #ededed;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    font-size: 16px;
+    border: none;
+    margin-right: 0px;
+}
+.res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab a {
+    background-color: #3A3A3A!Important;
+}
+.submit-page #newlink.submit.content .tabmenu.formtab .selected a {
+    padding: 16px;
+    font-size: 16px;
+    margin-right: 0px;
+    color: #fff;
+    background-color: #FF7247;
+}
+.res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a {
+    background-color: #161616!Important;
+}
+.submit-page div.infobar {
+    border: 0px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #FF7247;
+}
+.res-nightmode .submit-page .infobar {
+    background-color: #161616!Important;
+}
+/** Stickied Posts **/
+
+.thing.stickied a.title,
+.thing.stickied a,
+.thing.stickied .entry li .comments {
+    color: #228822!important;
+}
+/**Stickied link rank - thanks to /u/ggitaliano from /r/Carbon**/
+
+.link.stickied .rank {
+    position: relative;
+    visibility: visible;
+}
+.link.stickied .rank:after {
+    content: "S";
+    color: #228822;
+    margin-left: -1px;
+}
+/*Wiki*/
+
+.wiki-page .wiki-page-content {
+    background-color: #fff;
+    padding: 5px;
+    margin: 10px 15px 0 0;
+    overflow: hidden;
+}
+.res-nightmode .wiki-page .wiki-page-content {
+    background-color: #101010!Important;
+}
+.wiki-page .pageactions {
+    margin-top: 10px;
+}
+.wiki-page .wiki-page-content .wiki.md {
+    padding: 5px 10px;
+}
+.wiki-page .wiki-page-content .wiki>.toc>ul {
+    border: 0px;
+    padding: 8px 15px;
+    background-color: #fff;
+}
+.wiki-page-content .md h1 {
+    margin-top: 0.25em;
+    margin-bottom: 0.18125em;
+}
+/**Footer**/
+
+body>.debuginfo:after {
+    content: "CSS Theme from /r/Fring";
+    padding: 3px 0 0 5px;
+    float: left;
+    font-size: 11px;
+}
+.res-nightmode .footer {
+    border: 1px solid rgba(0, 0, 0, 0.20)!Important;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .1);
+    background: rgb(25, 25, 25);
+}
+.res-nightmode .footer a {
+    color: #bbb!Important;
+}
+.res-nightmode .footer a:hover {
+    color: #eaeaea!Important;
+}
+/**Reddit Enhancement Suite Fixes**/
+
+.res .search-page div.content{
+	margin-top:40px;
+}
+.res-nightmode .sidebox {
+    background-color: transparent!Important;
+    background: #202020!Important;
+}
+.res-nightmode #RESShortcuts {
+    color: #fff!Important;
+}
+html.res-commentBoxes .comment {
+    margin-left: 0!important;
+    margin-right: 0px!important;
+}
+.res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 0px!Important;
+}
+.res .titlebox>h1.redditname+div {
+    padding: 8px 15px;
+    border-top: 1px solid rgba(234, 234, 234, 0.4);
+    border-bottom: 1px solid rgba(234, 234, 234, 0.4);
+}
+#userbarToggle{
+	background-color: transparent!Important;
+	border: 0!Important;
+	left: 0px!Important;
+	border-radius: 0!Important;
+	border-top-left-radius: 7px!Important;
+	color: white!Important;
+	line-height:28px!Important;
+}
+#userbarToggle.userbarShow{
+	background-color: transparent!Important;
+	width: 18px!Important;
+	left: -2px!Important;
+}
+.res-nightmode #userbarToggle {
+    color: #B0B0B0!Important;
+    border-right: 1px solid rgba(0,0,0,0.2)!Important;
+}
+.res-nightmode .res .titlebox>h1.redditname+div {
+    border-top: 0px!Important;
+    border-bottom: 0px!Important;
+}
+.res #RESShortcutsEditContainer,
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash,
+.res #RESShortcutsLeft {
+    background: transparent!Important;
+    color: white!Important;
+    opacity: 0.9!Important;
+    height: 20px!Important;
+    line-height: 18px!Important;
+}
+.res-nightmode .res #RESShortcutsEditContainer,
+.res-nightmode .res #RESShortcutsSort,
+.res-nightmode .res #RESShortcutsRight,
+.res-nightmode .res #RESShortcutsAdd,
+.res-nightmode .res #RESShortcutsTrash,
+.res-nightmode .res #RESShortcutsLeft {
+    background-color: rgba(16, 16, 16, 1)!Important;
+    opacity: 0.9!Important;
+}
+.res #RESShortcutsEditContainer:hover,
+.res #RESShortcutsSort:hover,
+.res #RESShortcutsRight:hover,
+.res #RESShortcutsAdd:hover,
+.res #RESShortcutsTrash:hover,
+.res #RESShortcutsLeft:hover {
+    opacity: 1.0!Important;
+}
+.res-nightmode .side .md ul {
+    background-color: #161616!Important;
+}
+.res #srList{top:22px!Important;}
+/**End RES Fixes**/
+/**Login Form **/
+
+.res-nightmode .login-form-side {
+    background-color: #161616!Important;
+    border: 0px!Important;
+    box-shadow: 0 0px 4px rgba(22, 22, 22, 1)!Important;
+}
+.res-nightmode .login-form-side label {
+    color: #fff!Important;
+}
+.res-nightmode .login-form-side input[type=text],
+.res-nightmode .login-form-side input[type=password] {
+    background-color: #303030!Important;
+    color: #fff!Important;
+    border: 1px solid #242424!Important;
+}
+/**End Login Form**/
+/** ADS **/
+
+.organic-listing {
+    border: 0px;
+	margin-bottom: 0px;
+	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+}
+.organic-listing .link .rank {
+    display: none;
+}
+.link.promoted .rank {
+    display: none;
+}
+/**Hide Stuff **/
+
+.sidebox .spacer,
+.sidebox .subtitle,
+.sidebox .subtitle,
+.sidebox.create .spacer a {
+    display: none;
+}
+/*Additional Nightmode code*/
+
+.res-nightmode .md code,
+.res-nightmode .md pre {
+    background-color: #191919!Important;
+    color: #D3D3D3!Important;
+    border-color: rgba(0, 0, 0, 1)!Important;
+}
+.res-nightmode .new-comment .usertext-body {
+    background-color: rgb(42, 42, 42)!Important;
+    border-color: #121212!Important;
+}
+.res-nightmode .usertext-edit textarea {
+	background-color: #333!Important;
+	border: 1px solid #222!Important;
+}
+/**End Additional Nightmode code**/
+/*Reddit-Theme Specific CSS*/
+
+/** ToolBox - modtools **/
+.mod-toolbox .menuarea.modtools {
+    margin: 0px 320px 5px 0px!Important;
+    background-color: #93B2C7;
+    border: 1px solid #eaeaea;
+    border-top: 0px;
+}
+.res-nightmode .mod-toolbox #subredditsearch {
+    background: #161616!Important;
+    border-color: #161616;
+    color: #eaeaea;
+}
+.res-nightmode .mod-toolbox.res-nightmode #tb-search-suggest tr {} .res-nightmode #tb-search-suggest table {} .mod-toolbox .sidecontentbox ul a {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+/** Moderator Multi Page**/
+
+.multi-page .sitetable {
+    overflow: hidden;
+}
+.multi-page .content {
+    margin: 40px 15px 0px 15px;
+}
+.multi-page #header .pagename a {
+    position: relative;
+}
+.multi-page .menuarea {
+    margin-bottom: 0px;
+}
+.multi-page .hot-page .sitetable {
+    margin-top: 42px;
+    padding-top: 0px;
+}
+.multi-page .sidecontentbox .content {
+    margin: 0px!Important;
+}
+.multi-page .titlebox {
+    padding-bottom: 10px;
+}
+.multi-page .comment,
+.content .details {
+    padding: 10px 10px 10px 8px;
+}
+.multi-page .menuarea .drop-choices.lightdrop {
+    left: 62px;
+    width: 140px;
+}
+.multi-page .link .rank {
+    display: none;
+}
+.multi-page .filtered-details .unfilter {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.multi-page .titlebox p {
+    margin-left: 10px;
+}
+.multi-page .sidecontentbox .title {
+    color: rgb(5, 5, 5);
+    padding: 5px;
+    margin: 0px;
+    font-size: 12px;
+    box-shadow: none;
+    background: none;
+}
+.multi-page .sidecontentbox .title h1 .multi-page #header .pagename a:before {
+    display: none;
+    content: none;
+}
+.multi-page .listing-page .side div.titlebox .redditname a:before {
+    display: none;
+    content: none;
+}
+/** Multi Reddit Fix**/
+
+body.with-listing-chooser .listing-chooser {
+    top: 80px;
+    z-index: 100;
+}
+body.with-listing-chooser #header .tabmenu li:first-child.selected{margin-left:0;}
+.with-listing-chooser #header .tabmenu {
+    left: 140px;
+}
+.listing-chooser-collapsed #header .tabmenu {
+    left: 25px;
+}
+
+body.with-listing-chooser.listing-chooser-collapsed>.content, body.with-listing-chooser.listing-chooser-collapsed .footer-parent {
+  margin-left: 25px;
+}
+
+/**Trending Subreddits**/
+
+.trending-subreddits {
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding: 8px;
+    margin-left: 0px;
+    border: 0px;
+    border-top: 0px;
+    text-align: center;
+    color: #444;
+    background-color: #fff;
+	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+}
+.res-nightmode .trending-subreddits {
+    background-color: #161616!Important;
+}
+/**Messages Page**/
+
+.messages-page .sitetable {
+    margin-right: 0px;
+    border: 0px;
+    border-top: 0px;
+    background-color: #fff;
+}
+.res-nightmode .messages-page .sitetable {
+    background-color: transparent!Important;
+}
+.messages-page #header-bottom-left .tabmenu.tabmenu {
+    right: 15px;
+}
+.messages-page .menuarea {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.messages-page .content {
+    margin: 40px 15px 20px 15px
+}
+.messages-page .sitetable .nav-buttons {
+    border-left: 0px;
+    border-right: 0px;
+}
+.message {
+    padding-left: 5px;
+    margin: 0px 0px 10px 0px;
+    padding: 7px;
+    border: 1px solid #eaeaea;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+.res-nightmode .message {
+    border: 0px!Important;
+}
+.messages-page .menuarea .flat-list li.selected a{color: orangered;}
+
+.message.message-reply .entry, .message.message-parent .entry{
+margin-left:0px;
+border-left:0px;
+}
+
+.message.message-parent .child, .message.message-reply .child{
+margin-left: 15px;
+}
+
+.messages-page .sitetable .listing{
+border:0px;
+box-shadow: none;
+}	
+
+.messages-page .message.message-parent .child .message, .message.message-reply .child .message{
+border:0px;
+margin-top: 10px;
+}
+
+.profile-page .comment,
+.res-commentBoxes .comment {
+    margin-bottom: 0px!Important;
+}
+.profile-page .titlebox {
+    padding: 5px 10px;
+}
+.res-nightmode .profile-page .titlebox h1 {
+    border: 0px;
+}
+
+.profile-page .sidecontentbox .title h1 {
+    color: #444;
+}
+.profile-page .side div.sidecontentbox a.helplink {
+    font-size: 12px;
+    background-image: none;
+    color: #4286D0;
+    margin: 0px;
+    padding: 0px;
+    width: initial;
+    height: initial;
+    opacity: 1.0;
+    top: 10px;
+    right: 2px;
+    opacity: 1.0;
+}
+.profile-page .side div.sidecontentbox a.helplink:hover {
+    color: #3074be;
+}
+.profile-page .side div.sidecontentbox a.helplink:hover:after {
+    display: none;
+}
+.profile-page .last-clicked.link:not(:first-child),
+.link:not(:first-child),
+.linklisting>.comment:not(:first-child) {
+    padding: 8px 8px;
+}
+.profile-page .comment,
+.content .details {
+    padding: 10px 10px 10px 8px;
+}
+.res-nightmode .profile-page .comment {
+    margin-bottom: 0px!Important;
+    background-color: #161616!Important;
+    border-bottom: 1px solid rgba(31, 31, 31, 1)!Important;
+}
+.res-nightmode .gold-accent.snoovatar-link,
+.res-nightmode .gold-bubble,
+.res-nightmode .gold-accent {
+    background: -webkit-linear-gradient(top, #ccac00, #998100);
+    background: -moz-linear-gradient(top, #ccac00, #998100);
+    background: -o-linear-gradient(top, #ccac00, #998100);
+    background: -ms-linear-gradient(top, #ccac00, #998100);
+    background: linear-gradient(top, #ccac00, #998100);
+    background-color: #ccac00;
+    border: 0px;
+}
+.res-nightmode .gold-accent.snoovatar-link a,
+.res-nightmode div.rounded.gold-accent.gold-expiration-info > div.gold-remaining > a {
+    color: #eaeaea;
+}
+.res-nightmode div.rounded.gold-accent.gold-expiration-info > .res-nightmode div.gold-remaining,
+.res-nightmode .gold-expiration-info .gold-remaining+div {
+    color: #444!Important;
+}
+.res-nightmode .goldvertisement .inner {
+    border: 0px solid #161616;
+}
+.res-nightmode .goldvertisement {
+    background: -webkit-linear-gradient(top, #caab00, #9a8200);
+    background-color: #ccac00;
+    box-shadow: 0 0 10px #C6B280 inset;
+    border: 0px;
+    border-radius: 4px
+}
+.res-nightmode .server-seconds {
+    background-color: #161616!Important;
+    border: 0px;
+}
+
+/*-------------------------------------------------------------------------------------------------------
+------------------Add your Custom CSS Below Here--------*/
+
