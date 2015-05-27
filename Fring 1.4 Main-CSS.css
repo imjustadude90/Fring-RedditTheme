@@ -1371,6 +1371,28 @@ background-repeat: no-repeat
 	padding-left: 4px;
 }
 
+/*Nightmode Thumbnails*/
+.res-nightmode .thumbnail.self {
+    background: #202020 url(%%spritesheet%%) -128px 0px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.res-nightmode .thumbnail.default {
+    background: #202020 url(%%spritesheet%%) -127px -120px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.res-nightmode .thing.stickied a.thumbnail {
+    background: #202020 url(%%spritesheet%%) -128px -60px no-repeat;
+	height: 60px; width:60px;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 /** Thing **/
 
 .entry {
