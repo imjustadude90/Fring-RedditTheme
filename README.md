@@ -11,7 +11,6 @@ How to install the theme.
 1. Go to the stylesheet page on your subreddit, go to your subreddit and click on the "edit stylesheet" link in the moderation tools sidebar box. 
 2. Upload the image(s) from the images folder to your stylesheet. 
 3. Copy the CSS from Fring 1 Main-CSS.css and paste it into the the stylesheet page on reddit. 
-4. Paste this link >[](#/RES_SR_Config/NightModeCompatible) in your sidebar information so that RES Nightmode knows that your sub is compatible.
 
 If you want to customize the theme for your subreddit go to http://www.reddit.com/r/Fring/wiki/customize and follow the instructions for each different addon. I'm always updating the theme, so make sure you are subscribed to /r/Fring so that you don't miss any important updates. 
 
