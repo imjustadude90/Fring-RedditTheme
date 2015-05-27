@@ -1922,6 +1922,9 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	box-shadow: none!Important;
 	margin: 0px 2px!Important;
 }
+
+.profile-page .comment .expando-button{margin: 0px 3px 5px 5px!Important;vertical-align: middle!Important;}
+
 /**END EXPANDO BUTTONS**/
 
 /**Button**/
