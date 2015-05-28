@@ -1,7 +1,7 @@
 /*
 			Version 1.4
 			Stylesheet by Imjustadude90
-			Last modified: 27 MAY 2015
+			Last modified: 28 MAY 2015
 
 			--------------------------------------------------------------------------
             [Changelog]
@@ -18,8 +18,8 @@ body {
     background-color: #F0F0F0;
     margin: 0 auto;
 }
-.res-nightmode .res {
-    background-color: #202020;
+.res-nightmode body {
+    background-color: #202020!important;
 }
 .entry .buttons li a {
     font-weight: normal;
@@ -72,6 +72,7 @@ body {
 #sr-header-area .width-clip {
     right: 50px;
 }
+#RESShortcuts{color:white;}
 #RESShortcutsViewport {
     margin-right: 65px!Important;
 }
@@ -147,7 +148,7 @@ body {
     -moz-background-size: cover!Important;
     -o-background-size: cover!Important;
     background-size: cover!Important;
-	height:80px;
+	height:85px;
 }
 .res-nightmode #header {
     background-color: #161616!Important;
@@ -158,10 +159,11 @@ body {
 #header-img.default-header {
 	position: absolute;
 	margin-left: 5px;
+	margin-bottom: -3px;
     background: url(%%spritesheet%%) -127px -239px no-repeat;
 	opacity: 1.0;
 	padding-left: 60px;
-	height: 54px;
+	height: 60px;
 	width: 0;
 	display: inline-block;
 	bottom: 0px;
@@ -189,7 +191,7 @@ body {
 	display: inline-block;
 	position: absolute;
 	margin-top: -10px;
-	margin-left: 70px;
+	margin-left: 65px;
 	color: #fff;
 	text-shadow: 0px 1px 2px rgba(0,0,0,0.55);
 }
@@ -360,15 +362,15 @@ body {
     padding: 6px 10px;
 	border-right:1px solid rgba(219, 219, 219, 0.3);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+	-webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
 }
 .res-nightmode .tabmenu li a{border-right: 1px solid rgba(0, 0, 0, 0.3)!Important}
 .tabmenu li a:hover {
     color: #FF7247;
 	background-color: #fff;
-    -webkit-transition: all 0.1s ease;
-    -moz-transition: all 0.1s ease;
-    -o-transition: all 0.1s ease;
-    transition: all 0.1s ease;
 }
 .res-nightmode .tabmenu li a {
     background-color: transparent!Important;
@@ -1370,7 +1372,7 @@ background-repeat: no-repeat
 	color: white;
 	padding-left: 4px;
 }
-
+.res-nightmode .nsfw-stamp{color:white!Important}
 /*Nightmode Thumbnails*/
 .res-nightmode .thumbnail.self {
     background: #202020 url(%%spritesheet%%) -128px 0px no-repeat;
@@ -1665,7 +1667,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 }
 .res-nightmode .menuarea {
     color: #eaeaea!Important;
-    background-color: #1F1F1F!Important;
+    background-color: #161616!Important;
     border: 0px!Important;
     box-shadow: none;
 }
@@ -1923,44 +1925,10 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
 	margin: 0px 2px!Important;
 }
 
-.profile-page .comment .expando-button{margin: 0px 3px 5px 5px!Important;vertical-align: middle!Important;}
+.profile-page .comment .expando-button, .mutli-page .comment .expando-button{margin: 0px 3px 5px 5px!Important;vertical-align: middle!Important;}
 
 /**END EXPANDO BUTTONS**/
 
-/**Button**/
-.btn,button {
-    border-radius: 4px;
-    padding: 4px 10px;
-    text-decoration: none;
-    margin: 2px 5px 2px 0px;
-    color: #fff;
-    position: relative;
-    display: inline-block;
-    border: 0px!Important;
-    outline: none;
-    opacity: 1.0;
-    background-color: #FF7247;
-    -webkit-box-shadow: 0px 3px 0px #D75A41;
-    -moz-box-shadow: 0px 3px 0px #D75A41;
-    box-shadow: 0px 3px 0px #D75A41;
-}
-.btn:hover,
-button:hover {
-    opacity: 0.9;
-}
-.btn:active,
-button:active {
-    transform: translate(0px, 3px);
-    -webkit-transform: translate(0px, 3px);
-    box-shadow: 0px 1px 0px 0px;
-}
-#subreddit_stylesheet > div.sheets > div.col > div > div > span > a{color:#fff;}
-.c-btn-primary,
-.organic-listing .nextprev .arrow.next,
-.organic-listing .nextprev .arrow.prev {
-    box-shadow: none;
-    background-color: transparent
-}
 .login-form-side .submit,
 .res-nightmode .login-form-side .submit {
     background-color: transparent!Important;
@@ -1980,18 +1948,7 @@ button:active {
     box-shadow: 0px 3px 0px 0px #5E5E5E;
     opacity: 1.0;
 }
-.res-nightmode .btn:hover,
-.res-nightmode button:hover {
-    opacity: 0.9;
-}
-.res-nightmode .btn:active,
-.res-nightmode button:active {
-    transform: translate(0px, 3px);
-    -webkit-transform: translate(0px, 3px);
-    -webkit-box-shadow: 0px 1px 0px 0px #5E5E5E!Important;
-    -moz-box-shadow: 0px 1px 0px 0px #5E5E5E!Important;
-    box-shadow: 0px 1px 0px 0px #5E5E5E!Important;
-}
+
 /**End Button**/
 /**Submit Page**/
 
@@ -2002,6 +1959,14 @@ button:active {
  {
 	border: 1px solid #E7E8EA;
 	background-color: #F9F9F9;
+}
+.res-nightmode .submit-page .roundfield textarea,
+.res-nightmode .submit-page .roundfield input[type=text], 
+.res-nightmode .submit-page .roundfield input[type=url],
+.res-nightmode .submit-page .roundfield input[type=hidden]
+ {
+	border: 1px solid #373737!Important;
+	background-color: #202020!Important;
 }
 .submit-page div.content {
     margin: 7px 5px 0px 15px;
@@ -2281,7 +2246,9 @@ html.res-commentBoxes .comment {
     display: none;
 }
 /*Additional Nightmode code*/
-
+.res-nightmode .md textarea, .res-nightmode .md .-text, .res-nightmode .md p, .res-nightmode .md pre>code, .res-nightmode .md th, .res-nightmode .md td, .res-nightmode .md li{
+	color:#eaeaea;
+}
 .res-nightmode .md code,
 .res-nightmode .md pre {
     background-color: #191919!Important;
@@ -2301,28 +2268,26 @@ html.res-commentBoxes .comment {
 
 /** ToolBox - modtools **/
 .mod-toolbox .menuarea.modtools {
-    margin: 0px 320px 5px 0px!Important;
-    background-color: #93B2C7;
-    border: 1px solid #eaeaea;
-    border-top: 0px;
+	margin: 0px 310px 0px 0px!Important;
+	border:0;
+	height:auto!Important;
 }
-.res-nightmode .mod-toolbox #subredditsearch {
-    background: #161616!Important;
-    border-color: #161616;
-    color: #eaeaea;
+
+.mod-toolbox .pretty-button{
+	margin: 0 5px;
+	padding: 0px 5px;
+	line-height: 15px;
 }
-.res-nightmode .mod-toolbox.res-nightmode #tb-search-suggest tr {} .res-nightmode #tb-search-suggest table {} .mod-toolbox .sidecontentbox ul a {
+
+.mod-toolbox .sidecontentbox ul a {
     padding: 0px;
-    margin: 0px;
+    margin: 0px 5px;
     font-size: 12px;
 }
-/** Moderator Multi Page**/
+/** Multi Page**/
 
 .multi-page .sitetable {
     overflow: hidden;
-}
-.multi-page .content {
-    margin: 40px 15px 0px 15px;
 }
 .multi-page #header .pagename a {
     position: relative;
@@ -2344,21 +2309,16 @@ html.res-commentBoxes .comment {
 .content .details {
     padding: 10px 10px 10px 8px;
 }
-.multi-page .menuarea .drop-choices.lightdrop {
-    left: 62px;
-    width: 140px;
-}
-.multi-page .link .rank {
-    display: none;
-}
+
 .multi-page .filtered-details .unfilter {
     margin-left: 10px;
     margin-bottom: 5px;
 }
 .multi-page .titlebox p {
     margin-left: 10px;
+	margin-top:5px;
 }
-.multi-page .sidecontentbox .title {
+.subscription-box .title {
     color: rgb(5, 5, 5);
     padding: 5px;
     margin: 0px;
@@ -2366,6 +2326,25 @@ html.res-commentBoxes .comment {
     box-shadow: none;
     background: none;
 }
+.multi-page .side .subscribe-button a.add,
+.multi-page .side .subscribe-button a.remove
+{
+	font-size: 10px!important;
+}
+
+.multi-page .subscription-box li{margin-bottom:0;}
+
+.multi-page .RESDashboardToggle,
+.multi-page .RESDashboardToggle:hover,
+.multi-page .RESshortcutside,
+.multi-page .RESshortcutside:hover
+ {
+	background: none;
+	box-shadow: none;
+	width: auto;
+	margin: 0px auto;
+}
+
 .multi-page .sidecontentbox .title h1 .multi-page #header .pagename a:before {
     display: none;
     content: none;
@@ -2374,10 +2353,14 @@ html.res-commentBoxes .comment {
     display: none;
     content: none;
 }
+ul.report-reasons{margin-top:5px;}
+
+.thing.spam{background-color: #fa8072!Important;}
+.multi-page .link .entry .buttons li a.comments{color:#369!important;}
 /** Multi Reddit Fix**/
 
 body.with-listing-chooser .listing-chooser {
-    top: 80px;
+    top: 85px;
     z-index: 100;
 }
 body.with-listing-chooser #header .tabmenu li:first-child.selected{margin-left:0;}
@@ -2392,6 +2375,27 @@ body.with-listing-chooser.listing-chooser-collapsed>.content, body.with-listing-
   margin-left: 25px;
 }
 
+/*Multi Page*/
+
+.multi-details h2, .filtered-details h2,
+.multi-details .description, .filtered-details .description,
+.multi-details .settings, .filtered-details .settings,
+.multi-details h3, .filtered-details h3,
+.multi-page .side .recommend-box h1,
+.multi-page .side .recommend-box .more
+{
+	padding:0px 5px;
+}
+.multi-page .side .titlebox .bottom{
+	padding: 8px 5px;
+	border-bottom: 1px solid rgba(234,234,234,0.4);
+}
+
+.multi-details h2{
+	padding: 5px;
+}
+.res .multi-page .content {margin-top:40px;}
+.multi-page .link .rank{display:none!Important;}
 /**Trending Subreddits**/
 
 .trending-subreddits {
@@ -2411,6 +2415,7 @@ body.with-listing-chooser.listing-chooser-collapsed>.content, body.with-listing-
 .res-nightmode .trending-subreddits {
     background-color: #161616!Important;
 }
+.res-nightmode .trending-subreddits li a:hover{color:#4980B6; text-decoration:underline;}
 /**Messages Page**/
 
 .messages-page .sitetable {
@@ -2549,6 +2554,7 @@ margin-top: 10px;
     background-color: #161616!Important;
     border: 0px;
 }
+
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
