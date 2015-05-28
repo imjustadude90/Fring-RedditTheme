@@ -1937,19 +1937,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
     background-color: #DADADA;
     box-shadow: none;
 }
-/**Nightmode Button**/
 
-.res-nightmode .btn,
-.res-nightmode button {
-    color: #fafafa!Important;
-    background-color: #373737!Important;
-    -webkit-box-shadow: 0px 3px 0px 0px #5E5E5E;
-    -moz-box-shadow: 0px 3px 0px 0px #5E5E5E;
-    box-shadow: 0px 3px 0px 0px #5E5E5E;
-    opacity: 1.0;
-}
-
-/**End Button**/
 /**Submit Page**/
 
 .submit-page .roundfield textarea,
