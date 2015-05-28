@@ -1515,7 +1515,7 @@ background-repeat: no-repeat
 .commentarea {} .commentarea .panestack-title {
     border-bottom: 0px;
 }							
-/* nested commentary boxes - Thanks to /u/creesch :) */
+/* nested commentary boxes - Thanks to /u/creesch */
 
 .sitetable.nestedlisting>.comment, .res .sitetable.nestedlisting>.comment {
     border: 0!important;
@@ -2504,7 +2504,7 @@ margin-top: 10px;
 .content .details {
     padding: 10px 10px 10px 8px;
 }
-.res-nightmode .profile-page .comment {
+.res-nightmode .profile-page .comment, .res-nightmode .multi-page  .comment {
     margin-bottom: 0px!Important;
     background-color: #161616!Important;
     border-bottom: 1px solid rgba(31, 31, 31, 1)!Important;
