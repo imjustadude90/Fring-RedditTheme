@@ -1429,9 +1429,7 @@ background-repeat: no-repeat
   background-position: -53px -75px;
 }
 
-.md code{
-	border:0;
-	background: #F9F9F9 url:;
+.md > pre > code, .md > p > code{
 	font-family: "Courier New", Courier, monospace;
 	font-weight: normal;
 	font-style: normal;
@@ -1442,16 +1440,15 @@ background-repeat: no-repeat
 	position: relative;
 }
 
-.md code:before{
+.md > pre > code:before{
 	content: "";
-	position: relative;
+	position: absolute;
 	margin: 0px 0px;
 	right: 0px;
-	float: right;
 	width: 32px;
 	height: 17px;
 	background: url(%%spritesheet%%) no-repeat;
-	background-position: -82px -75px;
+	background-position: -124px -102px;
 }
 
 .md code, .md pre{
