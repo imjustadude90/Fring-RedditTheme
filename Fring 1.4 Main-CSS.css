@@ -1441,9 +1441,7 @@ background-repeat: no-repeat
   background-position: -53px -75px;
 }
 
-.md code{
-	border:0;
-	background: #F9F9F9 url:;
+.md > pre > code, .md > p > code {
 	font-family: "Courier New", Courier, monospace;
 	font-weight: normal;
 	font-style: normal;
@@ -1454,7 +1452,7 @@ background-repeat: no-repeat
 	position: relative;
 }
 
-.md code:before{
+.md > pre > code:before{
 	content: "";
 	position: relative;
 	margin: 0px 0px;
