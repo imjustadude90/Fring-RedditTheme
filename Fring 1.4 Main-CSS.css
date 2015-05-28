@@ -116,20 +116,21 @@ body {
 #sr-header-area .dropdown.srdrop .selected,
 .res #sr-header-area #srDropdownContainer a {
     background-image: url(%%spritesheet%%);
-    background-position: -2px -57px;
+    background-position: 0px -57px;
     background-repeat: no-repeat!important;
-    width: 16px;
-    height: 15px;
+    width: 14px;
+    height: 13px;
     display: block;
-    margin: 3px 0px 0px 0px;
+    margin: 4px 0px 0px 3px;
     padding: 0;
     line-height: 18px;
     cursor: pointer;
     text-indent: -999em;
 }
-#sr-header-area .dropdown.srdrop .selected:hover,
-.res #sr-header-area #srDropdownContainer a:hover {
-    opacity: 0.8;
+#sr-header-area .dropdown.srdrop .selected:active,
+.res #sr-header-area #srDropdownContainer a:active {
+	background-image: url(%%spritesheet%%);
+    background-position: -14px -57px;
 }
 .sr-bar a.gold {
     color: #e5c100!Important;
@@ -216,7 +217,7 @@ body {
     position: absolute;
     right: 0px;
     border-top-left-radius: 7px;
-    font-size: 12px;
+    font-size: 11px;
 	background-color: rgba(0, 0, 0, 0.1);
 	line-height: 20px;
 	height: 20px!important;
@@ -1263,6 +1264,18 @@ background-repeat: no-repeat
 	color:#FF7247;
 	font-weight:600;
 }
+/*Spam*/
+#siteTable > .spam.link > .entry .buttons li a.comments{color:#2677C8;}
+#siteTable > .spam.link > .entry .buttons li a{color:#222;}
+.res.res-nightmode .linklisting .spam.link{
+	border: 0;
+	border-left: 3px solid #fa8072!Important;
+}
+.res-nightmode #siteTable > .spam.link > .entry .buttons li a{color:inherit;}
+.res-nightmode #siteTable > .reported.link{
+	border: 0;
+	border-left: 3px solid rgb(218,165,32);
+}
 
 .linklisting .link {
     margin: 0px;
@@ -1368,7 +1381,7 @@ background-repeat: no-repeat
 }
 .nsfw-stamp {
 	border: 0px!Important;
-	background-color: #d10023;
+	background-color: #FF0000;
 	color: white;
 	padding-left: 4px;
 }
@@ -2144,7 +2157,7 @@ html.res-commentBoxes .comment {
 	border-radius: 0!Important;
 	border-top-left-radius: 7px!Important;
 	color: white!Important;
-	line-height:28px!Important;
+	line-height:30px!Important;
 }
 #userbarToggle.userbarShow{
 	background-color: transparent!Important;
