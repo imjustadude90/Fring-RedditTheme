@@ -1424,7 +1424,7 @@ background-repeat: no-repeat
 	margin: 10px 15px;
 	font-weight: 300;
 	font-style: italic;
-	text-indent: 35px;
+	text-indent: 10px;
 }
 .res-nightmode .commentarea .md blockquote, .res-nightmode  .link .usertext-body .md blockquote{
 	color:#BBB;
@@ -1433,7 +1433,7 @@ background-repeat: no-repeat
 }
 .commentarea .md blockquote:before, .link .usertext-body .md blockquote:before {
   content: "";
-  position: absolute;
+  float:left;
   margin: 0px 0px;
   width: 28px;
   height: 21px;
