@@ -1,7 +1,7 @@
 /*
 			Version 1.4
 			Stylesheet by Imjustadude90
-			Last modified: 28 MAY 2015
+			Last modified: 29 MAY 2015
 
 			--------------------------------------------------------------------------
             [Changelog]
@@ -20,9 +20,6 @@ body {
 }
 .res-nightmode body {
     background-color: #202020!important;
-}
-.entry .buttons li a {
-    font-weight: normal;
 }
 .pref-lang {
     font-weight: normal;
@@ -121,7 +118,7 @@ body {
     width: 14px;
     height: 13px;
     display: block;
-    margin: 3px 0px 0px 0px;
+    margin: 4px 0px 0px 2px;
     padding: 0;
     line-height: 18px;
     cursor: pointer;
@@ -217,7 +214,6 @@ body {
     position: absolute;
     right: 0px;
     border-top-left-radius: 7px;
-    font-size: 12px;
 	background-color: rgba(0, 0, 0, 0.1);
 	line-height: 20px;
 	height: 20px!important;
@@ -247,10 +243,11 @@ body {
 #header-bottom-right .user a {
     color: #f6f6f6;
     text-decoration: none;
+	font-size: 11px;
 }
 #header-bottom-right .user a:hover {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 #header-bottom-right .separator {
     color: transparent;
@@ -289,10 +286,9 @@ body {
 }
 #RESMainGearOverlay {
 	background-image: none!important;
-	margin: 2px 2px 2px 1px!Important;
+	margin: 1px 2px 2px 0px!Important;
 	width: 30px!Important;
 	padding: 0!Important;
-	border: 0!Important;
 }
 /**Mail**/
 
@@ -947,31 +943,21 @@ form#search {
     box-shadow: 0px 4px 0px #333;
 }
 #search input[type=submit] {
-	background: #FF7247;
     background-image: url(%%spritesheet%%);
-	background-position: -6px -113px;
+	background-position: 0px -102px;
     background-repeat: no-repeat;
-    height: 25px;
-    width: 30px;
+	height: 30px;
+	width: 30px;
     vertical-align: middle;
     outline: none;
     position: relative;
     right: 15px;
     margin-top: 0px;
-    border-radius: 3px;
 }
 #search input[type=submit]:hover {
-	-webkit-box-shadow: 0px 0px 3px #999999;
-	-moz-box-shadow: 0px 0px 3px #999999;
-	box-shadow: 0px 0px 3px #999999;
-	background-image: url(%%spritesheet%%);
-	background-position: -6px -113px;
+    background-image: url(%%spritesheet%%);
+	background-position: -30px -102px;
     background-repeat: no-repeat;
-}
-#search input[type=submit]:active {
-	-webkit-box-shadow: 0px 0px 6px #999999;
-	-moz-box-shadow: 0px 0px 6px #999999;
-	box-shadow: 0px 0px 6px #999999;
 }
 /**Search Info**/
 
@@ -1433,8 +1419,6 @@ background-repeat: no-repeat
 	font-family: "Courier New", Courier, monospace;
 	font-weight: normal;
 	font-style: normal;
-	font-size: 0.90em!Important;
-	line-height: 1.6!Important;
 	box-sizing: border-box;
 	margin: 8px 0px;
 	position: relative;
@@ -2141,7 +2125,7 @@ html.res-commentBoxes .comment {
 	border-radius: 0!Important;
 	border-top-left-radius: 7px!Important;
 	color: white!Important;
-	line-height:28px!Important;
+	line-height:30px!Important;
 }
 #userbarToggle.userbarShow{
 	background-color: transparent!Important;
@@ -2207,6 +2191,7 @@ html.res-commentBoxes .comment {
     border: 1px solid #242424!Important;
 }
 /**End Login Form**/
+
 /** ADS **/
 
 .organic-listing {
@@ -2222,6 +2207,15 @@ html.res-commentBoxes .comment {
 .link.promoted .rank {
     display: none;
 }
+/*Spam*/
+.thing.spam{background-color: #fa8072!Important;}
+.spam.link .entry .buttons li a.comments{color:#369!Important;}
+.spam.link .entry .buttons li a{color:#333!Important;}
+.spam.link .tagline{color:#444;}
+.spam.link>.title,{color:#0a78e6!Important}
+.spam.link>.title:hover{text-decoration:underline!Important;}
+
+
 /**Hide Stuff **/
 
 .sidebox .spacer,
@@ -2340,10 +2334,7 @@ html.res-commentBoxes .comment {
 }
 ul.report-reasons{margin-top:5px;}
 
-.thing.spam{background-color: #fa8072!Important;}
-.multi-page .link .entry .buttons li a.comments{color:#369!important;}
 /** Multi Reddit Fix**/
-
 body.with-listing-chooser .listing-chooser {
     top: 85px;
     z-index: 100;
