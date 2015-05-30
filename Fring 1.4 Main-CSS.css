@@ -1,7 +1,7 @@
 /*
 			Version 1.4
 			Stylesheet by Imjustadude90
-			Last modified: 29 MAY 2015
+			Last modified: 30 MAY 2015
 
 			--------------------------------------------------------------------------
             [Changelog]
@@ -415,7 +415,7 @@ body {
     background-color: #161616!Important;
     box-shadow: 0 0px 4px rgba(22, 22, 22, 1)!Important;
 }
-h1.redditname {
+h1.redditname, .profile-page div.side>div:nth-child(1)>.titlebox h1 {
     background: -webkit-linear-gradient(top, #fafafa, #f0f0f0);
     background: -moz-linear-gradient(top, #fafafa, #f0f0f0);
     background: -o-linear-gradient(top, #fafafa, #f0f0f0);
@@ -426,13 +426,14 @@ h1.redditname {
     margin-bottom: 0px;
     padding: 5px 10px;
 }
-.res-nightmode h1.redditname {
+.res-nightmode h1.redditname, .res-nightmode .profile-page div.side>div:nth-child(1)>.titlebox h1 {
     background: -webkit-linear-gradient(top, #161616, #1F1E1E);
     background: -moz-linear-gradient(top, #161616, #1F1E1E);
     background: -o-linear-gradient(top, #161616, #1F1E1E);
     background: -ms-linear-gradient(top, #161616, #1F1E1E);
     background: linear-gradient(top, #161616, #1F1E1E);
     background-color: #161616;
+	border-bottom:0;
 }
 /**Login Form**/
 
@@ -690,8 +691,8 @@ h1.redditname {
     border-bottom-color: #9D9D9D;
 }
 .res-nightmode .side .subscribe-button a.remove:hover {
-    background-color: #181818;
-    border-bottom: 3px solid #000000;
+	background-color: #2C2C2C;
+	border-bottom: 3px solid #454545;
 }
 .side .subscribe-button a.add:active,
 .side .subscribe-button a.remove:active,
@@ -858,10 +859,10 @@ body:not(.res) .titlebox .fancy-toggle-button {
 }
 .side div.morelink:hover{opacity:0.9;}
 .res-nightmode .side div.morelink {
-    background-color: #161616!Important;
-    -webkit-box-shadow: 0px 4px 0px #333;
-    -moz-box-shadow: 0px 4px 0px #333;
-    box-shadow: 0px 4px 0px #333;
+    background-color: #e14e3d!Important;
+    -webkit-box-shadow: 0px 4px 0px #D03B29;
+    -moz-box-shadow: 0px 4px 0px #D03B29;
+    box-shadow: 0px 4px 0px #D03B29;
 }
 .side div.morelink:active {
     transform: translate(0px, 3px);
@@ -938,9 +939,9 @@ form#search {
 }
 .res-nightmode #search input[type=text] {
     background-color: #161616!Important;
-    -moz-box-shadow: 0px 4px 0px #333;
-    -webkit-box-shadow: 0px 4px 0px #333;
-    box-shadow: 0px 4px 0px #333;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,.6);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.6);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.6);
 }
 #search input[type=submit] {
     background-image: url(%%spritesheet%%);
@@ -953,6 +954,9 @@ form#search {
     position: relative;
     right: 15px;
     margin-top: 0px;
+}
+.res-nightmode #search input[type=submit]{
+	background-color: transparent!Important;
 }
 #search input[type=submit]:hover {
     background-image: url(%%spritesheet%%);
@@ -1171,6 +1175,9 @@ background-repeat: no-repeat
 .res-nightmode body .content {
     background: transparent!Important;
 }
+.res-nightmode .messages-page div.content {
+    background: rgb(22, 22, 22)!Important;
+}
 /**Sitetable**/
 
 .submit-page .sitetable {
@@ -1250,14 +1257,14 @@ background-repeat: no-repeat
 	color:#FF7247;
 	font-weight:600;
 }
-
+.res-nightmode .link .entry .buttons li a.comments{color:#D03B29}
 .linklisting .link {
     margin: 0px;
     padding: 8px 8px;
     border-bottom: 1px solid rgba(234, 234, 234, 0.4);
     background-color: #fff;
 }
-.res.res-nightmode .linklisting .link {
+.res-nightmode .linklisting .link {
     background-color: #161616!Important;
     border-bottom: 1px solid rgba(31, 31, 31, 1)!Important;
     padding: 8px 8px!Important;
@@ -1575,7 +1582,7 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
     background-color: #fff;
 }
 .res-nightmode .commentarea .menuarea {
-    background-color: #1D1D1D!Important;
+    background-color: #161616!Important;
     border: 0px!Important;
     box-shadow: inset 0px 0px 3px #1B1B1B!Important;
 }
@@ -2243,259 +2250,241 @@ html.res-commentBoxes .comment {
 	border: 1px solid #222!Important;
 }
 /**End Additional Nightmode code**/
+
 /*Reddit-Theme Specific CSS*/
-
-/** ToolBox - modtools **/
-.mod-toolbox .menuarea.modtools {
-	margin: 0px 310px 0px 0px!Important;
-	border:0;
-	height:auto!Important;
-}
-
-.mod-toolbox .pretty-button{
-	margin: 0 5px;
-	padding: 0px 5px;
-	line-height: 15px;
-}
-
-.mod-toolbox .sidecontentbox ul a {
-    padding: 0px;
-    margin: 0px 5px;
-    font-size: 12px;
-}
-/** Multi Page**/
-
-.multi-page .sitetable {
-    overflow: hidden;
-}
-.multi-page #header .pagename a {
-    position: relative;
-}
-.multi-page .menuarea {
-    margin-bottom: 0px;
-}
-.multi-page .hot-page .sitetable {
-    margin-top: 42px;
-    padding-top: 0px;
-}
-.multi-page .sidecontentbox .content {
-    margin: 0px!Important;
-}
-.multi-page .titlebox {
-    padding-bottom: 10px;
-}
-.multi-page .comment,
-.content .details {
-    padding: 10px 10px 10px 8px;
-}
-
-.multi-page .filtered-details .unfilter {
-    margin-left: 10px;
-    margin-bottom: 5px;
-}
-.multi-page .titlebox p {
-    margin-left: 10px;
-	margin-top:5px;
-}
-.subscription-box .title {
-    color: rgb(5, 5, 5);
-    padding: 5px;
-    margin: 0px;
-    font-size: 12px;
-    box-shadow: none;
-    background: none;
-}
-.multi-page .side .subscribe-button a.add,
-.multi-page .side .subscribe-button a.remove
-{
-	font-size: 10px!important;
-}
-
-.multi-page .subscription-box li{margin-bottom:0;}
-
-.multi-page .RESDashboardToggle,
-.multi-page .RESDashboardToggle:hover,
-.multi-page .RESshortcutside,
-.multi-page .RESshortcutside:hover
- {
-	background: none;
-	box-shadow: none;
-	width: auto;
-	margin: 0px auto;
-}
-
-.multi-page .sidecontentbox .title h1 .multi-page #header .pagename a:before {
-    display: none;
-    content: none;
-}
-.multi-page .listing-page .side div.titlebox .redditname a:before {
-    display: none;
-    content: none;
-}
-ul.report-reasons{margin-top:5px;}
-
-/** Multi Reddit Fix**/
-body.with-listing-chooser .listing-chooser {
-    top: 85px;
-    z-index: 100;
-}
-body.with-listing-chooser #header .tabmenu li:first-child.selected{margin-left:0;}
-.with-listing-chooser #header .tabmenu {
-    left: 140px;
-}
-.listing-chooser-collapsed #header .tabmenu {
-    left: 25px;
-}
-
-body.with-listing-chooser.listing-chooser-collapsed>.content, body.with-listing-chooser.listing-chooser-collapsed .footer-parent {
-  margin-left: 25px;
-}
-
-/*Multi Page*/
-
-.multi-details h2, .filtered-details h2,
-.multi-details .description, .filtered-details .description,
-.multi-details .settings, .filtered-details .settings,
-.multi-details h3, .filtered-details h3,
-.multi-page .side .recommend-box h1,
-.multi-page .side .recommend-box .more
-{
-	padding:0px 5px;
-}
-.multi-page .side .titlebox .bottom{
-	padding: 8px 5px;
-	border-bottom: 1px solid rgba(234,234,234,0.4);
-}
-
-.multi-details h2{
-	padding: 5px;
-}
-.res .multi-page .content {margin-top:40px;}
-.multi-page .link .rank{display:none!Important;}
-/**Trending Subreddits**/
 
 .trending-subreddits {
     overflow: hidden;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 8px;
-    margin-left: 0px;
-    border: 0px;
-    border-top: 0px;
+    margin-left: 0;
+    border: 0;
+    border-top: 0;
     text-align: center;
     color: #444;
     background-color: #fff;
-	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
-	-moz-box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
-	box-shadow: 0px -1px 3px 0px rgba(0,0,0,.1);
+    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, .1)
 }
 .res-nightmode .trending-subreddits {
-    background-color: #161616!Important;
+    background-color: #161616!important
 }
-.res-nightmode .trending-subreddits li a:hover{color:#4980B6; text-decoration:underline;}
-/**Messages Page**/
-
-.messages-page .sitetable {
-    margin-right: 0px;
-    border: 0px;
-    border-top: 0px;
-    background-color: #fff;
+.res-nightmode .trending-subreddits li a:hover {
+    color: #4980B6;
+    text-decoration: underline
 }
-.res-nightmode .messages-page .sitetable {
-    background-color: transparent!Important;
+.multi-details h2,
+.filtered-details h2,
+.multi-details .description,
+.filtered-details .description,
+.multi-details .settings,
+.filtered-details .settings,
+.multi-details h3,
+.filtered-details h3,
+.multi-page .side .recommend-box h1,
+.multi-page .side .recommend-box .more {
+    padding: 0 5px
 }
-.messages-page #header-bottom-left .tabmenu.tabmenu {
-    right: 15px;
+.multi-page .side .titlebox .bottom {
+    padding: 8px 5px;
+    border-bottom: 1px solid rgba(234, 234, 234, 0.4)
 }
-.messages-page .menuarea {
-    margin-right: 0px;
-    margin-bottom: 0px;
+.multi-details h2 {
+    padding: 5px
 }
-.messages-page .content {
-    margin: 40px 15px 20px 15px
+.res .multi-page .content {
+    margin-top: 40px
 }
-.messages-page .sitetable .nav-buttons {
-    border-left: 0px;
-    border-right: 0px;
+.multi-page .link .rank {
+    display: none!important
 }
-.message {
-    padding-left: 5px;
-    margin: 0px 0px 10px 0px;
-    padding: 7px;
-    border: 1px solid #eaeaea;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
+body.with-listing-chooser .listing-chooser {
+    top: 85px;
+    z-index: 100
 }
-.res-nightmode .message {
-    border: 0px!Important;
+body.with-listing-chooser #header .tabmenu li:first-child.selected {
+    margin-left: 0
 }
-.messages-page .menuarea .flat-list li.selected a{color: orangered;}
-
-.message.message-reply .entry, .message.message-parent .entry{
-margin-left:0px;
-border-left:0px;
+.with-listing-chooser #header .tabmenu {
+    left: 140px
 }
-
-.message.message-parent .child, .message.message-reply .child{
-margin-left: 15px;
+.listing-chooser-collapsed #header .tabmenu {
+    left: 25px
 }
-
-.messages-page .sitetable .listing{
-border:0px;
-box-shadow: none;
-}	
-
-.messages-page .message.message-parent .child .message, .message.message-reply .child .message{
-border:0px;
-margin-top: 10px;
+body.with-listing-chooser.listing-chooser-collapsed>.content,
+body.with-listing-chooser.listing-chooser-collapsed .footer-parent {
+    margin-left: 25px
 }
-
+.multi-page .sitetable {
+    overflow: hidden
+}
+.multi-page #header .pagename a {
+    position: relative
+}
+.multi-page .menuarea {
+    margin-bottom: 0
+}
+.multi-page .hot-page .sitetable {
+    margin-top: 42px;
+    padding-top: 0
+}
+.multi-page .sidecontentbox .content {
+    margin: 0!important
+}
+.multi-page .titlebox {
+    padding-bottom: 10px
+}
+.multi-page .comment,
+.content .details {
+    padding: 10px 10px 10px 8px
+}
+.multi-page .filtered-details .unfilter {
+    margin-left: 10px;
+    margin-bottom: 5px
+}
+.multi-page .titlebox p {
+    margin-left: 10px;
+    margin-top: 5px
+}
+.subscription-box .title {
+    color: #050505;
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
+    box-shadow: none;
+    background: none
+}
+.multi-page .side .subscribe-button a.add,
+.multi-page .side .subscribe-button a.remove {
+    font-size: 10px!important
+}
+.multi-page .subscription-box li {
+    margin-bottom: 0
+}
+.multi-page .RESDashboardToggle,
+.multi-page .RESDashboardToggle:hover,
+.multi-page .RESshortcutside,
+.multi-page .RESshortcutside:hover {
+    background: none;
+    box-shadow: none;
+    width: auto;
+    margin: 0 auto
+}
+.multi-page .sidecontentbox .title h1 .multi-page #header .pagename a:before {
+    display: none;
+    content: none
+}
+.multi-page .listing-page .side div.titlebox .redditname a:before {
+    display: none;
+    content: none
+}
+ul.report-reasons {
+    margin-top: 5px
+}
 .profile-page .comment,
 .res-commentBoxes .comment {
-    margin-bottom: 0px!Important;
+    margin-bottom: 0!important
 }
 .profile-page .titlebox {
-    padding: 5px 10px;
+    padding: 0
+}
+.profile-page .titlebox .karma,
+.profile-page .karma-breakdown,
+.profile-page .gold-accent.snoovatar-link,
+.profile-page .gold-expiration-info,
+.profile-page .giftgold {
+    margin: 5px
+}
+.profile-page .side .titlebox .bottom {
+    padding: 2px 5px
+}
+.profile-page .titlebox .bottom a {
+    font-size: 12px
+}
+.profile-page .titlebox .fancy-toggle-button {
+    margin-left: 5px;
+    margin-bottom: 0;
+    height: 20px;
+    line-height: 20px
+}
+.profile-page div.sidecontentbox button.expand-summary {
+    width: 300px;
+    margin-left: -10px;
+    margin-bottom: -5px;
+    border: 0;
+    border-top: 1px solid #E8E8E8;
+    background-color: #F5F5F5;
+    color: #3498DB;
+    margin-top: 5px;
+    transition: all .2s ease
+}
+.profile-page div.sidecontentbox button.expand-summary:focus {
+    outline: 0
+}
+.res-nightmode .profile-page div.sidecontentbox button.expand-summary {
+    border-top: 1px solid #171717;
+    background-color: #2D2D2D
+}
+.profile-page div.sidecontentbox button.expand-summary:hover {
+    border-top: 1px solid #2980B9;
+    background-color: #3498DB;
+    color: #fff
+}
+.profile-page .titlebox .bottom .age time,
+.profile-page .titlebox .bottom .age {
+    font-size: 12px!important
+}
+.profile-page .titlebox .bottom .age time:before {
+    display: none!important
+}
+.profile-page .side .titlebox .bottom img {
+    position: relative;
+    top: 1px
 }
 .res-nightmode .profile-page .titlebox h1 {
-    border: 0px;
+    border: 0
 }
-
 .profile-page .sidecontentbox .title h1 {
-    color: #444;
+    color: #444
 }
 .profile-page .side div.sidecontentbox a.helplink {
     font-size: 12px;
     background-image: none;
     color: #4286D0;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: initial;
     height: initial;
-    opacity: 1.0;
-    top: 10px;
-    right: 2px;
-    opacity: 1.0;
+    opacity: 1;
+    top: 6px;
+    right: 5px;
+    opacity: 1
+}
+.profile-page div.titlebox div.server-seconds.rounded {
+    border: 0;
+    border-radius: 0
 }
 .profile-page .side div.sidecontentbox a.helplink:hover {
-    color: #3074be;
+    color: #3074be
 }
 .profile-page .side div.sidecontentbox a.helplink:hover:after {
-    display: none;
+    display: none
 }
 .profile-page .last-clicked.link:not(:first-child),
 .link:not(:first-child),
 .linklisting>.comment:not(:first-child) {
-    padding: 8px 8px;
+    padding: 8px
 }
 .profile-page .comment,
 .content .details {
-    padding: 10px 10px 10px 8px;
+    padding: 10px 10px 10px 8px
 }
-.res-nightmode .profile-page .comment, .res-nightmode .multi-page  .comment {
-    margin-bottom: 0px!Important;
-    background-color: #161616!Important;
-    border-bottom: 1px solid rgba(31, 31, 31, 1)!Important;
+.res-nightmode .profile-page .comment,
+.res-nightmode .multi-page .comment {
+    margin-bottom: 0!important;
+    background-color: #161616!important;
+    border-bottom: 1px solid rgba(31, 31, 31, 1)!important
 }
 .res-nightmode .gold-accent.snoovatar-link,
 .res-nightmode .gold-bubble,
@@ -2506,30 +2495,224 @@ margin-top: 10px;
     background: -ms-linear-gradient(top, #ccac00, #998100);
     background: linear-gradient(top, #ccac00, #998100);
     background-color: #ccac00;
-    border: 0px;
+    border: 0
+}
+.res-nightmode .gold-bubble p.aside {
+    color: #fff
 }
 .res-nightmode .gold-accent.snoovatar-link a,
 .res-nightmode div.rounded.gold-accent.gold-expiration-info > div.gold-remaining > a {
-    color: #eaeaea;
+    color: #eaeaea
 }
 .res-nightmode div.rounded.gold-accent.gold-expiration-info > .res-nightmode div.gold-remaining,
 .res-nightmode .gold-expiration-info .gold-remaining+div {
-    color: #444!Important;
+    color: #444!important
 }
 .res-nightmode .goldvertisement .inner {
-    border: 0px solid #161616;
+    border: 0 solid #161616
 }
 .res-nightmode .goldvertisement {
     background: -webkit-linear-gradient(top, #caab00, #9a8200);
     background-color: #ccac00;
     box-shadow: 0 0 10px #C6B280 inset;
-    border: 0px;
+    border: 0;
     border-radius: 4px
 }
 .res-nightmode .server-seconds {
-    background-color: #161616!Important;
-    border: 0px;
+    background-color: #161616!important;
+    border: 0
 }
+.compose-page .content {
+    background-color: #fff!important;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1)
+}
+.res-nightmode .compose-page .content {
+    background-color: #191919!important
+}
+.compose-page .content .roundfield {
+    margin: 0 auto;
+    background-color: transparent;
+    margin-left: 0
+}
+.compose-page #header .tabmenu {
+    margin: 0 auto;
+    top: 30px
+}
+.compose-page div.content>h1 {
+    margin: 10px 0;
+    border-bottom: solid 3px #f0f0f0;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+.res-nightmode .compose-page div.content>h1 {
+    border-bottom: solid 3px #333;
+    color: #fff
+}
+.compose-page div.content>h1:after {
+    content: "";
+    background-color: #53A9EE;
+    height: 3px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    margin-top: 5px
+}
+.res-nightmode .compose-page div.content>h1:after {
+    background-color: #fff
+}
+.compose-page div.content>h1:first-letter {
+    text-transform: uppercase
+}
+.compose-page #compose-message select {
+    font-size: 13px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 50px
+}
+.compose-page .roundfield input[name=to],
+.compose-page .roundfield input[name=subject],
+.compose-page .roundfield textarea {
+    border: 1px solid #E7E8EA;
+    background-color: #F9F9F9;
+    width: 500px
+}
+.res-nightmode .compose-page .roundfield input[name=to],
+.res-nightmode .compose-page .roundfield input[name=subject],
+.res-nightmode .compose-page .roundfield textarea {
+    border: 1px solid #222;
+    background-color: #333;
+    color: #FFF
+}
+.compose-page #compose-message > div:nth-child(3) > div > span.gray {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute
+}
+.compose-page button#send {
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 -2px #2980B9;
+    border: 0;
+    border-radius: 5px;
+    background-color: #3498DB;
+    -webkit-box-shadow: 0 3px 0 #2980B9;
+    -moz-box-shadow: 0 3px 0 #2980B9;
+    box-shadow: 0 3px 0 #2980B9;
+    margin-left: 10px;
+    margin-bottom: 15px
+}
+.res-nightmode .compose-page button#send {
+    background-color: #666!important;
+    -webkit-box-shadow: 0 4px 0 #444;
+    -moz-box-shadow: 0 4px 0 #444;
+    box-shadow: 0 4px 0 #444;
+    text-shadow: 0 -2px #444
+}
+.compose-page button#send:hover {
+    opacity: .9
+}
+.compose-page button#send:focus {
+    outline: 0
+}
+.compose-page button#send:active {
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    -webkit-box-shadow: 0 2px 0 #2980B9;
+    -moz-box-shadow: 0 2px 0 #2980B9;
+    box-shadow: 0 2px 0 #2980B9
+}
+.res-nightmode .compose-page button#send:active {
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    -webkit-box-shadow: 0 2px 0 #444;
+    -moz-box-shadow: 0 2px 0 #444;
+    box-shadow: 0 2px 0 #444
+}
+.compose-page button#send:first-letter {
+    text-transform: uppercase
+}
+.messages-page .sitetable {
+    margin-right: 0;
+    border: 0;
+    border-top: 0;
+    background-color: #fff
+}
+.res-nightmode .messages-page .sitetable {
+    background-color: transparent!important
+}
+.messages-page #header-bottom-left .tabmenu.tabmenu {
+    right: 15px
+}
+.messages-page .menuarea {
+    margin-right: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #EAEAEA
+}
+.messages-page .content {
+    margin: 40px 15px 20px
+}
+.messages-page .sitetable .nav-buttons {
+    border-left: 0;
+    border-right: 0
+}
+.message {
+    margin: 0 0 10px;
+    padding: 7px;
+    border: 1px solid #eaeaea;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0
+}
+.res-nightmode .message {
+    border-top: 1px solid #101010!important;
+    border: 0
+}
+.messages-page .menuarea .flat-list li.selected a {
+    color: #ff4500
+}
+.message.message-reply .entry,
+.message.message-parent .entry {
+    margin-left: 0;
+    border-left: 0
+}
+.message.message-parent .child,
+.message.message-reply .child {
+    margin-left: 15px
+}
+.messages-page .sitetable .listing {
+    border: 0;
+    box-shadow: none
+}
+.messages-page .message.message-parent .child .message,
+.message.message-reply .child .message {
+    border: 0;
+    margin-top: 10px
+}
+.mod-toolbox .menuarea.modtools {
+    margin: 0 310px 0 0 !important;
+    border: 0;
+    height: auto!important
+}
+.mod-toolbox .pretty-button {
+    margin: 0 5px;
+    padding: 0 5px;
+    line-height: 15px
+}
+.mod-toolbox .sidecontentbox ul a {
+    padding: 0;
+    margin: 0 5px;
+    font-size: 12px
+}
+/**End Reddit-Theme Specific CSS**/
+
 
 
 /*-------------------------------------------------------------------------------------------------------
