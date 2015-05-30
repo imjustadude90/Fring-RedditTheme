@@ -93,6 +93,7 @@ body {
 }
 .sr-bar a:hover {
     color: #fff;
+	text-decoration:underline;
 }
 /**SR More Link **/
 
@@ -234,6 +235,7 @@ body {
 #header-bottom-right .user {
     color: #efefef;
 	font-weight: 600;
+	font-size: 12px;
 }
 #header-bottom-right .user .userkarma {
     border-bottom: 0px dotted #efefef;
@@ -243,7 +245,7 @@ body {
 #header-bottom-right .user a {
     color: #f6f6f6;
     text-decoration: none;
-	font-size: 11px;
+	font-size: 12px;
 }
 #header-bottom-right .user a:hover {
     color: #fff;
@@ -548,6 +550,7 @@ h1.redditname, .profile-page div.side>div:nth-child(1)>.titlebox h1 {
     -moz-box-shadow: 0px 3px 0px #D75A41;
     box-shadow: 0px 3px 0px #D75A41;
 }
+.side .titlebox .md h3 a:hover{opacity:0.9;}
 .res-nightmode .side .titlebox .md h3 a {
     background-color: #202020!Important;
     -webkit-box-shadow: 0px 4px 0px #333;
@@ -1396,6 +1399,82 @@ background-repeat: no-repeat
     padding-right: 5px;
     padding-left: 10px;
 }
+/*Flair*/
+.linkflairlabel, .flair{
+	background-color: #53A9EE;
+	padding: .2em .6em .3em;
+	margin: 1px 3px;
+	border: 0;
+	border-radius: .25em;
+	color: #fff;
+	text-align: center;
+	line-height: 1;
+	font-size: 10px;
+	font-weight: 500;
+	-webkit-box-shadow: 0px 0px 3px #C5C5C5;
+	-moz-box-shadow: 0px 0px 3px #C5C5C5;
+	box-shadow: 0px 0px 3px #C5C5C5;
+}
+
+.flair-black , .linkflair-black .linkflairlabel,{background-color: #2A2A2A; color: white;}
+.flair-red, .linkflair-red .linkflairlabel{background-color: #EA2F36; color: white;}
+.flair-blue, .linkflair-blue .linkflairlabel{background-color: #0000A0; color: white;}
+.flair-darkblue, .linkflair-darkblue .linkflairlabel{background-color: #344a5f; color: white;}
+.flair-lightblue, .linkflair-lightblue .linkflairlabel{background-color: #3498db; color: white;}
+.flair-yellow , .linkflair-yellow .linkflairlabel{background-color: #f1c40f; color: white;}
+.flair-orange, .linkflair-orange .linkflairlabel{background-color: #f39c12; color: white;}
+.flair-green, .linkflair-green .linkflairlabel{background-color: #008000; color: white;}
+.flair-flatgreen, .linkflair-flatgreen .linkflairlabel{background-color: #2ecc71; color: white;}
+.flair-aqua, .linkflair-aqua .linkflairlabel{background-color: #bdc3c7; color: white;}
+.flair-gray, .linkflair-gray .linkflairlabel{background-color: #95a5a6; color: white;}
+.flair-purple, .linkflair-purple .linkflairlabel{background-color: #8e44ad; color: white;}
+.flair-cloud, .linkflair-cloud .linkflairlabel{background-color: #ecf0f1; color: black;}
+.flair-brown, .linkflair-brown .linkflairlabel{background-color: #8E7246; color: white;}
+.flair-pink, .linkflair-pink .linkflairlabel{background-color: #EA1B91; color: white;}
+
+.linkflair.stickied .linkflairlabel{
+	background-color: #39A039;
+	color: white;
+}
+/*Wiki Flair showcase - thanks to /u/multi-mod*/
+
+.wiki-page-flair .wiki table thead {display: none;}
+.wiki-page-flair .wiki table {color: white;}
+.wiki-page-flair .wiki td {
+    background-color: gray;
+    margin: 3px;
+	border:0;
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+    line-height: 7;
+}
+.wiki-page-flair .wiki table tr:nth-of-type(1) td:nth-of-type(1){background-color:#000}
+.wiki-page-flair .wiki table tr:nth-of-type(1) td:nth-of-type(2){background-color:#EA2F36}
+.wiki-page-flair .wiki table tr:nth-of-type(1) td:nth-of-type(3){background-color:#0000A0}
+.wiki-page-flair .wiki table tr:nth-of-type(1) td:nth-of-type(4){background-color:#344a5f}
+.wiki-page-flair .wiki table tr:nth-of-type(1) td:nth-of-type(5){background-color:#3498db}
+.wiki-page-flair .wiki table tr:nth-of-type(2) td:nth-of-type(1){background-color:#f1c40f}
+.wiki-page-flair .wiki table tr:nth-of-type(2) td:nth-of-type(2){background-color:#f39c12}
+.wiki-page-flair .wiki table tr:nth-of-type(2) td:nth-of-type(3){background-color:green}
+.wiki-page-flair .wiki table tr:nth-of-type(2) td:nth-of-type(4){background-color:#2ecc71}
+.wiki-page-flair .wiki table tr:nth-of-type(2) td:nth-of-type(5){background-color:#18E2C3;}
+.wiki-page-flair .wiki table tr:nth-of-type(3) td:nth-of-type(1){background-color:#95a5a6}
+.wiki-page-flair .wiki table tr:nth-of-type(3) td:nth-of-type(2){background-color:#8e44ad}
+.wiki-page-flair .wiki table tr:nth-of-type(3) td:nth-of-type(3){background-color:#ecf0f1;color:#000}
+.wiki-page-flair .wiki table tr:nth-of-type(3) td:nth-of-type(4){background-color:#8E7246}
+.wiki-page-flair .wiki table tr:nth-of-type(3) td:nth-of-type(5){background-color:#EA1B91}
+
+/*Flair Page*/
+.content .tabpane-content{
+	border: 0;
+	background-color: white;
+	padding: 8px 8px 8px 8px;
+	overflow: auto;
+	margin-top: 6px;
+}
+.res-nightmode .content .tabpane-content{background-color: rgb(16, 16, 16);}
 /**Comment Page**/
 
 .commentarea .md blockquote, .link .usertext-body .md blockquote{
@@ -2132,7 +2211,7 @@ html.res-commentBoxes .comment {
 	border-radius: 0!Important;
 	border-top-left-radius: 7px!Important;
 	color: white!Important;
-	line-height:30px!Important;
+	line-height:28px!Important;
 }
 #userbarToggle.userbarShow{
 	background-color: transparent!Important;
@@ -2221,7 +2300,6 @@ html.res-commentBoxes .comment {
 .spam.link .tagline{color:#444;}
 .spam.link>.title,{color:#0a78e6!Important}
 .spam.link>.title:hover{text-decoration:underline!Important;}
-
 
 /**Hide Stuff **/
 
@@ -2389,6 +2467,7 @@ ul.report-reasons {
 .profile-page .titlebox {
     padding: 0
 }
+.profile-page div.side div.titlebox table#per-sr-karma.more-karmas{width:280px;}
 .profile-page .titlebox .karma,
 .profile-page .karma-breakdown,
 .profile-page .gold-accent.snoovatar-link,
@@ -2691,6 +2770,8 @@ ul.report-reasons {
     border: 0;
     box-shadow: none
 }
+.loggedin.messages-page.moderator #header-bottom-left .tabmenu.tabmenu{right:325px;}
+.loggedin.messages-page.moderator .sitetable{overflow:hidden;}
 .messages-page .message.message-parent .child .message,
 .message.message-reply .child .message {
     border: 0;
@@ -2712,8 +2793,6 @@ ul.report-reasons {
     font-size: 12px
 }
 /**End Reddit-Theme Specific CSS**/
-
-
 
 /*-------------------------------------------------------------------------------------------------------
 ------------------Add your Custom CSS Below Here--------*/
