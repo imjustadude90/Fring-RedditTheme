@@ -1,7 +1,7 @@
 /*
 			Version 1.4
 			Stylesheet by Imjustadude90
-			Last modified: 30 MAY 2015
+			Last modified: 01 June 2015
 
 			--------------------------------------------------------------------------
             [Changelog]
@@ -2364,6 +2364,7 @@ html.res-commentBoxes .comment {
 .multi-page .side .recommend-box .more {
     padding: 0 5px
 }
+.gold-accent.titlebox{padding: 0;}
 .multi-page .side .titlebox .bottom {
     padding: 8px 5px;
     border-bottom: 1px solid rgba(234, 234, 234, 0.4)
