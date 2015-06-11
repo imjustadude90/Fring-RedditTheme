@@ -1,17 +1,11 @@
 /*
 			Version 1.4
-			Stylesheet by Imjustadude90
-			Last modified: 30 MAY 2015
-
-			--------------------------------------------------------------------------
-            [Changelog]
-			v1.0 - Initial Design - /r/Fring Template
-			v1.1 - RES Nightmode Compatible
-			v1.2 - Nightmode re-design & header re-design. 
-			v1.3 - New vote arrows & improved customization.
-			v1.4 - Re-write, various bug-fixes. Re-design of tabmenu, comments page, thumbnails and much more.
+			Stylesheet by /u/Imjustadude90
+			Last modified: 11 June 2015
+			
 -------------------------------------------------------------------------- */
-/**Add Customization on the bottom, or it will not work**//** Main Body **/
+
+/**Important!! - Add Customization on the bottom, or it will not work**//** Main Body **/
 
 body {
     color: #111111;
