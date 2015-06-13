@@ -1194,7 +1194,7 @@ background-repeat: no-repeat
     background: transparent!Important;
 }
 .res-nightmode .messages-page div.content {
-    background: rgb(22, 22, 22)!Important;
+    background: #202020!Important;
 }
 /**Sitetable**/
 
