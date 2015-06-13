@@ -220,11 +220,11 @@ body {
 	transition: all 0.15s ease;
 }
 .res-nightmode #header-bottom-right, .res-nightmode #sr-header-area {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1)!important;
 	transition: all 0.15s ease;
 }
 .res-nightmode #header-bottom-right:hover, .res-nightmode #sr-header-area:hover{
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.4)!important;
 }
 #header-bottom-right .user {
     color: #efefef;
