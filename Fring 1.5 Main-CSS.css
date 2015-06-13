@@ -1563,10 +1563,6 @@ div.titlebox>div.bottom>span.flair{display:none;}
     padding: 10px 10px 10px 8px;
     margin: 0 0 5px 0;
 }
-.res-nightmode .commentarea .thing {
-    background-color: #202020!Important;
-    border: 0px!Important;
-}
 .commentarea .child .thing {
     box-shadow: none;
     padding: 2px;
@@ -1670,6 +1666,34 @@ body .comment .comment .comment .comment .comment .comment .comment .comment .co
     border-radius: 3px !important;
 }
 
+.res-nightmode body .comment,
+.res-nightmode body .comment .comment .comment,
+.res-nightmode body .comment .comment .comment .comment .comment,
+.res-nightmode body .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode body .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment
+ {
+    background-color: #202020!important;
+    border-radius: 3px !important;
+}
+
+.res-nightmode .comment .comment,
+.res-nightmode .comment .comment .comment .comment,
+.res-nightmode .comment .comment .comment .comment .comment .comment,
+.res-nightmode .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #161616!important;
+    border-radius: 3px !important;
+}
 /** End Nested Comments **/
 
 .commentarea .menuarea {
